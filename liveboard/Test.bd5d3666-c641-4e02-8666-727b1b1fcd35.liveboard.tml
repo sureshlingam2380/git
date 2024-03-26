@@ -19,10 +19,8 @@ liveboard:
           headline_aggregation: SUM
         - column_id: Total Purchase Id
           headline_aggregation: SUM
-        ordered_column_ids:
-        - Total Product Cost
-        - Total Purchase Id
         client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Total Product Cost\",\"columnProperty\": {}},{\"columnId\": \"Total Purchase Id\",\"columnProperty\": {}}]}"
       chart:
         type: KPI
         chart_columns:
@@ -32,5 +30,10 @@ liveboard:
         - "y":
           - Total Product Cost
         client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Total Purchase Id\",\"columnProperty\": {}},{\"columnId\": \"Total Product Cost\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"bdc40325-ff04-4747-af62-22722a12b3cb\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Product Cost\"],\"isOpposite\": false}},{\"id\": \"0faee03a-dfa2-4cf4-a082-57a468dd4e58\",\"properties\": {\"axisType\": \"X\"}}]}"
       display_mode: CHART_MODE
     viz_guid: 6f72bde3-c124-4cc2-8f5e-021e0ab5c9cf
+  layout:
+    tiles:
+    - visualization_id: Viz_1
+      size: EXTRA_SMALL
