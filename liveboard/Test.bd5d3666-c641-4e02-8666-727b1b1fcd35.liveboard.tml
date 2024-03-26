@@ -1,0 +1,36 @@
+guid: bd5d3666-c641-4e02-8666-727b1b1fcd35
+liveboard:
+  name: Test
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: Total Product Cost
+      tables:
+      - id: Chasmtrap
+        name: Chasmtrap
+        fqn: 07a8af30-cd9d-4ab0-a58a-544a818ddac7
+      search_query: "[Product Cost] [Purchase Id]"
+      answer_columns:
+      - name: Total Product Cost
+      - name: Total Purchase Id
+      table:
+        table_columns:
+        - column_id: Total Product Cost
+          headline_aggregation: SUM
+        - column_id: Total Purchase Id
+          headline_aggregation: SUM
+        ordered_column_ids:
+        - Total Product Cost
+        - Total Purchase Id
+        client_state: ""
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Total Product Cost
+        - column_id: Total Purchase Id
+        axis_configs:
+        - "y":
+          - Total Product Cost
+        client_state: ""
+      display_mode: CHART_MODE
+    viz_guid: 6f72bde3-c124-4cc2-8f5e-021e0ab5c9cf
