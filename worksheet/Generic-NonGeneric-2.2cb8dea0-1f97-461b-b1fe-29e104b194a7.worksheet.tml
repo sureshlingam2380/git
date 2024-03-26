@@ -1,0 +1,100 @@
+guid: 2cb8dea0-1f97-461b-b1fe-29e104b194a7
+worksheet:
+  name: Generic-NonGeneric-2
+  description: "Contains columns from part details, linorder and customer. Part points to part details via generic relationship. However, this worksheet doesn't include columns that are a part of generic relationship. This worksheet also contains a depth of 3 from the root lineorder table. Lineorder -> Part-> Part Details. This worksheet also has a formula involving generic join."
+  tables:
+  - name: CUSTOMER
+    fqn: 5de19354-710f-448e-8ed2-4315d926a264
+  - name: LINEORDER
+    fqn: 2445fe81-30d6-46fa-9f42-f6b1b4e01623
+  - name: PART
+    fqn: a7fc012e-bdb3-4e75-9ce4-b3f731d90136
+  - name: Part Details
+    fqn: 7abdeb87-66ab-490f-95c6-6e849f07eb7c
+  joins:
+  - name: Lineorder PartKey - Part PartKey
+    source: LINEORDER
+    destination: PART
+    type: INNER
+    is_one_to_one: false
+  - name: Lineorder CustKey - Customer CustKey
+    source: LINEORDER
+    destination: CUSTOMER
+    type: INNER
+    is_one_to_one: false
+  - name: PART - Part Details
+    source: PART
+    destination: Part Details
+    type: INNER
+    is_one_to_one: false
+  table_paths:
+  - id: CUSTOMER_1
+    table: CUSTOMER
+    join_path:
+    - join:
+      - Lineorder CustKey - Customer CustKey
+  - id: LINEORDER_1
+    table: LINEORDER
+    join_path:
+    - {}
+  - id: PART_1
+    table: PART
+    join_path:
+    - join:
+      - Lineorder PartKey - Part PartKey
+  - id: Part Details_1
+    table: Part Details
+    join_path:
+    - join:
+      - Lineorder PartKey - Part PartKey
+      - PART - Part Details
+  formulas:
+  - name: genericjoinformula
+    expr: "[Part Details_1::Industry] = 'automobile'"
+    was_auto_generated: false
+  - name: genericjoinformula1
+    expr: "[Part Details_1::Part PartKey] > [LINEORDER_1::OrderKey]"
+    was_auto_generated: false
+  worksheet_columns:
+  - name: Industry
+    column_id: Part Details_1::Industry
+    properties:
+      column_type: ATTRIBUTE
+  - name: Tax
+    column_id: LINEORDER_1::Tax
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+  - name: Discount
+    column_id: LINEORDER_1::Discount
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+  - name: Revenue
+    column_id: LINEORDER_1::Revenue
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+  - name: Customer Region
+    column_id: CUSTOMER_1::Customer Region
+    properties:
+      column_type: ATTRIBUTE
+  - name: Market Segment
+    column_id: CUSTOMER_1::Market Segment
+    properties:
+      column_type: ATTRIBUTE
+  - name: Category
+    column_id: PART_1::Category
+    properties:
+      column_type: ATTRIBUTE
+  - name: genericjoinformula
+    formula_id: genericjoinformula
+    properties:
+      column_type: ATTRIBUTE
+  - name: genericjoinformula1
+    formula_id: genericjoinformula1
+    properties:
+      column_type: ATTRIBUTE
+  properties:
+    is_bypass_rls: false
+    join_progressive: true
