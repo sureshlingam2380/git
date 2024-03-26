@@ -52,38 +52,6 @@ liveboard:
     viz_guid: af0dbee0-df7c-48f6-a1cb-a68c83ea7d26
   - id: Viz_2
     answer:
-      name: Total Agency Review_Rating
-      tables:
-      - id: Complex_Schema_Full_Outer_Join
-        name: Complex_Schema_Full_Outer_Join
-        fqn: e4c2d89d-f8fe-4e51-90b5-c6b8358bd6ea
-      search_query: "[Agency Review_Rating] [Customer_Zip]"
-      answer_columns:
-      - name: Total Agency Review_Rating
-      - name: Total Customer_Zip
-      table:
-        table_columns:
-        - column_id: Total Agency Review_Rating
-          headline_aggregation: SUM
-        - column_id: Total Customer_Zip
-          headline_aggregation: SUM
-        ordered_column_ids:
-        - Total Agency Review_Rating
-        - Total Customer_Zip
-        client_state: ""
-      chart:
-        type: KPI
-        chart_columns:
-        - column_id: Total Agency Review_Rating
-        - column_id: Total Customer_Zip
-        axis_configs:
-        - "y":
-          - Total Agency Review_Rating
-        client_state: ""
-      display_mode: CHART_MODE
-    viz_guid: acbcb0d8-df9e-4546-b2af-589b1a6f1647
-  - id: Viz_3
-    answer:
       name: Total Revenue by genericjoinformula
       tables:
       - id: Generic-NonGeneric-2
@@ -118,7 +86,7 @@ liveboard:
         client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"genericjoinformula\",\"columnProperty\": {}},{\"columnId\": \"Total Revenue\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"ec2dc835-d811-479c-bf35-f3b7a845bea4\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Revenue\"],\"isOpposite\": false}},{\"id\": \"9223e249-4a50-45d7-87e3-3d14c2f1883c\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"genericjoinformula\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Revenue\",\"color\": \"#48D1E0\"}]}"
       display_mode: CHART_MODE
     viz_guid: e390b3db-8713-462a-8678-954e43bc34ff
-  - id: Viz_4
+  - id: Viz_3
     answer:
       name: Total Product Cost by Product Name
       tables:
@@ -159,8 +127,6 @@ liveboard:
     - visualization_id: Viz_1
       size: MEDIUM
     - visualization_id: Viz_2
-      size: EXTRA_SMALL
-    - visualization_id: Viz_3
       size: MEDIUM
-    - visualization_id: Viz_4
+    - visualization_id: Viz_3
       size: MEDIUM
