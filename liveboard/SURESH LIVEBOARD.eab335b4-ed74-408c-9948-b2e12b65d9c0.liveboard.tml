@@ -82,6 +82,42 @@ liveboard:
         client_state: ""
       display_mode: CHART_MODE
     viz_guid: acbcb0d8-df9e-4546-b2af-589b1a6f1647
+  - id: Viz_3
+    answer:
+      name: Total Revenue by genericjoinformula
+      tables:
+      - id: Generic-NonGeneric-2
+        name: Generic-NonGeneric-2
+        fqn: 2cb8dea0-1f97-461b-b1fe-29e104b194a7
+      search_query: "[Revenue] [genericjoinformula]"
+      answer_columns:
+      - name: Total Revenue
+      - name: genericjoinformula
+      table:
+        table_columns:
+        - column_id: Total Revenue
+          headline_aggregation: SUM
+        - column_id: genericjoinformula
+          headline_aggregation: COUNT_DISTINCT
+        ordered_column_ids:
+        - genericjoinformula
+        - Total Revenue
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: genericjoinformula
+        - column_id: Total Revenue
+        axis_configs:
+        - x:
+          - genericjoinformula
+          "y":
+          - Total Revenue
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"genericjoinformula\",\"columnProperty\": {}},{\"columnId\": \"Total Revenue\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"ec2dc835-d811-479c-bf35-f3b7a845bea4\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Revenue\"],\"isOpposite\": false}},{\"id\": \"9223e249-4a50-45d7-87e3-3d14c2f1883c\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"genericjoinformula\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Revenue\",\"color\": \"#48D1E0\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: e390b3db-8713-462a-8678-954e43bc34ff
   layout:
     tiles:
     - visualization_id: Viz_1
