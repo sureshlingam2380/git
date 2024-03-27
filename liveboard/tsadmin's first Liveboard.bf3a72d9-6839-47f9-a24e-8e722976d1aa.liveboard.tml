@@ -77,39 +77,6 @@ liveboard:
         client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Item Category\",\"columnProperty\": {}},{\"columnId\": \"Total Sale Quantity\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"a23b2da7-0b65-4c75-a5f2-9b4f724f524a\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sale Quantity\"],\"isOpposite\": false}},{\"id\": \"ca5018df-a807-4c30-af26-561a1e207598\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Item Category\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Sale Quantity\",\"color\": \"#8C62F5\"}]}"
       display_mode: CHART_MODE
     viz_guid: 97ab431e-8525-485d-8d0d-73b0ab1d5ed2
-  - id: Viz_3
-    answer:
-      name: Total Agency Service Years by Agency Name
-      tables:
-      - id: WS TEST
-        name: WS TEST
-        fqn: c082515a-870e-4c16-963f-b50ad9bc42bb
-      search_query: "[Agency Name] [Agency Service Years]"
-      answer_columns:
-      - name: Agency Name
-      - name: Total Agency Service Years
-      table:
-        table_columns:
-        - column_id: Agency Name
-          headline_aggregation: COUNT_DISTINCT
-        - column_id: Total Agency Service Years
-          headline_aggregation: SUM
-        client_state: ""
-        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
-      chart:
-        type: COLUMN
-        chart_columns:
-        - column_id: Agency Name
-        - column_id: Total Agency Service Years
-        axis_configs:
-        - x:
-          - Agency Name
-          "y":
-          - Total Agency Service Years
-        client_state: ""
-        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Agency Name\",\"columnProperty\": {}},{\"columnId\": \"Total Agency Service Years\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"bb18a5b5-3216-452a-9128-d69f023e7ea9\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Agency Service Years\"],\"isOpposite\": false}},{\"id\": \"9b0662d0-9b8b-488e-abd3-42d33be39b20\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Agency Name\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Agency Service Years\",\"color\": \"#48D1E0\"}]}"
-      display_mode: CHART_MODE
-    viz_guid: 2882bf6a-8465-4a59-a0ef-d615a843772b
   layout:
     tiles:
     - visualization_id: Viz_1
