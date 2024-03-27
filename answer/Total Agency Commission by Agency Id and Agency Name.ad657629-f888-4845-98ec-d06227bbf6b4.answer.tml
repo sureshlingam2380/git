@@ -1,0 +1,38 @@
+guid: ad657629-f888-4845-98ec-d06227bbf6b4
+answer:
+  name: Total Agency Commission by Agency Id and Agency Name
+  tables:
+  - id: WS TEST
+    name: WS TEST
+    fqn: c082515a-870e-4c16-963f-b50ad9bc42bb
+  search_query: "[Agency Name] [Agency Id] [Agency Commission]"
+  answer_columns:
+  - name: Agency Id
+  - name: Agency Name
+  - name: Total Agency Commission
+  table:
+    table_columns:
+    - column_id: Agency Id
+      headline_aggregation: COUNT_DISTINCT
+    - column_id: Agency Name
+      headline_aggregation: COUNT_DISTINCT
+    - column_id: Total Agency Commission
+      headline_aggregation: SUM
+    client_state: ""
+    client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+  chart:
+    type: COLUMN
+    chart_columns:
+    - column_id: Agency Id
+    - column_id: Agency Name
+    - column_id: Total Agency Commission
+    axis_configs:
+    - x:
+      - Agency Id
+      "y":
+      - Total Agency Commission
+      color:
+      - Agency Name
+    client_state: ""
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Agency Name\",\"columnProperty\": {}},{\"columnId\": \"Agency Id\",\"columnProperty\": {}},{\"columnId\": \"Total Agency Commission\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"3b02a894-437d-4a2a-8c24-c058e5efe86f\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Agency Commission\"],\"isOpposite\": false}},{\"id\": \"804d83a4-233a-4459-a326-ad91be7fbdcf\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Agency Id\"]}}],\"systemSeriesColors\": [{\"serieName\": \"abc\",\"color\": \"#2F3947\"},{\"serieName\": \"acquirent\",\"color\": \"#A2ACBA\"},{\"serieName\": \"advanatge tech\",\"color\": \"#47515F\"},{\"serieName\": \"artisan talent\",\"color\": \"#BEC6D0\"},{\"serieName\": \"best marketing\",\"color\": \"#747E8C\"},{\"serieName\": \"best of staffing\",\"color\": \"#7A3D1F\"},{\"serieName\": \"betts recruiting\",\"color\": \"#FFA97E\"},{\"serieName\": \"carlton\",\"color\": \"#C26232\"},{\"serieName\": \"chase professionals\",\"color\": \"#FFCCB3\"},{\"serieName\": \"disys\",\"color\": \"#FF8142\"},{\"serieName\": \"dws\",\"color\": \"#422E75\"},{\"serieName\": \"glassdoor\",\"color\": \"#B094F8\"},{\"serieName\": \"grey thorn\",\"color\": \"#6A4ABA\"},{\"serieName\": \"ihire\",\"color\": \"#D1C0FB\"},{\"serieName\": \"kas placement\",\"color\": \"#8C62F5\"},{\"serieName\": \"kelly services\",\"color\": \"#025B3C\"},{\"serieName\": \"lightspeed\",\"color\": \"#56D3A8\"},{\"serieName\": \"momentum scientific\",\"color\": \"#049160\"},{\"serieName\": \"nexus\",\"color\": \"#9BE5CB\"},{\"serieName\": \"numeric\",\"color\": \"#06BF7F\"},{\"serieName\": \"paladin\",\"color\": \"#785F1A\"},{\"serieName\": \"peak sales\",\"color\": \"#FCD977\"},{\"serieName\": \"redfin\",\"color\": \"#BF982A\"},{\"serieName\": \"salestalentinc\",\"color\": \"#FDE9AF\"},{\"serieName\": \"sterling engineering\",\"color\": \"#FCC838\"},{\"serieName\": \"sun recruiting\",\"color\": \"#22636B\"},{\"serieName\": \"sutter hills\",\"color\": \"#82DFE9\"},{\"serieName\": \"talent rover\",\"color\": \"#369FAA\"},{\"serieName\": \"three pillars\",\"color\": \"#B5ECF2\"},{\"serieName\": \"trs staffing solutions\",\"color\": \"#48D1E0\"},{\"serieName\": \"uhf\",\"color\": \"#163772\"},{\"serieName\": \"wehire\",\"color\": \"#71A1F4\"},{\"serieName\": \"workbridge associates\",\"color\": \"#2359B6\"},{\"serieName\": \"wunderland\",\"color\": \"#ABC7F9\"},{\"serieName\": \"yelp\",\"color\": \"#2E75F0\"}]}"
+  display_mode: CHART_MODE
