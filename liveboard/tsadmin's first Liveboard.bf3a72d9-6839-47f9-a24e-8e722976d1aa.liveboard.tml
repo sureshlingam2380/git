@@ -77,42 +77,9 @@ liveboard:
         client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Item Category\",\"columnProperty\": {}},{\"columnId\": \"Total Sale Quantity\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"a23b2da7-0b65-4c75-a5f2-9b4f724f524a\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sale Quantity\"],\"isOpposite\": false}},{\"id\": \"ca5018df-a807-4c30-af26-561a1e207598\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Item Category\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Sale Quantity\",\"color\": \"#8C62F5\"}]}"
       display_mode: CHART_MODE
     viz_guid: 97ab431e-8525-485d-8d0d-73b0ab1d5ed2
-  - id: Viz_3
-    answer:
-      name: Total Agency Service Years by Agency Id and Agency Review Reporting Company
-      tables:
-      - id: WS TEST
-        name: WS TEST
-        fqn: c082515a-870e-4c16-963f-b50ad9bc42bb
-      search_query: "[Agency Id] [Agency Service Years] [Agency Review Reporting Company]"
-      answer_columns:
-      - name: Agency Id
-      - name: Agency Review Reporting Company
-      - name: Total Agency Service Years
-      table:
-        table_columns:
-        - column_id: Agency Id
-          headline_aggregation: COUNT_DISTINCT
-        - column_id: Agency Review Reporting Company
-          headline_aggregation: COUNT_DISTINCT
-        - column_id: Total Agency Service Years
-          headline_aggregation: SUM
-        client_state: ""
-        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
-      chart:
-        type: STACKED_COLUMN
-        chart_columns:
-        - column_id: Agency Id
-        - column_id: Agency Review Reporting Company
-        - column_id: Total Agency Service Years
-        axis_configs:
-        - x:
-          - Agency Id
-          "y":
-          - Total Agency Service Years
-          color:
-          - Agency Review Reporting Company
-        client_state: ""
-        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Agency Id\",\"columnProperty\": {}},{\"columnId\": \"Total Agency Service Years\",\"columnProperty\": {}},{\"columnId\": \"Agency Review Reporting Company\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"44e6b0f8-391c-4b43-bb14-e68b069b04a3\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Agency Service Years\"],\"isOpposite\": false}},{\"id\": \"ed5374e7-9f54-4da2-a8c0-fa2e85abb12b\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Agency Id\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Agency Service Years\",\"color\": \"#48D1E0\"},{\"serieName\": \"agencyaudit\",\"color\": \"#FCC838\"},{\"serieName\": \"the people's corp\",\"color\": \"#48D1E0\"},{\"serieName\": \"watchdog reporting\",\"color\": \"#2E75F0\"}]}"
-      display_mode: CHART_MODE
-    viz_guid: ebf15c26-c06b-4bc4-9414-5191e10b1136
+  layout:
+    tiles:
+    - visualization_id: Viz_1
+      size: MEDIUM
+    - visualization_id: Viz_2
+      size: MEDIUM
