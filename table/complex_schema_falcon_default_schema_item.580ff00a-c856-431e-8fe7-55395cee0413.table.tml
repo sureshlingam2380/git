@@ -1,0 +1,54 @@
+guid: 580ff00a-c856-431e-8fe7-55395cee0413
+table:
+  name: complex_schema_falcon_default_schema_item
+  db: DEVELOPMENT
+  schema: TS_dataset
+  db_table: complex_schema_falcon_default_schema_item
+  connection:
+    name: Snowflake
+    fqn: b449ce3d-8682-4697-a073-75965562b7be
+  columns:
+  - name: item_id
+    db_column_name: item_id
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: INT64
+  - name: item_number_of_nodes
+    db_column_name: item_number_of_nodes
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: INT64
+  - name: item_category
+    db_column_name: item_category
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: item_support_provided
+    db_column_name: item_support_provided
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: BOOL
+  - name: item_support_years
+    db_column_name: item_support_years
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: INT64
+  - name: item_ctc
+    db_column_name: item_ctc
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: INT64

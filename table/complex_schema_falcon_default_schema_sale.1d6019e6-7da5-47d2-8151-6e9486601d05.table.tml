@@ -1,0 +1,102 @@
+guid: 1d6019e6-7da5-47d2-8151-6e9486601d05
+table:
+  name: complex_schema_falcon_default_schema_sale
+  db: DEVELOPMENT
+  schema: TS_dataset
+  db_table: complex_schema_falcon_default_schema_sale
+  connection:
+    name: Snowflake
+    fqn: b449ce3d-8682-4697-a073-75965562b7be
+  columns:
+  - name: sale_transaction_id
+    db_column_name: sale_transaction_id
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: INT64
+  - name: sale_item_id
+    db_column_name: sale_item_id
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: INT64
+  - name: sale_deal_size
+    db_column_name: sale_deal_size
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: INT64
+  - name: sale_customer_id
+    db_column_name: sale_customer_id
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: sale_transaction_date
+    db_column_name: sale_transaction_date
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: DATE
+  - name: sale_implementation_date
+    db_column_name: sale_implementation_date
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: DATE
+  - name: sale_zip_code
+    db_column_name: sale_zip_code
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: INT64
+  - name: sale_quantity
+    db_column_name: sale_quantity
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: INT64
+  - name: sale_salesman_id
+    db_column_name: sale_salesman_id
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: sale_first_name
+    db_column_name: sale_first_name
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: sale_last_name
+    db_column_name: sale_last_name
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: sale_commission_amount
+    db_column_name: sale_commission_amount
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: INT64
+  - name: sale_deal_type
+    db_column_name: sale_deal_type
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
