@@ -4,13 +4,6 @@ model:
   model_tables:
   - name: complex_schema_falcon_default_schema_agency
     fqn: e4693a9f-94a0-433f-971e-6095e5c0c4a5
-  - name: complex_schema_falcon_default_schema_agency_review
-    fqn: 7e536bac-cacd-4866-9e45-a7f3f3682c2b
-    joins:
-    - with: complex_schema_falcon_default_schema_agency
-      "on": "[complex_schema_falcon_default_schema_agency_review::agency_review_agency_id] = [complex_schema_falcon_default_schema_agency::agency_id]"
-      type: INNER
-      cardinality: ONE_TO_ONE
   columns:
   - name: Agency City
     column_id: complex_schema_falcon_default_schema_agency::agency_city
@@ -40,36 +33,6 @@ model:
     column_id: complex_schema_falcon_default_schema_agency::agency_id
     properties:
       column_type: ATTRIBUTE
-  - name: Agency Review Date Rating Expiration
-    column_id: complex_schema_falcon_default_schema_agency_review::agency_review_date_rating_expiration
-    properties:
-      column_type: ATTRIBUTE
-      index_type: DONT_INDEX
-  - name: Agency Review Rating
-    column_id: complex_schema_falcon_default_schema_agency_review::agency_review_rating
-    properties:
-      column_type: MEASURE
-      aggregation: SUM
-      index_type: DONT_INDEX
-  - name: Agency Review Rating Id
-    column_id: complex_schema_falcon_default_schema_agency_review::agency_review_rating_id
-    properties:
-      column_type: MEASURE
-      aggregation: SUM
-      index_type: DONT_INDEX
-  - name: Agency Review Agency Id
-    column_id: complex_schema_falcon_default_schema_agency_review::agency_review_agency_id
-    properties:
-      column_type: ATTRIBUTE
-  - name: Agency Review Reporting Company
-    column_id: complex_schema_falcon_default_schema_agency_review::agency_review_reporting_company
-    properties:
-      column_type: ATTRIBUTE
-  - name: Agency Review Date Rating Issued
-    column_id: complex_schema_falcon_default_schema_agency_review::agency_review_date_rating_issued
-    properties:
-      column_type: ATTRIBUTE
-      index_type: DONT_INDEX
   properties:
     is_bypass_rls: false
     join_progressive: true
