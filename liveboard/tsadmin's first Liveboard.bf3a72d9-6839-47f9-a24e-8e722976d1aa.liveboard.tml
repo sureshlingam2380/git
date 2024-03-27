@@ -44,3 +44,36 @@ liveboard:
         client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Sale Deal Type\",\"columnProperty\": {}},{\"columnId\": \"Total Item Number Of Nodes\",\"columnProperty\": {}},{\"columnId\": \"Total Item Review Item Id\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"cc9f6fc7-07e5-4b36-91be-2fdd1e11b111\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Item Number Of Nodes\"],\"isOpposite\": false}},{\"id\": \"d23c8b38-dff2-46aa-b1c1-9137bc02a652\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Item Review Item Id\"],\"isOpposite\": true}},{\"id\": \"041f580d-e78a-4fd5-8957-db63e17cf204\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Sale Deal Type\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Item Number Of Nodes\",\"color\": \"#48D1E0\"},{\"serieName\": \"Total Item Review Item Id\",\"color\": \"#2E75F0\"}]}"
       display_mode: CHART_MODE
     viz_guid: 88e085df-2258-42ad-b7a7-39ea32daf552
+  - id: Viz_2
+    answer:
+      name: Total Sale Quantity by Item Category
+      tables:
+      - id: Suresh WS
+        name: Suresh WS
+        fqn: 8672a723-566d-406b-952d-b31d9a34e25a
+      search_query: "[Sale Quantity] [Item Category]"
+      answer_columns:
+      - name: Item Category
+      - name: Total Sale Quantity
+      table:
+        table_columns:
+        - column_id: Item Category
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Total Sale Quantity
+          headline_aggregation: SUM
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: Item Category
+        - column_id: Total Sale Quantity
+        axis_configs:
+        - x:
+          - Item Category
+          "y":
+          - Total Sale Quantity
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Item Category\",\"columnProperty\": {}},{\"columnId\": \"Total Sale Quantity\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"a23b2da7-0b65-4c75-a5f2-9b4f724f524a\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sale Quantity\"],\"isOpposite\": false}},{\"id\": \"ca5018df-a807-4c30-af26-561a1e207598\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Item Category\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Sale Quantity\",\"color\": \"#8C62F5\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: 97ab431e-8525-485d-8d0d-73b0ab1d5ed2

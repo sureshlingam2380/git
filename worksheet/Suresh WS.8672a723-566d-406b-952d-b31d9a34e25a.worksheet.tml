@@ -19,12 +19,6 @@ model:
       type: INNER
       cardinality: MANY_TO_ONE
   columns:
-  - name: Item Ctc
-    column_id: complex_schema_falcon_default_schema_item::item_ctc
-    properties:
-      column_type: MEASURE
-      aggregation: SUM
-      index_type: DONT_INDEX
   - name: Item Id
     column_id: complex_schema_falcon_default_schema_item::item_id
     properties:
