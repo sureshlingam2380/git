@@ -1,0 +1,32 @@
+guid: 87f05e84-4ea7-4123-a04d-6efe411cba1c
+answer:
+  name: "Sale Salesman Id, Weekly Item Review Date"
+  tables:
+  - id: FINAL WS
+    name: FINAL WS
+    fqn: 94b6446e-e9cd-415d-b11a-7f9ea08c835b
+  search_query: "[Sale Salesman Id] [Item Review Date] [Item Review Date].weekly"
+  answer_columns:
+  - name: Sale Salesman Id
+  - name: Week(Item Review Date)
+  table:
+    table_columns:
+    - column_id: Sale Salesman Id
+      headline_aggregation: COUNT_DISTINCT
+    - column_id: Week(Item Review Date)
+      headline_aggregation: MIN-MAX
+    client_state: ""
+    client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+  chart:
+    type: SCATTER
+    chart_columns:
+    - column_id: Sale Salesman Id
+    - column_id: Week(Item Review Date)
+    axis_configs:
+    - x:
+      - Week(Item Review Date)
+      "y":
+      - Sale Salesman Id
+    client_state: ""
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Week(Item Review Date)\",\"columnProperty\": {}},{\"columnId\": \"Sale Salesman Id\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"0eb569a0-3c96-41cf-a077-1e30580803ac\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Sale Salesman Id\"],\"isOpposite\": false}},{\"id\": \"3c1b8451-e08f-4a2f-bf2d-a90b09119653\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Week(Item Review Date)\"]}}],\"systemSeriesColors\": [{\"serieName\": \"a\",\"color\": \"#06BF7F\"},{\"serieName\": \"aa\",\"color\": \"#FCC838\"},{\"serieName\": \"aaa\",\"color\": \"#82DFE9\"},{\"serieName\": \"b\",\"color\": \"#48D1E0\"},{\"serieName\": \"bb\",\"color\": \"#71A1F4\"},{\"serieName\": \"bbb\",\"color\": \"#2E75F0\"}]}"
+  display_mode: TABLE_MODE
