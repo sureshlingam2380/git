@@ -147,6 +147,45 @@ liveboard:
         client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"6d4da2a0-1a02-4835-b87c-a2a471a86b8b\",\"columnProperty\": {}},{\"columnId\": \"96caae28-0a51-470f-80c0-9750da65aab7\",\"columnProperty\": {}},{\"columnId\": \"064afafe-cb96-4804-98b4-081d40b468c2\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"276b4095-8cea-4f4b-a529-b44b3793ac6d\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"6d4da2a0-1a02-4835-b87c-a2a471a86b8b\"],\"isOpposite\": false}},{\"id\": \"cd81d086-3b38-42db-aeb1-85ce92085bee\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"96caae28-0a51-470f-80c0-9750da65aab7\"]}}],\"systemSeriesColors\": [{\"serieName\": \"a\",\"color\": \"#06BF7F\"},{\"serieName\": \"aa\",\"color\": \"#FCC838\"},{\"serieName\": \"aaa\",\"color\": \"#82DFE9\"},{\"serieName\": \"b\",\"color\": \"#48D1E0\"},{\"serieName\": \"bb\",\"color\": \"#71A1F4\"},{\"serieName\": \"bbb\",\"color\": \"#2E75F0\"}]}"
       display_mode: TABLE_MODE
     viz_guid: 65845196-2331-40b9-a43c-062e43011d42
+  - id: Viz_5
+    answer:
+      name: "Sale Salesman Id, Weekly Item Review Date"
+      tables:
+      - id: FINAL WS
+        name: FINAL WS
+        fqn: 94b6446e-e9cd-415d-b11a-7f9ea08c835b
+      search_query: "[Sale Salesman Id] [Item Review Date] [Item Review Date].weekly [Item Id]"
+      answer_columns:
+      - name: Sale Salesman Id
+      - name: Total Item Id
+      - name: Week(Item Review Date)
+      table:
+        table_columns:
+        - column_id: Sale Salesman Id
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Total Item Id
+          headline_aggregation: SUM
+        - column_id: Week(Item Review Date)
+          headline_aggregation: MIN-MAX
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: LINE
+        chart_columns:
+        - column_id: Sale Salesman Id
+        - column_id: Total Item Id
+        - column_id: Week(Item Review Date)
+        axis_configs:
+        - x:
+          - Week(Item Review Date)
+          "y":
+          - Total Item Id
+          color:
+          - Sale Salesman Id
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Week(Item Review Date)\",\"columnProperty\": {}},{\"columnId\": \"Sale Salesman Id\",\"columnProperty\": {}},{\"columnId\": \"Total Item Id\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"a69e6788-dcb3-4003-b6fa-7efbd2cd8874\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Item Id\"],\"isOpposite\": false}},{\"id\": \"e4fc714d-0334-400e-b5a7-bed89d6b8bd7\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Week(Item Review Date)\"]}}],\"systemSeriesColors\": [{\"serieName\": \"a\",\"color\": \"#06BF7F\"},{\"serieName\": \"aa\",\"color\": \"#FCC838\"},{\"serieName\": \"aaa\",\"color\": \"#82DFE9\"},{\"serieName\": \"b\",\"color\": \"#48D1E0\"},{\"serieName\": \"bb\",\"color\": \"#71A1F4\"},{\"serieName\": \"bbb\",\"color\": \"#2E75F0\"},{\"serieName\": \"{null}\",\"color\": \"#2E75F0\"},{\"serieName\": \"a001\",\"color\": \"#48D1E0\"},{\"serieName\": \"a002\",\"color\": \"#FCC838\"},{\"serieName\": \"a004\",\"color\": \"#06BF7F\"},{\"serieName\": \"a006\",\"color\": \"#8C62F5\"},{\"serieName\": \"a007\",\"color\": \"#FF8142\"},{\"serieName\": \"a009\",\"color\": \"#ABC7F9\"},{\"serieName\": \"a010\",\"color\": \"#B5ECF2\"},{\"serieName\": \"a011\",\"color\": \"#FDE9AF\"},{\"serieName\": \"a013\",\"color\": \"#9BE5CB\"},{\"serieName\": \"a014\",\"color\": \"#D1C0FB\"},{\"serieName\": \"a016\",\"color\": \"#FFCCB3\"},{\"serieName\": \"a018\",\"color\": \"#2359B6\"},{\"serieName\": \"a020\",\"color\": \"#369FAA\"},{\"serieName\": \"a022\",\"color\": \"#BF982A\"},{\"serieName\": \"a024\",\"color\": \"#049160\"},{\"serieName\": \"a025\",\"color\": \"#6A4ABA\"},{\"serieName\": \"a026\",\"color\": \"#C26232\"},{\"serieName\": \"a028\",\"color\": \"#71A1F4\"},{\"serieName\": \"a029\",\"color\": \"#82DFE9\"},{\"serieName\": \"a030\",\"color\": \"#FCD977\"},{\"serieName\": \"a031\",\"color\": \"#56D3A8\"},{\"serieName\": \"a032\",\"color\": \"#B094F8\"},{\"serieName\": \"a033\",\"color\": \"#FFA97E\"},{\"serieName\": \"a034\",\"color\": \"#163772\"},{\"serieName\": \"a035\",\"color\": \"#22636B\"},{\"serieName\": \"a036\",\"color\": \"#785F1A\"},{\"serieName\": \"a037\",\"color\": \"#025B3C\"},{\"serieName\": \"a038\",\"color\": \"#422E75\"},{\"serieName\": \"a039\",\"color\": \"#7A3D1F\"},{\"serieName\": \"a040\",\"color\": \"#2E75F0\"},{\"serieName\": \"a041\",\"color\": \"#48D1E0\"},{\"serieName\": \"a042\",\"color\": \"#FCC838\"},{\"serieName\": \"a043\",\"color\": \"#06BF7F\"},{\"serieName\": \"a044\",\"color\": \"#8C62F5\"},{\"serieName\": \"a045\",\"color\": \"#FF8142\"},{\"serieName\": \"a046\",\"color\": \"#ABC7F9\"},{\"serieName\": \"a047\",\"color\": \"#B5ECF2\"},{\"serieName\": \"a048\",\"color\": \"#FDE9AF\"},{\"serieName\": \"a049\",\"color\": \"#9BE5CB\"},{\"serieName\": \"a050\",\"color\": \"#D1C0FB\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: bb04d802-c6cd-4c9c-a733-ef40b98f48f4
   layout:
     tiles:
     - visualization_id: Viz_1
