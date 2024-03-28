@@ -75,6 +75,45 @@ liveboard:
         client_state: ""
       display_mode: CHART_MODE
     viz_guid: 7e6fff26-4cf1-4968-abf0-f9edd185ea41
+  - id: Viz_3
+    answer:
+      name: Total Customer Zip by Customer Sector and Customer Rating
+      tables:
+      - id: FINAL WS
+        name: FINAL WS
+        fqn: 94b6446e-e9cd-415d-b11a-7f9ea08c835b
+      search_query: "[Customer Zip] [Customer Rating] [Customer Sector]"
+      answer_columns:
+      - name: Customer Rating
+      - name: Customer Sector
+      - name: Total Customer Zip
+      table:
+        table_columns:
+        - column_id: Customer Rating
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Customer Sector
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Total Customer Zip
+          headline_aggregation: SUM
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: STACKED_COLUMN
+        chart_columns:
+        - column_id: Customer Rating
+        - column_id: Customer Sector
+        - column_id: Total Customer Zip
+        axis_configs:
+        - x:
+          - Customer Sector
+          "y":
+          - Total Customer Zip
+          color:
+          - Customer Rating
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Total Customer Zip\",\"columnProperty\": {}},{\"columnId\": \"Customer Sector\",\"columnProperty\": {}},{\"columnId\": \"Customer Rating\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"276b4095-8cea-4f4b-a529-b44b3793ac6d\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Customer Zip\"],\"isOpposite\": false}},{\"id\": \"cd81d086-3b38-42db-aeb1-85ce92085bee\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Customer Sector\"]}}],\"systemSeriesColors\": [{\"serieName\": \"a\",\"color\": \"#06BF7F\"},{\"serieName\": \"aa\",\"color\": \"#FCC838\"},{\"serieName\": \"aaa\",\"color\": \"#82DFE9\"},{\"serieName\": \"b\",\"color\": \"#48D1E0\"},{\"serieName\": \"bb\",\"color\": \"#71A1F4\"},{\"serieName\": \"bbb\",\"color\": \"#2E75F0\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: bf9f5071-1131-4863-a4f8-558e810a6b7e
   layout:
     tiles:
     - visualization_id: Viz_1
