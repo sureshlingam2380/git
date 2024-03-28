@@ -114,6 +114,39 @@ liveboard:
         client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Total Customer Zip\",\"columnProperty\": {}},{\"columnId\": \"Customer Sector\",\"columnProperty\": {}},{\"columnId\": \"Customer Rating\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"276b4095-8cea-4f4b-a529-b44b3793ac6d\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Customer Zip\"],\"isOpposite\": false}},{\"id\": \"cd81d086-3b38-42db-aeb1-85ce92085bee\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Customer Sector\"]}}],\"systemSeriesColors\": [{\"serieName\": \"a\",\"color\": \"#06BF7F\"},{\"serieName\": \"aa\",\"color\": \"#FCC838\"},{\"serieName\": \"aaa\",\"color\": \"#82DFE9\"},{\"serieName\": \"b\",\"color\": \"#48D1E0\"},{\"serieName\": \"bb\",\"color\": \"#71A1F4\"},{\"serieName\": \"bbb\",\"color\": \"#2E75F0\"}]}"
       display_mode: CHART_MODE
     viz_guid: bf9f5071-1131-4863-a4f8-558e810a6b7e
+  - id: Viz_4
+    answer:
+      name: "Sale Salesman Id, Weekly Item Review Date"
+      tables:
+      - id: FINAL WS
+        name: FINAL WS
+        fqn: 94b6446e-e9cd-415d-b11a-7f9ea08c835b
+      search_query: "[Sale Salesman Id] [Item Review Date] [Item Review Date].weekly"
+      answer_columns:
+      - name: Sale Salesman Id
+      - name: Week(Item Review Date)
+      table:
+        table_columns:
+        - column_id: Sale Salesman Id
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Week(Item Review Date)
+          headline_aggregation: MIN-MAX
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: SCATTER
+        chart_columns:
+        - column_id: Sale Salesman Id
+        - column_id: Week(Item Review Date)
+        axis_configs:
+        - x:
+          - Week(Item Review Date)
+          "y":
+          - Sale Salesman Id
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"6d4da2a0-1a02-4835-b87c-a2a471a86b8b\",\"columnProperty\": {}},{\"columnId\": \"96caae28-0a51-470f-80c0-9750da65aab7\",\"columnProperty\": {}},{\"columnId\": \"064afafe-cb96-4804-98b4-081d40b468c2\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"276b4095-8cea-4f4b-a529-b44b3793ac6d\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"6d4da2a0-1a02-4835-b87c-a2a471a86b8b\"],\"isOpposite\": false}},{\"id\": \"cd81d086-3b38-42db-aeb1-85ce92085bee\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"96caae28-0a51-470f-80c0-9750da65aab7\"]}}],\"systemSeriesColors\": [{\"serieName\": \"a\",\"color\": \"#06BF7F\"},{\"serieName\": \"aa\",\"color\": \"#FCC838\"},{\"serieName\": \"aaa\",\"color\": \"#82DFE9\"},{\"serieName\": \"b\",\"color\": \"#48D1E0\"},{\"serieName\": \"bb\",\"color\": \"#71A1F4\"},{\"serieName\": \"bbb\",\"color\": \"#2E75F0\"}]}"
+      display_mode: TABLE_MODE
+    viz_guid: 65845196-2331-40b9-a43c-062e43011d42
   layout:
     tiles:
     - visualization_id: Viz_1
