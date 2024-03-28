@@ -1,0 +1,42 @@
+guid: 28aa45fb-bc62-4872-aec9-48ad6421dc03
+liveboard:
+  name: Orange
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: "Total Item Id, Total Item Number Of Nodes by Item Support Provided"
+      tables:
+      - id: Suresh WS
+        name: Suresh WS
+        fqn: 8672a723-566d-406b-952d-b31d9a34e25a
+      search_query: "[Item Id] [Item Number Of Nodes] [Item Support Provided]"
+      answer_columns:
+      - name: Item Support Provided
+      - name: Total Item Id
+      - name: Total Item Number Of Nodes
+      table:
+        table_columns:
+        - column_id: Item Support Provided
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Total Item Id
+          headline_aggregation: SUM
+        - column_id: Total Item Number Of Nodes
+          headline_aggregation: SUM
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: Item Support Provided
+        - column_id: Total Item Id
+        - column_id: Total Item Number Of Nodes
+        axis_configs:
+        - x:
+          - Item Support Provided
+          "y":
+          - Total Item Id
+          - Total Item Number Of Nodes
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Item Support Provided\",\"columnProperty\": {}},{\"columnId\": \"Total Item Id\",\"columnProperty\": {}},{\"columnId\": \"Total Item Number Of Nodes\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"50fe08ed-5c46-45a2-aab4-b85c2e7931d3\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Item Id\"],\"isOpposite\": false}},{\"id\": \"62e1440b-f0e4-49db-b1cc-fd74466f6e3d\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Item Number Of Nodes\"],\"isOpposite\": true}},{\"id\": \"4d04f045-1a77-428f-8962-a8cff409ed62\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Item Support Provided\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Item Id\",\"color\": \"#48D1E0\"},{\"serieName\": \"Total Item Number Of Nodes\",\"color\": \"#2E75F0\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: d080633f-dd61-4f1e-8ab3-e3260be4002f
