@@ -1,0 +1,26 @@
+guid: bd8823cb-15d7-4048-bbfc-e6001085e20c
+answer:
+  name: Total Sale Cost
+  tables:
+  - id: Chasmtrap
+    name: Chasmtrap
+    fqn: 07a8af30-cd9d-4ab0-a58a-544a818ddac7
+  search_query: "[Sale Cost]"
+  answer_columns:
+  - name: Total Sale Cost
+  table:
+    table_columns:
+    - column_id: Total Sale Cost
+      headline_aggregation: SUM
+    client_state: ""
+    client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+  chart:
+    type: KPI
+    chart_columns:
+    - column_id: Total Sale Cost
+    axis_configs:
+    - "y":
+      - Total Sale Cost
+    client_state: ""
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Total Sale Cost\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"77a17b2d-b872-4ca8-ae71-36f3a7c2853a\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sale Cost\"],\"isOpposite\": false}},{\"id\": \"9beb0b10-7049-4e21-8861-158e5590ce83\",\"properties\": {\"axisType\": \"X\"}}]}"
+  display_mode: CHART_MODE
