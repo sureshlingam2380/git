@@ -186,6 +186,39 @@ liveboard:
         client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Week(Item Review Date)\",\"columnProperty\": {}},{\"columnId\": \"Sale Salesman Id\",\"columnProperty\": {}},{\"columnId\": \"Total Item Id\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"a69e6788-dcb3-4003-b6fa-7efbd2cd8874\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Item Id\"],\"isOpposite\": false}},{\"id\": \"e4fc714d-0334-400e-b5a7-bed89d6b8bd7\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Week(Item Review Date)\"]}}],\"systemSeriesColors\": [{\"serieName\": \"a\",\"color\": \"#06BF7F\"},{\"serieName\": \"aa\",\"color\": \"#FCC838\"},{\"serieName\": \"aaa\",\"color\": \"#82DFE9\"},{\"serieName\": \"b\",\"color\": \"#48D1E0\"},{\"serieName\": \"bb\",\"color\": \"#71A1F4\"},{\"serieName\": \"bbb\",\"color\": \"#2E75F0\"},{\"serieName\": \"{null}\",\"color\": \"#2E75F0\"},{\"serieName\": \"a001\",\"color\": \"#48D1E0\"},{\"serieName\": \"a002\",\"color\": \"#FCC838\"},{\"serieName\": \"a004\",\"color\": \"#06BF7F\"},{\"serieName\": \"a006\",\"color\": \"#8C62F5\"},{\"serieName\": \"a007\",\"color\": \"#FF8142\"},{\"serieName\": \"a009\",\"color\": \"#ABC7F9\"},{\"serieName\": \"a010\",\"color\": \"#B5ECF2\"},{\"serieName\": \"a011\",\"color\": \"#FDE9AF\"},{\"serieName\": \"a013\",\"color\": \"#9BE5CB\"},{\"serieName\": \"a014\",\"color\": \"#D1C0FB\"},{\"serieName\": \"a016\",\"color\": \"#FFCCB3\"},{\"serieName\": \"a018\",\"color\": \"#2359B6\"},{\"serieName\": \"a020\",\"color\": \"#369FAA\"},{\"serieName\": \"a022\",\"color\": \"#BF982A\"},{\"serieName\": \"a024\",\"color\": \"#049160\"},{\"serieName\": \"a025\",\"color\": \"#6A4ABA\"},{\"serieName\": \"a026\",\"color\": \"#C26232\"},{\"serieName\": \"a028\",\"color\": \"#71A1F4\"},{\"serieName\": \"a029\",\"color\": \"#82DFE9\"},{\"serieName\": \"a030\",\"color\": \"#FCD977\"},{\"serieName\": \"a031\",\"color\": \"#56D3A8\"},{\"serieName\": \"a032\",\"color\": \"#B094F8\"},{\"serieName\": \"a033\",\"color\": \"#FFA97E\"},{\"serieName\": \"a034\",\"color\": \"#163772\"},{\"serieName\": \"a035\",\"color\": \"#22636B\"},{\"serieName\": \"a036\",\"color\": \"#785F1A\"},{\"serieName\": \"a037\",\"color\": \"#025B3C\"},{\"serieName\": \"a038\",\"color\": \"#422E75\"},{\"serieName\": \"a039\",\"color\": \"#7A3D1F\"},{\"serieName\": \"a040\",\"color\": \"#2E75F0\"},{\"serieName\": \"a041\",\"color\": \"#48D1E0\"},{\"serieName\": \"a042\",\"color\": \"#FCC838\"},{\"serieName\": \"a043\",\"color\": \"#06BF7F\"},{\"serieName\": \"a044\",\"color\": \"#8C62F5\"},{\"serieName\": \"a045\",\"color\": \"#FF8142\"},{\"serieName\": \"a046\",\"color\": \"#ABC7F9\"},{\"serieName\": \"a047\",\"color\": \"#B5ECF2\"},{\"serieName\": \"a048\",\"color\": \"#FDE9AF\"},{\"serieName\": \"a049\",\"color\": \"#9BE5CB\"},{\"serieName\": \"a050\",\"color\": \"#D1C0FB\"}]}"
       display_mode: CHART_MODE
     viz_guid: bb04d802-c6cd-4c9c-a733-ef40b98f48f4
+  - id: Viz_6
+    answer:
+      name: Total Sale Quantity by Weekly Customer Date Of Contact
+      tables:
+      - id: FINAL WS
+        name: FINAL WS
+        fqn: 94b6446e-e9cd-415d-b11a-7f9ea08c835b
+      search_query: "[Customer Date Of Contact] [Customer Date Of Contact].weekly [Sale Quantity]"
+      answer_columns:
+      - name: Total Sale Quantity
+      - name: Week(Customer Date Of Contact)
+      table:
+        table_columns:
+        - column_id: Total Sale Quantity
+          headline_aggregation: SUM
+        - column_id: Week(Customer Date Of Contact)
+          headline_aggregation: MIN-MAX
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Total Sale Quantity
+        - column_id: Week(Customer Date Of Contact)
+        axis_configs:
+        - x:
+          - Week(Customer Date Of Contact)
+          "y":
+          - Total Sale Quantity
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Week(Customer Date Of Contact)\",\"columnProperty\": {}},{\"columnId\": \"Total Sale Quantity\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"b45e9d55-9fac-4515-8c8d-326467261f64\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sale Quantity\"],\"isOpposite\": false}},{\"id\": \"496acb36-f21c-4426-bb50-ab49d7d46bed\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Week(Customer Date Of Contact)\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Sale Quantity\",\"color\": \"#48D1E0\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: ed5aa0d3-4681-412d-8299-c9b283f28fed
   layout:
     tiles:
     - visualization_id: Viz_1
