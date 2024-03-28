@@ -1,0 +1,32 @@
+guid: da8f43f1-ae73-4b90-b4ea-815c146bcf30
+answer:
+  name: Total Item Id by Sale Customer Id
+  tables:
+  - id: FINAL WS
+    name: FINAL WS
+    fqn: 94b6446e-e9cd-415d-b11a-7f9ea08c835b
+  search_query: "[Item Id] [Sale Customer Id]"
+  answer_columns:
+  - name: Sale Customer Id
+  - name: Total Item Id
+  table:
+    table_columns:
+    - column_id: Sale Customer Id
+      headline_aggregation: COUNT_DISTINCT
+    - column_id: Total Item Id
+      headline_aggregation: SUM
+    client_state: ""
+    client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+  chart:
+    type: COLUMN
+    chart_columns:
+    - column_id: Sale Customer Id
+    - column_id: Total Item Id
+    axis_configs:
+    - x:
+      - Sale Customer Id
+      "y":
+      - Total Item Id
+    client_state: ""
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_OFF\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Sale Customer Id\",\"columnProperty\": {}},{\"columnId\": \"Total Item Id\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"87e016d4-ffa6-454f-9f64-a5e9df2deb31\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Item Id\"],\"isOpposite\": false}},{\"id\": \"5947553c-e767-4eed-a065-7a849087c000\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Sale Customer Id\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Item Id\",\"color\": \"#747E8C\"}]}"
+  display_mode: CHART_MODE
