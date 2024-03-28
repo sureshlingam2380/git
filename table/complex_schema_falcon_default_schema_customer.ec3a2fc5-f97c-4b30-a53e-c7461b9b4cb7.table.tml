@@ -1,0 +1,75 @@
+guid: ec3a2fc5-f97c-4b30-a53e-c7461b9b4cb7
+table:
+  name: complex_schema_falcon_default_schema_customer
+  db: DEVELOPMENT
+  schema: TS_dataset
+  db_table: complex_schema_falcon_default_schema_customer
+  connection:
+    name: Snowflake
+    fqn: b449ce3d-8682-4697-a073-75965562b7be
+  columns:
+  - name: customer_id
+    db_column_name: customer_id
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: customer_name
+    db_column_name: customer_name
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: customer_city
+    db_column_name: customer_city
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: customer_state
+    db_column_name: customer_state
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: customer_zip
+    db_column_name: customer_zip
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: INT64
+  - name: customer_rating
+    db_column_name: customer_rating
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: customer_sector
+    db_column_name: customer_sector
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: customer_country
+    db_column_name: customer_country
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: customer_market_valuation
+    db_column_name: customer_market_valuation
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: INT64
+  - name: customer_date_of_contact
+    db_column_name: customer_date_of_contact
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: DATE

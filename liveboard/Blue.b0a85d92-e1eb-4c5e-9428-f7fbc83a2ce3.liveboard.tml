@@ -1,0 +1,52 @@
+guid: b0a85d92-e1eb-4c5e-9428-f7fbc83a2ce3
+liveboard:
+  name: Blue
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: "Total Sale Quantity, Total Sale Deal Size, Total Item Support Years, Total Item Review Rating by Sale Deal Type"
+      tables:
+      - id: FINAL WS
+        name: FINAL WS
+        fqn: 94b6446e-e9cd-415d-b11a-7f9ea08c835b
+      search_query: "[Sale Deal Type] [Sale Quantity] [Sale Deal Size] [Item Support Years] [Item Review Rating]"
+      answer_columns:
+      - name: Sale Deal Type
+      - name: Total Item Review Rating
+      - name: Total Item Support Years
+      - name: Total Sale Deal Size
+      - name: Total Sale Quantity
+      table:
+        table_columns:
+        - column_id: Sale Deal Type
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Total Item Review Rating
+          headline_aggregation: SUM
+        - column_id: Total Item Support Years
+          headline_aggregation: SUM
+        - column_id: Total Sale Deal Size
+          headline_aggregation: SUM
+        - column_id: Total Sale Quantity
+          headline_aggregation: SUM
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: Sale Deal Type
+        - column_id: Total Item Review Rating
+        - column_id: Total Item Support Years
+        - column_id: Total Sale Deal Size
+        - column_id: Total Sale Quantity
+        axis_configs:
+        - x:
+          - Sale Deal Type
+          "y":
+          - Total Sale Quantity
+          - Total Sale Deal Size
+          - Total Item Support Years
+          - Total Item Review Rating
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Sale Deal Type\",\"columnProperty\": {}},{\"columnId\": \"Total Sale Quantity\",\"columnProperty\": {}},{\"columnId\": \"Total Sale Deal Size\",\"columnProperty\": {}},{\"columnId\": \"Total Item Support Years\",\"columnProperty\": {}},{\"columnId\": \"Total Item Review Rating\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"8d899ce0-b31c-4f57-bd3c-8b6d6949e85c\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sale Quantity\"],\"isOpposite\": false}},{\"id\": \"689ef316-937b-44e7-94b7-23a3e767572f\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sale Deal Size\"],\"isOpposite\": true}},{\"id\": \"71ddcc24-3401-4601-9360-56e4d5220740\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Item Support Years\"],\"isOpposite\": true}},{\"id\": \"0c8d7c4b-7178-4e1e-a864-0d4033a4c91a\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Item Review Rating\"],\"isOpposite\": true}},{\"id\": \"0d72f648-f2f8-41b1-8a2a-9208daa0924b\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Sale Deal Type\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Sale Quantity\",\"color\": \"#2E75F0\"},{\"serieName\": \"Total Sale Deal Size\",\"color\": \"#48D1E0\"},{\"serieName\": \"Total Item Support Years\",\"color\": \"#FCC838\"},{\"serieName\": \"Total Item Review Rating\",\"color\": \"#06BF7F\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: 6d8dfe4d-dbc1-4343-bf8a-965dbbcbe109

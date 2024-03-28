@@ -1,0 +1,195 @@
+guid: 94b6446e-e9cd-415d-b11a-7f9ea08c835b
+model:
+  name: FINAL WS
+  model_tables:
+  - name: complex_schema_falcon_default_schema_sale
+    fqn: 1d6019e6-7da5-47d2-8151-6e9486601d05
+    joins:
+    - with: complex_schema_falcon_default_schema_item
+      "on": "[complex_schema_falcon_default_schema_sale::sale_item_id] = [complex_schema_falcon_default_schema_item::item_id]"
+      type: INNER
+      cardinality: MANY_TO_ONE
+  - name: complex_schema_falcon_default_schema_item
+    fqn: 580ff00a-c856-431e-8fe7-55395cee0413
+  - name: complex_schema_falcon_default_schema_item_review
+    fqn: dfbbe921-70ad-4866-a030-a4503d1a6582
+    joins:
+    - with: complex_schema_falcon_default_schema_item
+      "on": "[complex_schema_falcon_default_schema_item_review::item_review_item_id] = [complex_schema_falcon_default_schema_item::item_id]"
+      type: INNER
+      cardinality: MANY_TO_ONE
+  - name: complex_schema_falcon_default_schema_customer
+    fqn: ec3a2fc5-f97c-4b30-a53e-c7461b9b4cb7
+    joins:
+    - with: complex_schema_falcon_default_schema_sale
+      "on": "[complex_schema_falcon_default_schema_customer::customer_id] = [complex_schema_falcon_default_schema_sale::sale_customer_id]"
+      type: INNER
+      cardinality: MANY_TO_ONE
+  columns:
+  - name: Customer Country
+    column_id: complex_schema_falcon_default_schema_customer::customer_country
+    properties:
+      column_type: ATTRIBUTE
+  - name: Customer Market Valuation
+    column_id: complex_schema_falcon_default_schema_customer::customer_market_valuation
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+  - name: Customer City
+    column_id: complex_schema_falcon_default_schema_customer::customer_city
+    properties:
+      column_type: ATTRIBUTE
+  - name: Customer Name
+    column_id: complex_schema_falcon_default_schema_customer::customer_name
+    properties:
+      column_type: ATTRIBUTE
+  - name: Customer Date Of Contact
+    column_id: complex_schema_falcon_default_schema_customer::customer_date_of_contact
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+  - name: Customer Sector
+    column_id: complex_schema_falcon_default_schema_customer::customer_sector
+    properties:
+      column_type: ATTRIBUTE
+  - name: Customer Rating
+    column_id: complex_schema_falcon_default_schema_customer::customer_rating
+    properties:
+      column_type: ATTRIBUTE
+  - name: Customer State
+    column_id: complex_schema_falcon_default_schema_customer::customer_state
+    properties:
+      column_type: ATTRIBUTE
+  - name: Customer Id
+    column_id: complex_schema_falcon_default_schema_customer::customer_id
+    properties:
+      column_type: ATTRIBUTE
+  - name: Customer Zip
+    column_id: complex_schema_falcon_default_schema_customer::customer_zip
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+  - name: Item Ctc
+    column_id: complex_schema_falcon_default_schema_item::item_ctc
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+  - name: Item Id
+    column_id: complex_schema_falcon_default_schema_item::item_id
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+  - name: Item Support Provided
+    column_id: complex_schema_falcon_default_schema_item::item_support_provided
+    properties:
+      column_type: ATTRIBUTE
+  - name: Item Number Of Nodes
+    column_id: complex_schema_falcon_default_schema_item::item_number_of_nodes
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+  - name: Item Support Years
+    column_id: complex_schema_falcon_default_schema_item::item_support_years
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+  - name: Item Category
+    column_id: complex_schema_falcon_default_schema_item::item_category
+    properties:
+      column_type: ATTRIBUTE
+  - name: Item Review Item Id
+    column_id: complex_schema_falcon_default_schema_item_review::item_review_item_id
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+  - name: Item Review Id
+    column_id: complex_schema_falcon_default_schema_item_review::item_review_id
+    properties:
+      column_type: ATTRIBUTE
+  - name: Item Review Rating
+    column_id: complex_schema_falcon_default_schema_item_review::item_review_rating
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+  - name: Item Review Date
+    column_id: complex_schema_falcon_default_schema_item_review::item_review_date
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+  - name: Sale Deal Type
+    column_id: complex_schema_falcon_default_schema_sale::sale_deal_type
+    properties:
+      column_type: ATTRIBUTE
+  - name: Sale First Name
+    column_id: complex_schema_falcon_default_schema_sale::sale_first_name
+    properties:
+      column_type: ATTRIBUTE
+  - name: Sale Customer Id
+    column_id: complex_schema_falcon_default_schema_sale::sale_customer_id
+    properties:
+      column_type: ATTRIBUTE
+  - name: Sale Commission Amount
+    column_id: complex_schema_falcon_default_schema_sale::sale_commission_amount
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+  - name: Sale Implementation Date
+    column_id: complex_schema_falcon_default_schema_sale::sale_implementation_date
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+  - name: Sale Zip Code
+    column_id: complex_schema_falcon_default_schema_sale::sale_zip_code
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+  - name: Sale Quantity
+    column_id: complex_schema_falcon_default_schema_sale::sale_quantity
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+  - name: Sale Transaction Id
+    column_id: complex_schema_falcon_default_schema_sale::sale_transaction_id
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+  - name: Sale Deal Size
+    column_id: complex_schema_falcon_default_schema_sale::sale_deal_size
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+  - name: Sale Transaction Date
+    column_id: complex_schema_falcon_default_schema_sale::sale_transaction_date
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+  - name: Sale Last Name
+    column_id: complex_schema_falcon_default_schema_sale::sale_last_name
+    properties:
+      column_type: ATTRIBUTE
+  - name: Sale Salesman Id
+    column_id: complex_schema_falcon_default_schema_sale::sale_salesman_id
+    properties:
+      column_type: ATTRIBUTE
+  - name: Sale Item Id
+    column_id: complex_schema_falcon_default_schema_sale::sale_item_id
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+  properties:
+    is_bypass_rls: false
+    join_progressive: true
