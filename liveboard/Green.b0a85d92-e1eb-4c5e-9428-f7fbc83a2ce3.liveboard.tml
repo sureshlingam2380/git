@@ -343,6 +343,49 @@ liveboard:
         client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Week(Customer Date Of Contact)\",\"columnProperty\": {}},{\"columnId\": \"Total Sale Deal Size\",\"columnProperty\": {}},{\"columnId\": \"Total Sale Quantity\",\"columnProperty\": {}},{\"columnId\": \"Total Item Ctc\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"8f181d45-f34a-4430-8b77-d6e29932c269\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sale Deal Size\"],\"isOpposite\": false}},{\"id\": \"36ea42d2-51f2-4896-957f-697aa74d302c\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sale Quantity\"],\"isOpposite\": true}},{\"id\": \"60bc4db9-0888-4557-8242-94524e0e5188\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Item Ctc\"],\"isOpposite\": true}},{\"id\": \"99860f46-50be-435d-924b-1eca0492be82\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Week(Customer Date Of Contact)\"]}}],\"systemSeriesColors\": [{\"serieName\": \"7c3a8be8-4eaf-4033-951a-561e494dfa35\",\"color\": \"#48D1E0\"},{\"serieName\": \"Total Sale Deal Size\",\"color\": \"#2E75F0\"},{\"serieName\": \"Total Sale Quantity\",\"color\": \"#48D1E0\"},{\"serieName\": \"Total Item Ctc\",\"color\": \"#8C62F5\"}]}"
       display_mode: CHART_MODE
     viz_guid: e39c3013-ee38-4eea-b092-39be2f1208ca
+  - id: Viz_10
+    answer:
+      name: "Total Sale Deal Size, Total Sale Quantity, Total Item Ctc by Weekly Customer Date Of Contact"
+      tables:
+      - id: FINAL WS
+        name: FINAL WS
+        fqn: 94b6446e-e9cd-415d-b11a-7f9ea08c835b
+      search_query: "[Sale Deal Size] [Sale Quantity] [Customer Date Of Contact] [Customer Date Of Contact].weekly [Item Ctc]"
+      answer_columns:
+      - name: Total Item Ctc
+      - name: Total Sale Deal Size
+      - name: Total Sale Quantity
+      - name: Week(Customer Date Of Contact)
+      table:
+        table_columns:
+        - column_id: Total Item Ctc
+          headline_aggregation: SUM
+        - column_id: Total Sale Deal Size
+          headline_aggregation: SUM
+        - column_id: Total Sale Quantity
+          headline_aggregation: SUM
+        - column_id: Week(Customer Date Of Contact)
+          headline_aggregation: MIN-MAX
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: LINE
+        chart_columns:
+        - column_id: Total Item Ctc
+        - column_id: Total Sale Deal Size
+        - column_id: Total Sale Quantity
+        - column_id: Week(Customer Date Of Contact)
+        axis_configs:
+        - x:
+          - Week(Customer Date Of Contact)
+          "y":
+          - Total Sale Deal Size
+          - Total Sale Quantity
+          - Total Item Ctc
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Week(Customer Date Of Contact)\",\"columnProperty\": {}},{\"columnId\": \"Total Sale Deal Size\",\"columnProperty\": {}},{\"columnId\": \"Total Sale Quantity\",\"columnProperty\": {}},{\"columnId\": \"Total Item Ctc\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"8f181d45-f34a-4430-8b77-d6e29932c269\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sale Deal Size\"],\"isOpposite\": false}},{\"id\": \"36ea42d2-51f2-4896-957f-697aa74d302c\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sale Quantity\"],\"isOpposite\": true}},{\"id\": \"60bc4db9-0888-4557-8242-94524e0e5188\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Item Ctc\"],\"isOpposite\": true}},{\"id\": \"99860f46-50be-435d-924b-1eca0492be82\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Week(Customer Date Of Contact)\"]}}],\"systemSeriesColors\": [{\"serieName\": \"7c3a8be8-4eaf-4033-951a-561e494dfa35\",\"color\": \"#48D1E0\"},{\"serieName\": \"Total Sale Deal Size\",\"color\": \"#2E75F0\"},{\"serieName\": \"Total Sale Quantity\",\"color\": \"#48D1E0\"},{\"serieName\": \"Total Item Ctc\",\"color\": \"#8C62F5\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: 7a6a830f-fc38-4820-bbe4-9fe3a24bbd4a
   layout:
     tiles:
     - visualization_id: Viz_1
