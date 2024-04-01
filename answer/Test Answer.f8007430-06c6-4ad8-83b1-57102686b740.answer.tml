@@ -1,0 +1,32 @@
+guid: f8007430-06c6-4ad8-83b1-57102686b740
+answer:
+  name: Test Answer
+  tables:
+  - id: Chasmtrap
+    name: Chasmtrap
+    fqn: 07a8af30-cd9d-4ab0-a58a-544a818ddac7
+  search_query: "[Product Cost] [PID]"
+  answer_columns:
+  - name: PID
+  - name: Total Product Cost
+  table:
+    table_columns:
+    - column_id: PID
+      headline_aggregation: COUNT_DISTINCT
+    - column_id: Total Product Cost
+      headline_aggregation: SUM
+    client_state: ""
+    client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+  chart:
+    type: COLUMN
+    chart_columns:
+    - column_id: PID
+    - column_id: Total Product Cost
+    axis_configs:
+    - x:
+      - PID
+      "y":
+      - Total Product Cost
+    client_state: ""
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"PID\",\"columnProperty\": {}},{\"columnId\": \"Total Product Cost\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"0fa3c1cd-cb9f-4b8f-ad49-4124e265b6f2\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Product Cost\"],\"isOpposite\": false}},{\"id\": \"9700e484-8cc7-49c9-8d59-c2a4b0f0a95c\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"PID\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Product Cost\",\"color\": \"#FCC838\"}]}"
+  display_mode: CHART_MODE
