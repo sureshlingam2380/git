@@ -5,12 +5,10 @@ answer:
   - id: disabled-rls-non-chasm-ws
     name: disabled-rls-non-chasm-ws
     fqn: 6e884096-20f3-4298-9463-19b7d39c1224
-  search_query: "[PRODUCT_DETAIL_COST] [PRODUCT_DETAIL_ID] [PURCHASE_PRICE] [PRODUCT_DETAIL_PRICE] [products-detail PRODUCT_DETAIL_ID]"
+  search_query: "[PRODUCT_DETAIL_COST] [PRODUCT_DETAIL_ID] [products-detail PRODUCT_DETAIL_ID]"
   answer_columns:
   - name: PRODUCT_DETAIL_COST
   - name: PRODUCT_DETAIL_ID
-  - name: PRODUCT_DETAIL_PRICE
-  - name: Total PURCHASE_PRICE
   - name: products-detail PRODUCT_DETAIL_ID
   table:
     table_columns:
@@ -18,30 +16,23 @@ answer:
       headline_aggregation: COUNT_DISTINCT
     - column_id: PRODUCT_DETAIL_ID
       headline_aggregation: COUNT_DISTINCT
-    - column_id: PRODUCT_DETAIL_PRICE
-      headline_aggregation: COUNT_DISTINCT
-    - column_id: Total PURCHASE_PRICE
-      headline_aggregation: SUM
     - column_id: products-detail PRODUCT_DETAIL_ID
       headline_aggregation: COUNT_DISTINCT
     client_state: ""
     client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
   chart:
-    type: COLUMN
+    type: SCATTER
     chart_columns:
     - column_id: PRODUCT_DETAIL_COST
     - column_id: PRODUCT_DETAIL_ID
-    - column_id: PRODUCT_DETAIL_PRICE
-    - column_id: Total PURCHASE_PRICE
     - column_id: products-detail PRODUCT_DETAIL_ID
     axis_configs:
     - x:
-      - products-detail PRODUCT_DETAIL_ID
+      - PRODUCT_DETAIL_ID
       "y":
-      - Total PURCHASE_PRICE
+      - products-detail PRODUCT_DETAIL_ID
       color:
       - PRODUCT_DETAIL_COST
-      - PRODUCT_DETAIL_PRICE
     client_state: ""
-    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"products-detail PRODUCT_DETAIL_ID\",\"columnProperty\": {}},{\"columnId\": \"Total PURCHASE_PRICE\",\"columnProperty\": {}},{\"columnId\": \"PRODUCT_DETAIL_COST\",\"columnProperty\": {}},{\"columnId\": \"PRODUCT_DETAIL_PRICE\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"ee7603a4-586e-48aa-af37-a348b4b10e0c\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total PURCHASE_PRICE\"],\"isOpposite\": false}},{\"id\": \"a382748e-80b9-4a63-adf3-fbef3a4e5571\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"products-detail PRODUCT_DETAIL_ID\"]}}]}"
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"products-detail PRODUCT_DETAIL_ID\",\"columnProperty\": {}},{\"columnId\": \"PRODUCT_DETAIL_COST\",\"columnProperty\": {}},{\"columnId\": \"PRODUCT_DETAIL_ID\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"86abb451-6316-4761-a52e-5958c0cdfa9d\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"products-detail PRODUCT_DETAIL_ID\"],\"isOpposite\": false}},{\"id\": \"d6fdcb5f-b2d2-4340-b889-15cd6cebc24e\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"PRODUCT_DETAIL_ID\"]}}]}"
   display_mode: TABLE_MODE

@@ -75,12 +75,6 @@ worksheet:
     properties:
       column_type: ATTRIBUTE
       format_pattern: "#,###"
-  - name: PURCHASE_DISCOUNT
-    column_id: rls_purchases_fact_1::PURCHASE_DISCOUNT
-    properties:
-      column_type: MEASURE
-      aggregation: SUM
-      format_pattern: "#,###"
   - name: PURCHASE_PRICE
     column_id: rls_purchases_fact_1::PURCHASE_PRICE
     properties:
