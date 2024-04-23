@@ -129,6 +129,10 @@ worksheet:
     column_id: PART_1::Manufacturer
     properties:
       column_type: ATTRIBUTE
+  - name: Category
+    column_id: PART_1::Category
+    properties:
+      column_type: ATTRIBUTE
   - name: Brand1
     column_id: PART_1::Brand1
     properties:
