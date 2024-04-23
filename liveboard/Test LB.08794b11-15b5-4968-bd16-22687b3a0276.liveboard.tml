@@ -111,6 +111,35 @@ liveboard:
         client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Product Name\",\"columnProperty\": {}},{\"columnId\": \"Total Sale Cost\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"a448434f-7e62-403f-9fd0-7ae63f38972a\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sale Cost\"],\"isOpposite\": false}},{\"id\": \"657cbe2f-adea-487c-9300-b780a6a8de13\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Product Name\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Sale Cost\",\"color\": \"#48D1E0\"}]}"
       display_mode: CHART_MODE
     viz_guid: ae61fe85-f83a-4c4f-8e45-7e9738c1771d
+  - id: Viz_4
+    answer:
+      name: Total Agency_Service Years
+      tables:
+      - id: Complex_Schema_Full_Outer_Join
+        name: Complex_Schema_Full_Outer_Join
+        fqn: e4c2d89d-f8fe-4e51-90b5-c6b8358bd6ea
+      search_query: "[Agency_Service Years] [Customer_Zip]"
+      answer_columns:
+      - name: Total Agency_Service Years
+      - name: Total Customer_Zip
+      table:
+        table_columns:
+        - column_id: Total Agency_Service Years
+          headline_aggregation: SUM
+        - column_id: Total Customer_Zip
+          headline_aggregation: SUM
+        client_state: ""
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Total Agency_Service Years
+        - column_id: Total Customer_Zip
+        axis_configs:
+        - "y":
+          - Total Agency_Service Years
+        client_state: ""
+      display_mode: CHART_MODE
+    viz_guid: 80d4b8f1-36f4-4b19-ba7c-05214e69ebbb
   layout:
     tiles:
     - visualization_id: Viz_1
