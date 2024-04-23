@@ -1,0 +1,135 @@
+guid: 6e884096-20f3-4298-9463-19b7d39c1224
+worksheet:
+  name: disabled-rls-non-chasm-ws
+  tables:
+  - name: rls_products_detail_general
+    fqn: ae4e4b7d-5760-4ced-a4e3-b2c99cb50cf1
+  - name: rls_products_detail_mapping
+    fqn: 883716dd-651d-4331-a4da-9e037dbc3150
+  - name: rls_products_general
+    fqn: 5a2c4992-2259-4738-9c08-0faace3a4037
+  - name: rls_purchases_detail_general
+    fqn: 9567bd47-cf8d-4835-9f6d-d5a8d159d4af
+  - name: rls_purchases_detail_mapping
+    fqn: 228bab26-1c2e-46e4-a5b5-7391a2b6f340
+  - name: rls_purchases_fact
+    fqn: 629e77e0-8c53-455c-bd5d-f427ffc2c4bf
+  joins:
+  - name: PRODUCT_DETAIL_ID - PRODUCT_DETAIL_ID
+    source: rls_products_detail_general
+    destination: rls_products_detail_mapping
+    type: INNER
+    is_one_to_one: false
+  - name: PRODUCT_ID - PRODUCT_DETAIL_ID
+    source: rls_products_general
+    destination: rls_products_detail_general
+    type: INNER
+    is_one_to_one: false
+  - name: Generic Relationship To Mapping Table
+    source: rls_purchases_detail_general
+    destination: rls_purchases_detail_mapping
+    type: INNER
+    is_one_to_one: false
+  - name: PURCHASE_DETAIL_ID - PURCHASE_DETAIL_ID
+    source: rls_purchases_fact
+    destination: rls_purchases_detail_general
+    type: INNER
+    is_one_to_one: false
+  - name: PURCHASE_PRODUCT_ID - PRODUCT_ID
+    source: rls_purchases_fact
+    destination: rls_products_general
+    type: INNER
+    is_one_to_one: false
+  table_paths:
+  - id: rls_products_detail_general_1
+    table: rls_products_detail_general
+    join_path:
+    - join:
+      - PURCHASE_PRODUCT_ID - PRODUCT_ID
+      - PRODUCT_ID - PRODUCT_DETAIL_ID
+  - id: rls_products_detail_mapping_1
+    table: rls_products_detail_mapping
+    join_path:
+    - join:
+      - PURCHASE_PRODUCT_ID - PRODUCT_ID
+      - PRODUCT_ID - PRODUCT_DETAIL_ID
+      - PRODUCT_DETAIL_ID - PRODUCT_DETAIL_ID
+  - id: rls_purchases_detail_general_1
+    table: rls_purchases_detail_general
+    join_path:
+    - join:
+      - PURCHASE_DETAIL_ID - PURCHASE_DETAIL_ID
+  - id: rls_purchases_detail_mapping_1
+    table: rls_purchases_detail_mapping
+    join_path:
+    - join:
+      - PURCHASE_DETAIL_ID - PURCHASE_DETAIL_ID
+      - Generic Relationship To Mapping Table
+  - id: rls_purchases_fact_1
+    table: rls_purchases_fact
+    join_path:
+    - {}
+  worksheet_columns:
+  - name: PURCHASE_DETAIL_ID
+    column_id: rls_purchases_fact_1::PURCHASE_DETAIL_ID
+    properties:
+      column_type: ATTRIBUTE
+      format_pattern: "#,###"
+  - name: PURCHASE_DISCOUNT
+    column_id: rls_purchases_fact_1::PURCHASE_DISCOUNT
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      format_pattern: "#,###"
+  - name: PURCHASE_PRICE
+    column_id: rls_purchases_fact_1::PURCHASE_PRICE
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      format_pattern: "#,###"
+  - name: PURCHASE_PRODUCT_NAME
+    column_id: rls_purchases_fact_1::PURCHASE_PRODUCT_NAME
+    properties:
+      column_type: ATTRIBUTE
+  - name: PURCHASE_SUPPLIER
+    column_id: rls_purchases_fact_1::PURCHASE_SUPPLIER
+    properties:
+      column_type: ATTRIBUTE
+  - name: PURCHASE_DETAIL_DESCRIPTION
+    column_id: rls_purchases_detail_general_1::PURCHASE_DETAIL_DESCRIPTION
+    properties:
+      column_type: ATTRIBUTE
+  - name: purchases-detail PURCHASE_DETAIL_ID
+    column_id: rls_purchases_detail_general_1::PURCHASE_DETAIL_ID
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+  - name: PRODUCT_DETAIL_COST
+    column_id: rls_products_detail_general_1::PRODUCT_DETAIL_COST
+    properties:
+      column_type: ATTRIBUTE
+  - name: PRODUCT_DETAIL_ID
+    column_id: rls_products_detail_general_1::PRODUCT_DETAIL_ID
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+  - name: PRODUCT_DETAIL_PRICE
+    column_id: rls_products_detail_general_1::PRODUCT_DETAIL_PRICE
+    properties:
+      column_type: ATTRIBUTE
+  - name: GROUP_NAME
+    column_id: rls_products_detail_mapping_1::GROUP_NAME
+    properties:
+      column_type: ATTRIBUTE
+  - name: products-detail PRODUCT_DETAIL_ID
+    column_id: rls_products_detail_mapping_1::PRODUCT_DETAIL_ID
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+  - name: purchases-detail GROUP_NAME
+    column_id: rls_purchases_detail_mapping_1::GROUP_NAME
+    properties:
+      column_type: ATTRIBUTE
+  properties:
+    is_bypass_rls: true
+    join_progressive: true
