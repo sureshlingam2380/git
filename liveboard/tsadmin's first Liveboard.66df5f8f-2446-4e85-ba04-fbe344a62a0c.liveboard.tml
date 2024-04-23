@@ -75,13 +75,13 @@ liveboard:
       - id: Chasmtrap
         name: Chasmtrap
         fqn: 07a8af30-cd9d-4ab0-a58a-544a818ddac7
-      search_query: "[Product Cost] [Product Name]"
+      search_query: "[Product Cost] [Product Name1]"
       answer_columns:
-      - name: Product Name
+      - name: Product Name1
       - name: Total Product Cost
       table:
         table_columns:
-        - column_id: Product Name
+        - column_id: Product Name1
           headline_aggregation: COUNT_DISTINCT
         - column_id: Total Product Cost
           headline_aggregation: SUM
@@ -90,14 +90,47 @@ liveboard:
       chart:
         type: COLUMN
         chart_columns:
-        - column_id: Product Name
+        - column_id: Product Name1
         - column_id: Total Product Cost
         axis_configs:
         - x:
-          - Product Name
+          - Product Name1
           "y":
           - Total Product Cost
         client_state: ""
-        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Product Name\",\"columnProperty\": {}},{\"columnId\": \"Total Product Cost\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"3d290eff-4c75-4547-8f9e-0cd7f6f29dee\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Product Cost\"],\"isOpposite\": false}},{\"id\": \"78fa3c68-28b6-4b63-b92f-2bb4981c35ae\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Product Name\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Product Cost\",\"color\": \"#747E8C\"}]}"
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Product Name1\",\"columnProperty\": {}},{\"columnId\": \"Total Product Cost\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"3d290eff-4c75-4547-8f9e-0cd7f6f29dee\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Product Cost\"],\"isOpposite\": false}},{\"id\": \"78fa3c68-28b6-4b63-b92f-2bb4981c35ae\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Product Name1\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Product Cost\",\"color\": \"#747E8C\"}]}"
       display_mode: CHART_MODE
     viz_guid: 41e93ce2-d940-4719-bd7b-17f627407ac2
+  - id: Viz_4
+    answer:
+      name: Total Extended Price by Category
+      tables:
+      - id: Container Worksheet
+        name: Container Worksheet
+        fqn: 286933b5-fc30-46b8-9216-31f669f46a15
+      search_query: "[Extended Price] [Category]"
+      answer_columns:
+      - name: Category
+      - name: Total Extended Price
+      table:
+        table_columns:
+        - column_id: Category
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Total Extended Price
+          headline_aggregation: SUM
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: Category
+        - column_id: Total Extended Price
+        axis_configs:
+        - x:
+          - Category
+          "y":
+          - Total Extended Price
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Category\",\"columnProperty\": {}},{\"columnId\": \"Total Extended Price\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"71dc0966-4224-495d-994f-8b6a8a0b3743\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Extended Price\"],\"isOpposite\": false}},{\"id\": \"315f097c-7d80-41b3-b298-bf15292deb55\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Category\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Extended Price\",\"color\": \"#FF8142\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: d358fa80-49c4-4932-baa7-66d35b9762d8
