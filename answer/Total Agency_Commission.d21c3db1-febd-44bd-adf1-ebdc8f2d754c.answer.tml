@@ -5,14 +5,13 @@ answer:
   - id: Complex_Schema_Full_Outer_Join
     name: Complex_Schema_Full_Outer_Join
     fqn: e4c2d89d-f8fe-4e51-90b5-c6b8358bd6ea
-  search_query: "[Agency_Commission] [Agency Review_Rating] [Item Review_Rating] [Employee_Salary] [Employee_Experience] [Employee_Age] [Item_CTC]"
+  search_query: "[Agency_Commission] [Agency Review_Rating] [Employee_Salary] [Employee_Experience] [Employee_Age] [Item_CTC]"
   answer_columns:
   - name: Total Agency Review_Rating
   - name: Total Agency_Commission
   - name: Total Employee_Age
   - name: Total Employee_Experience
   - name: Total Employee_Salary
-  - name: Total Item Review_Rating
   - name: Total Item_CTC
   table:
     table_columns:
@@ -26,8 +25,6 @@ answer:
       headline_aggregation: SUM
     - column_id: Total Employee_Salary
       headline_aggregation: SUM
-    - column_id: Total Item Review_Rating
-      headline_aggregation: SUM
     - column_id: Total Item_CTC
       headline_aggregation: SUM
     client_state: ""
@@ -40,7 +37,6 @@ answer:
     - column_id: Total Employee_Age
     - column_id: Total Employee_Experience
     - column_id: Total Employee_Salary
-    - column_id: Total Item Review_Rating
     - column_id: Total Item_CTC
     axis_configs:
     - "y":
