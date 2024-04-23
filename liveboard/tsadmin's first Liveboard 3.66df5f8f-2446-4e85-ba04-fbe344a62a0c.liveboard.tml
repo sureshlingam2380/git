@@ -1,6 +1,6 @@
 guid: 66df5f8f-2446-4e85-ba04-fbe344a62a0c
 liveboard:
-  name: tsadmin's first Liveboard 2
+  name: tsadmin's first Liveboard 3
   visualizations:
   - id: Viz_1
     answer:
@@ -75,13 +75,13 @@ liveboard:
       - id: Chasmtrap
         name: Chasmtrap
         fqn: 07a8af30-cd9d-4ab0-a58a-544a818ddac7
-      search_query: "[Product Cost] [Product Name1]"
+      search_query: "[Product Cost] [Product Name2]"
       answer_columns:
-      - name: Product Name1
+      - name: Product Name2
       - name: Total Product Cost
       table:
         table_columns:
-        - column_id: Product Name1
+        - column_id: Product Name2
           headline_aggregation: COUNT_DISTINCT
         - column_id: Total Product Cost
           headline_aggregation: SUM
@@ -90,15 +90,15 @@ liveboard:
       chart:
         type: COLUMN
         chart_columns:
-        - column_id: Product Name1
+        - column_id: Product Name2
         - column_id: Total Product Cost
         axis_configs:
         - x:
-          - Product Name1
+          - Product Name2
           "y":
           - Total Product Cost
         client_state: ""
-        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Product Name1\",\"columnProperty\": {}},{\"columnId\": \"Total Product Cost\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"3d290eff-4c75-4547-8f9e-0cd7f6f29dee\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Product Cost\"],\"isOpposite\": false}},{\"id\": \"78fa3c68-28b6-4b63-b92f-2bb4981c35ae\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Product Name1\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Product Cost\",\"color\": \"#747E8C\"}]}"
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Product Name2\",\"columnProperty\": {}},{\"columnId\": \"Total Product Cost\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"3d290eff-4c75-4547-8f9e-0cd7f6f29dee\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Product Cost\"],\"isOpposite\": false}},{\"id\": \"78fa3c68-28b6-4b63-b92f-2bb4981c35ae\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Product Name2\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Product Cost\",\"color\": \"#747E8C\"}]}"
       display_mode: CHART_MODE
     viz_guid: 41e93ce2-d940-4719-bd7b-17f627407ac2
   - id: Viz_4
@@ -108,30 +108,30 @@ liveboard:
       - id: Container Worksheet
         name: Container Worksheet
         fqn: 286933b5-fc30-46b8-9216-31f669f46a15
-      search_query: "[Extended Price1] [Category 2]"
+      search_query: "[Extended Price3] [Category 4]"
       answer_columns:
-      - name: Category 2
-      - name: Total Extended Price1
+      - name: Category 4
+      - name: Total Extended Price3
       table:
         table_columns:
-        - column_id: Category 2
+        - column_id: Category 4
           headline_aggregation: COUNT_DISTINCT
-        - column_id: Total Extended Price1
+        - column_id: Total Extended Price3
           headline_aggregation: SUM
         client_state: ""
         client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
       chart:
         type: COLUMN
         chart_columns:
-        - column_id: Category 2
-        - column_id: Total Extended Price1
+        - column_id: Category 4
+        - column_id: Total Extended Price3
         axis_configs:
         - x:
-          - Category 2
+          - Category 4
           "y":
-          - Total Extended Price1
+          - Total Extended Price3
         client_state: ""
-        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Category 2\",\"columnProperty\": {}},{\"columnId\": \"Total Extended Price1\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"71dc0966-4224-495d-994f-8b6a8a0b3743\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Extended Price1\"],\"isOpposite\": false}},{\"id\": \"315f097c-7d80-41b3-b298-bf15292deb55\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Category 2\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Extended Price1\",\"color\": \"#FF8142\"}]}"
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Category 4\",\"columnProperty\": {}},{\"columnId\": \"Total Extended Price3\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"71dc0966-4224-495d-994f-8b6a8a0b3743\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Extended Price3\"],\"isOpposite\": false}},{\"id\": \"315f097c-7d80-41b3-b298-bf15292deb55\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Category 4\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Extended Price3\",\"color\": \"#FF8142\"}]}"
       display_mode: CHART_MODE
     viz_guid: d358fa80-49c4-4932-baa7-66d35b9762d8
   layout:
