@@ -217,6 +217,53 @@ liveboard:
         client_state: ""
       display_mode: CHART_MODE
     viz_guid: 305ac3a2-4d6e-43d4-9c2f-3a226898a42f
+  - id: Viz_7
+    answer:
+      name: Total Agency_Commission
+      tables:
+      - id: Complex_Schema_Full_Outer_Join
+        name: Complex_Schema_Full_Outer_Join
+        fqn: e4c2d89d-f8fe-4e51-90b5-c6b8358bd6ea
+      search_query: "[Agency_Commission] [Agency Review_Rating] [Employee_Salary] [Employee_Experience] [Employee_Age] [Item_CTC]"
+      answer_columns:
+      - name: Total Agency Review_Rating
+      - name: Total Agency_Commission
+      - name: Total Employee_Age
+      - name: Total Employee_Experience
+      - name: Total Employee_Salary
+      - name: Total Item_CTC
+      table:
+        table_columns:
+        - column_id: Total Agency Review_Rating
+          headline_aggregation: SUM
+        - column_id: Total Agency_Commission
+          headline_aggregation: SUM
+        - column_id: Total Employee_Age
+          headline_aggregation: SUM
+        - column_id: Total Employee_Experience
+          headline_aggregation: SUM
+        - column_id: Total Employee_Salary
+          headline_aggregation: SUM
+        - column_id: Total Item_CTC
+          headline_aggregation: SUM
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Total Agency Review_Rating
+        - column_id: Total Agency_Commission
+        - column_id: Total Employee_Age
+        - column_id: Total Employee_Experience
+        - column_id: Total Employee_Salary
+        - column_id: Total Item_CTC
+        axis_configs:
+        - "y":
+          - Total Agency_Commission
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Total Agency_Commission\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"85dca1ff-bf0e-4bc5-910b-81817856e604\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Agency_Commission\"],\"isOpposite\": false}},{\"id\": \"69370994-2db5-44c4-b190-30356bc8d715\",\"properties\": {\"axisType\": \"X\"}}]}"
+      display_mode: CHART_MODE
+    viz_guid: 3ae62767-5978-4564-981a-c678bb01766c
   layout:
     tiles:
     - visualization_id: Viz_1
