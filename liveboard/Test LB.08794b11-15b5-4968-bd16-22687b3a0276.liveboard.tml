@@ -188,6 +188,39 @@ liveboard:
         client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Customer_City\",\"columnProperty\": {}},{\"columnId\": \"Agency_ID\",\"columnProperty\": {}},{\"columnId\": \"Customer_Country\",\"columnProperty\": {}},{\"columnId\": \"Agency Review_Reporting Company\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"ac988bd5-7dc9-4796-ab05-97b915b5ef34\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Agency_ID\"],\"isOpposite\": false}},{\"id\": \"ce89f50c-9732-43d0-aa33-5e744a0e2513\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Customer_City\"]}}],\"systemSeriesColors\": [{\"serieName\": \"{null}, {null}\",\"color\": \"#FFA97E\"},{\"serieName\": \"{null}, agencyaudit\",\"color\": \"#FF8142\"},{\"serieName\": \"{null}, the people's corp\",\"color\": \"#B094F8\"},{\"serieName\": \"{null}, watchdog reporting\",\"color\": \"#8C62F5\"},{\"serieName\": \"canada, {null}\",\"color\": \"#049160\"},{\"serieName\": \"canada, agencyaudit\",\"color\": \"#56D3A8\"},{\"serieName\": \"canada, the people's corp\",\"color\": \"#06BF7F\"},{\"serieName\": \"canada, watchdog reporting\",\"color\": \"#BF982A\"},{\"serieName\": \"us, {null}\",\"color\": \"#FCD977\"},{\"serieName\": \"us, agencyaudit\",\"color\": \"#FCC838\"},{\"serieName\": \"us, the people's corp\",\"color\": \"#369FAA\"},{\"serieName\": \"us, watchdog reporting\",\"color\": \"#82DFE9\"},{\"serieName\": \"usa, {null}\",\"color\": \"#48D1E0\"},{\"serieName\": \"usa, agencyaudit\",\"color\": \"#2359B6\"},{\"serieName\": \"usa, the people's corp\",\"color\": \"#71A1F4\"},{\"serieName\": \"usa, watchdog reporting\",\"color\": \"#2E75F0\"}]}"
       display_mode: CHART_MODE
     viz_guid: 38417536-2747-448f-a308-ebd4f21ad8fa
+  - id: Viz_6
+    answer:
+      name: Total Agency_Service Years
+      tables:
+      - id: Complex_Schema_Full_Outer_Join
+        name: Complex_Schema_Full_Outer_Join
+        fqn: e4c2d89d-f8fe-4e51-90b5-c6b8358bd6ea
+      search_query: "[Agency_Service Years] [Customer_Market Valuation] [Item Review_Rating]"
+      answer_columns:
+      - name: Total Agency_Service Years
+      - name: Total Customer_Market Valuation
+      - name: Total Item Review_Rating
+      table:
+        table_columns:
+        - column_id: Total Agency_Service Years
+          headline_aggregation: SUM
+        - column_id: Total Customer_Market Valuation
+          headline_aggregation: SUM
+        - column_id: Total Item Review_Rating
+          headline_aggregation: SUM
+        client_state: ""
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Total Agency_Service Years
+        - column_id: Total Customer_Market Valuation
+        - column_id: Total Item Review_Rating
+        axis_configs:
+        - "y":
+          - Total Agency_Service Years
+        client_state: ""
+      display_mode: CHART_MODE
+    viz_guid: 305ac3a2-4d6e-43d4-9c2f-3a226898a42f
   layout:
     tiles:
     - visualization_id: Viz_1
