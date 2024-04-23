@@ -96,7 +96,7 @@ liveboard:
         - "y":
           - Total Agency_Service Years
         client_state: ""
-        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Total Agency_Service Years\",\"columnProperty\": {}},{\"columnId\": \"Total Customer_Zip\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"1f1d2eb2-15d7-4126-985b-12cd66d14f09\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Agency_Service Years\"],\"isOpposite\": false}},{\"id\": \"64e1c521-1594-4bd7-85dc-832824115469\",\"properties\": {\"axisType\": \"X\"}}]}"
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Total Agency_Service Years\",\"columnProperty\": {}},{\"columnId\": \"Total Customer_Zip\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"a649c2cb-4f41-4643-9922-82cfc4a9008e\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Agency_Service Years\"],\"isOpposite\": false}},{\"id\": \"20b3a7ee-0b2f-4c8c-a5eb-4e3139faffbc\",\"properties\": {\"axisType\": \"X\"}}]}"
       display_mode: CHART_MODE
     viz_guid: 80d4b8f1-36f4-4b19-ba7c-05214e69ebbb
   - id: Viz_4
