@@ -113,6 +113,39 @@ liveboard:
         client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Category 4\",\"columnProperty\": {}},{\"columnId\": \"Total Extended Price3\",\"columnProperty\": {}},{\"columnId\": \"Supplier Nation\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"d49749d5-96fb-4485-adb5-59c79ee0f1b9\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Extended Price3\"],\"isOpposite\": false}},{\"id\": \"4fc80d6d-8b27-47a8-95ba-498b0df76fe0\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Supplier Nation\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Extended Price3\",\"color\": \"#FCC838\"},{\"serieName\": \"mfgr#11\",\"color\": \"#47515F\"},{\"serieName\": \"mfgr#12\",\"color\": \"#BEC6D0\"},{\"serieName\": \"mfgr#13\",\"color\": \"#747E8C\"},{\"serieName\": \"mfgr#14\",\"color\": \"#C26232\"},{\"serieName\": \"mfgr#15\",\"color\": \"#FFCCB3\"},{\"serieName\": \"mfgr#21\",\"color\": \"#FF8142\"},{\"serieName\": \"mfgr#22\",\"color\": \"#6A4ABA\"},{\"serieName\": \"mfgr#23\",\"color\": \"#D1C0FB\"},{\"serieName\": \"mfgr#24\",\"color\": \"#8C62F5\"},{\"serieName\": \"mfgr#25\",\"color\": \"#56D3A8\"},{\"serieName\": \"mfgr#31\",\"color\": \"#049160\"},{\"serieName\": \"mfgr#32\",\"color\": \"#9BE5CB\"},{\"serieName\": \"mfgr#33\",\"color\": \"#06BF7F\"},{\"serieName\": \"mfgr#34\",\"color\": \"#FCD977\"},{\"serieName\": \"mfgr#35\",\"color\": \"#BF982A\"},{\"serieName\": \"mfgr#41\",\"color\": \"#FDE9AF\"},{\"serieName\": \"mfgr#42\",\"color\": \"#FCC838\"},{\"serieName\": \"mfgr#43\",\"color\": \"#82DFE9\"},{\"serieName\": \"mfgr#44\",\"color\": \"#369FAA\"},{\"serieName\": \"mfgr#45\",\"color\": \"#B5ECF2\"},{\"serieName\": \"mfgr#51\",\"color\": \"#48D1E0\"},{\"serieName\": \"mfgr#52\",\"color\": \"#71A1F4\"},{\"serieName\": \"mfgr#53\",\"color\": \"#2359B6\"},{\"serieName\": \"mfgr#54\",\"color\": \"#ABC7F9\"},{\"serieName\": \"mfgr#55\",\"color\": \"#2E75F0\"}]}"
       display_mode: CHART_MODE
     viz_guid: dbbbbc20-abe8-4c37-8f13-fd3e3fdc4acc
+  - id: Viz_4
+    answer:
+      name: Copy of Total Extended Price3 by Category 4
+      tables:
+      - id: Chasmtrap
+        name: Chasmtrap
+        fqn: 07a8af30-cd9d-4ab0-a58a-544a818ddac7
+      search_query: "[Product Name2] [Product Cost]"
+      answer_columns:
+      - name: Product Name2
+      - name: Total Product Cost
+      table:
+        table_columns:
+        - column_id: Product Name2
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Total Product Cost
+          headline_aggregation: SUM
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: Product Name2
+        - column_id: Total Product Cost
+        axis_configs:
+        - x:
+          - Product Name2
+          "y":
+          - Total Product Cost
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Product Name2\",\"columnProperty\": {}},{\"columnId\": \"Total Product Cost\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"1ec6ca51-bf9d-4dc3-bf75-721e67bee418\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Product Cost\"],\"isOpposite\": false}},{\"id\": \"89cf41f4-1cc9-420f-869b-7cff165fe415\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Product Name2\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Product Cost\",\"color\": \"#FF8142\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: b0f0cc24-8027-420c-9eb1-39bfb80baf44
   layout:
     tabs:
     - name: Tab 1
@@ -124,6 +157,7 @@ liveboard:
         height: 8
         width: 6
       - visualization_id: Viz_2
+      - visualization_id: Viz_4
     - name: test tab 2
       description: ""
       tiles:
