@@ -35,3 +35,17 @@ liveboard:
         client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Category 4\",\"columnProperty\": {}},{\"columnId\": \"Total Extended Price3\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"e4726b8b-e093-4fe3-b4cc-90e6c0b04e1f\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Extended Price3\"],\"isOpposite\": false}},{\"id\": \"bf399c4a-a5ea-42ba-a297-719617ee32fe\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Category 4\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Extended Price3\",\"color\": \"#FCC838\"}]}"
       display_mode: CHART_MODE
     viz_guid: aac54ec3-2859-482d-9975-74ae4c6afffc
+  layout:
+    tabs:
+    - name: Tab 1
+      description: ""
+      tiles:
+      - visualization_id: Viz_1
+        x: 0
+        "y": 0
+        height: 8
+        width: 6
+    - name: test tab 2
+      description: ""
+    - name: test Tab 3
+      description: ""
