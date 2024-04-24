@@ -81,7 +81,7 @@ worksheet:
     column_id: DATE_2::Month
     properties:
       column_type: ATTRIBUTE
-  - name: Extended Price3
+  - name: Extended Price4
     column_id: LINEORDER_1::Extended Price
     properties:
       column_type: MEASURE
@@ -95,7 +95,7 @@ worksheet:
     column_id: LINEORDER_1::Line Number
     properties:
       column_type: ATTRIBUTE
-  - name: Category 4
+  - name: Category 5
     column_id: PART_1::Category
     properties:
       column_type: ATTRIBUTE
