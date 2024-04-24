@@ -146,6 +146,45 @@ liveboard:
         client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Product Name2\",\"columnProperty\": {}},{\"columnId\": \"Total Product Cost\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"1ec6ca51-bf9d-4dc3-bf75-721e67bee418\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Product Cost\"],\"isOpposite\": false}},{\"id\": \"89cf41f4-1cc9-420f-869b-7cff165fe415\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Product Name2\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Product Cost\",\"color\": \"#FF8142\"}]}"
       display_mode: CHART_MODE
     viz_guid: b0f0cc24-8027-420c-9eb1-39bfb80baf44
+  - id: Viz_5
+    answer:
+      name: Copy of Total Extended Price3 by Category 4
+      tables:
+      - id: Chasmtrap
+        name: Chasmtrap
+        fqn: 07a8af30-cd9d-4ab0-a58a-544a818ddac7
+      search_query: "[Product Name2] [Product Cost] [purchases Product Id]"
+      answer_columns:
+      - name: Product Name2
+      - name: Total Product Cost
+      - name: purchases Product Id
+      table:
+        table_columns:
+        - column_id: Product Name2
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Total Product Cost
+          headline_aggregation: SUM
+        - column_id: purchases Product Id
+          headline_aggregation: COUNT_DISTINCT
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: Product Name2
+        - column_id: Total Product Cost
+        - column_id: purchases Product Id
+        axis_configs:
+        - x:
+          - purchases Product Id
+          "y":
+          - Total Product Cost
+          color:
+          - Product Name2
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Product Name2\",\"columnProperty\": {}},{\"columnId\": \"Total Product Cost\",\"columnProperty\": {}},{\"columnId\": \"purchases Product Id\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"4f862ae5-72bc-4185-9784-753754553836\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Product Cost\"],\"isOpposite\": false}},{\"id\": \"9ba49151-5e15-4eed-a141-2fc03c300493\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"purchases Product Id\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Product Cost\",\"color\": \"#FF8142\"},{\"serieName\": \"ipad\",\"color\": \"#FCC838\"},{\"serieName\": \"pc\",\"color\": \"#48D1E0\"},{\"serieName\": \"tv\",\"color\": \"#2E75F0\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: 5837d96c-647a-436c-9186-7ab62e9deb0b
   layout:
     tabs:
     - name: Tab 1
@@ -164,3 +203,5 @@ liveboard:
       - visualization_id: Viz_3
     - name: test Tab 3
       description: ""
+      tiles:
+      - visualization_id: Viz_5
