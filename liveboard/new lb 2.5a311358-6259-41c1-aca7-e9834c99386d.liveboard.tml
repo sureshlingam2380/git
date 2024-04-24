@@ -1,0 +1,37 @@
+guid: 5a311358-6259-41c1-aca7-e9834c99386d
+liveboard:
+  name: new lb 2
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: Total Extended Price3 by Category 4
+      tables:
+      - id: Container Worksheet
+        name: Container Worksheet
+        fqn: 286933b5-fc30-46b8-9216-31f669f46a15
+      search_query: "[Extended Price3] [Category 4]"
+      answer_columns:
+      - name: Category 4
+      - name: Total Extended Price3
+      table:
+        table_columns:
+        - column_id: Category 4
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Total Extended Price3
+          headline_aggregation: SUM
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: Category 4
+        - column_id: Total Extended Price3
+        axis_configs:
+        - x:
+          - Category 4
+          "y":
+          - Total Extended Price3
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Category 4\",\"columnProperty\": {}},{\"columnId\": \"Total Extended Price3\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"e4726b8b-e093-4fe3-b4cc-90e6c0b04e1f\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Extended Price3\"],\"isOpposite\": false}},{\"id\": \"bf399c4a-a5ea-42ba-a297-719617ee32fe\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Category 4\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Extended Price3\",\"color\": \"#FCC838\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: aac54ec3-2859-482d-9975-74ae4c6afffc
