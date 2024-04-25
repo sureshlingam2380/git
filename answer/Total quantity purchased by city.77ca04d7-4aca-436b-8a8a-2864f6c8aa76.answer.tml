@@ -1,6 +1,6 @@
 guid: 77ca04d7-4aca-436b-8a8a-2864f6c8aa76
 answer:
-  name: Total quantity purchased by city version 2
+  name: Total quantity purchased by city
   tables:
   - id: (Sample) Retail - Apparel
     name: (Sample) Retail - Apparel
