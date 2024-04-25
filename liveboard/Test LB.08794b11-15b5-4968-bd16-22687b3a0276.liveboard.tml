@@ -4,71 +4,32 @@ liveboard:
   visualizations:
   - id: Viz_1
     answer:
-      name: Total Discount by Category
-      tables:
-      - id: Broken WS
-        name: Broken WS
-        fqn: 1ac1a13a-0eea-479c-9bd6-25f16cf3ce70
-      search_query: "[Category] [Discount]"
-      answer_columns:
-      - name: Category
-      - name: Total Discount
-      table:
-        table_columns:
-        - column_id: Category
-          headline_aggregation: COUNT_DISTINCT
-        - column_id: Total Discount
-          headline_aggregation: SUM
-        client_state: ""
-        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
-      chart:
-        type: COLUMN
-        chart_columns:
-        - column_id: Category
-        - column_id: Total Discount
-        axis_configs:
-        - x:
-          - Category
-          "y":
-          - Total Discount
-        client_state: ""
-        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Category\",\"columnProperty\": {}},{\"columnId\": \"Total Discount\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"8034cee0-2c0e-4adb-88a3-a65dc954fda6\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Discount\"],\"isOpposite\": false}},{\"id\": \"fe72bb42-075c-43c9-8d4a-6a52530da228\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Category\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Discount\",\"color\": \"#FF8142\"}]}"
-      display_mode: CHART_MODE
-    viz_guid: ca531d58-95f7-48e1-a47b-fc3333d4ffa8
-  - id: Viz_2
-    answer:
       name: Total Sale Cost by Product Name
       tables:
       - id: Chasmtrap
         name: Chasmtrap
         fqn: 07a8af30-cd9d-4ab0-a58a-544a818ddac7
-      search_query: "[Product Name] [Sale Cost]"
+      search_query: "[Product Name]"
       answer_columns:
       - name: Product Name
-      - name: Total Sale Cost
       table:
         table_columns:
         - column_id: Product Name
           headline_aggregation: COUNT_DISTINCT
-        - column_id: Total Sale Cost
-          headline_aggregation: SUM
         client_state: ""
         client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
       chart:
-        type: COLUMN
+        type: KPI
         chart_columns:
         - column_id: Product Name
-        - column_id: Total Sale Cost
         axis_configs:
-        - x:
+        - "y":
           - Product Name
-          "y":
-          - Total Sale Cost
         client_state: ""
-        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Product Name\",\"columnProperty\": {}},{\"columnId\": \"Total Sale Cost\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"a448434f-7e62-403f-9fd0-7ae63f38972a\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sale Cost\"],\"isOpposite\": false}},{\"id\": \"657cbe2f-adea-487c-9300-b780a6a8de13\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Product Name\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Sale Cost\",\"color\": \"#48D1E0\"}]}"
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Product Name\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"c8105f99-50ed-4d79-a460-7b963ddc34da\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Product Name\"],\"isOpposite\": false}},{\"id\": \"933b4c3f-cf09-4d0f-9b2b-d12b0f9f822b\",\"properties\": {\"axisType\": \"X\"}}],\"systemSeriesColors\": [{\"serieName\": \"e9db321a-c931-40de-9219-fa2c6a35e3f5\",\"color\": \"#48D1E0\"}]}"
       display_mode: CHART_MODE
     viz_guid: ae61fe85-f83a-4c4f-8e45-7e9738c1771d
-  - id: Viz_3
+  - id: Viz_2
     answer:
       name: Total Agency_Service Years
       tables:
@@ -99,7 +60,7 @@ liveboard:
         client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Total Customer_Zip\",\"columnProperty\": {}},{\"columnId\": \"Total Agency_Service Years\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"299b3307-e281-472a-9c68-c98db279748b\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Agency_Service Years\"],\"isOpposite\": false}},{\"id\": \"3bb1098d-09af-47c4-8108-58b5ef2b54fb\",\"properties\": {\"axisType\": \"X\"}}]}"
       display_mode: CHART_MODE
     viz_guid: 80d4b8f1-36f4-4b19-ba7c-05214e69ebbb
-  - id: Viz_4
+  - id: Viz_3
     answer:
       name: "Agency_ID by Customer_City and Customer_Country, Agency Review_Reporting Company"
       tables:
@@ -147,7 +108,7 @@ liveboard:
         client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Customer_City\",\"columnProperty\": {}},{\"columnId\": \"Agency_ID\",\"columnProperty\": {}},{\"columnId\": \"Customer_Country\",\"columnProperty\": {}},{\"columnId\": \"Agency Review_Reporting Company\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"ac988bd5-7dc9-4796-ab05-97b915b5ef34\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Agency_ID\"],\"isOpposite\": false}},{\"id\": \"ce89f50c-9732-43d0-aa33-5e744a0e2513\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Customer_City\"]}}],\"systemSeriesColors\": [{\"serieName\": \"{null}, {null}\",\"color\": \"#FFA97E\"},{\"serieName\": \"{null}, agencyaudit\",\"color\": \"#FF8142\"},{\"serieName\": \"{null}, the people's corp\",\"color\": \"#B094F8\"},{\"serieName\": \"{null}, watchdog reporting\",\"color\": \"#8C62F5\"},{\"serieName\": \"canada, {null}\",\"color\": \"#049160\"},{\"serieName\": \"canada, agencyaudit\",\"color\": \"#56D3A8\"},{\"serieName\": \"canada, the people's corp\",\"color\": \"#06BF7F\"},{\"serieName\": \"canada, watchdog reporting\",\"color\": \"#BF982A\"},{\"serieName\": \"us, {null}\",\"color\": \"#FCD977\"},{\"serieName\": \"us, agencyaudit\",\"color\": \"#FCC838\"},{\"serieName\": \"us, the people's corp\",\"color\": \"#369FAA\"},{\"serieName\": \"us, watchdog reporting\",\"color\": \"#82DFE9\"},{\"serieName\": \"usa, {null}\",\"color\": \"#48D1E0\"},{\"serieName\": \"usa, agencyaudit\",\"color\": \"#2359B6\"},{\"serieName\": \"usa, the people's corp\",\"color\": \"#71A1F4\"},{\"serieName\": \"usa, watchdog reporting\",\"color\": \"#2E75F0\"}]}"
       display_mode: CHART_MODE
     viz_guid: 38417536-2747-448f-a308-ebd4f21ad8fa
-  - id: Viz_5
+  - id: Viz_4
     answer:
       name: Total Agency_Service Years
       tables:
@@ -182,15 +143,48 @@ liveboard:
         client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Total Agency_Service Years\",\"columnProperty\": {}},{\"columnId\": \"Total Customer_Market Valuation\",\"columnProperty\": {}},{\"columnId\": \"Total Item Review_Rating\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"813a47eb-09a2-4cec-936d-7951b02e7518\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Agency_Service Years\"],\"isOpposite\": false}},{\"id\": \"a93f12d9-94c8-47fa-ba95-45e4243dc636\",\"properties\": {\"axisType\": \"X\"}}]}"
       display_mode: CHART_MODE
     viz_guid: 305ac3a2-4d6e-43d4-9c2f-3a226898a42f
+  - id: Viz_5
+    answer:
+      name: count(custkey)
+      tables:
+      - id: Formula Worksheet
+        name: Formula Worksheet
+        fqn: 7d2fbbc1-d3bb-4ee4-9218-ec6421958c62
+      search_query: "[count(custkey)] [const3] [discount+2]"
+      answer_columns:
+      - name: Total const3
+      - name: Total discount+2
+      - name: count(custkey)
+      table:
+        table_columns:
+        - column_id: Total const3
+          headline_aggregation: SUM
+        - column_id: Total discount+2
+          headline_aggregation: TABLE_AGGR
+        - column_id: count(custkey)
+          headline_aggregation: AVERAGE
+        client_state: ""
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Total const3
+        - column_id: Total discount+2
+        - column_id: count(custkey)
+        axis_configs:
+        - "y":
+          - count(custkey)
+        client_state: ""
+      display_mode: CHART_MODE
+    viz_guid: 218853cb-d2f7-4c7b-90b0-7a1265fd2b68
   layout:
     tiles:
     - visualization_id: Viz_1
       size: MEDIUM
     - visualization_id: Viz_2
-      size: MEDIUM
-    - visualization_id: Viz_3
       size: EXTRA_SMALL
-    - visualization_id: Viz_4
+    - visualization_id: Viz_3
       size: MEDIUM
+    - visualization_id: Viz_4
+      size: EXTRA_SMALL
     - visualization_id: Viz_5
       size: EXTRA_SMALL
