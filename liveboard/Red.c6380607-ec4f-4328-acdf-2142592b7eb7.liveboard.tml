@@ -72,6 +72,31 @@ liveboard:
         client_state: ""
       display_mode: TABLE_MODE
     viz_guid: a15e423a-41f8-487a-a9f5-88865435c631
+  - id: Viz_3
+    answer:
+      name: Total C1
+      tables:
+      - id: TESTINT
+        name: TESTINT
+        fqn: 6d2c1c9b-a407-409c-8c0c-819aeb51350f
+      search_query: "[C1]"
+      answer_columns:
+      - name: Total C1
+      table:
+        table_columns:
+        - column_id: Total C1
+          headline_aggregation: SUM
+        client_state: ""
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Total C1
+        axis_configs:
+        - "y":
+          - Total C1
+        client_state: ""
+      display_mode: CHART_MODE
+    viz_guid: 663c83b9-7391-454f-869a-862067d962c9
   layout:
     tiles:
     - visualization_id: Viz_1
