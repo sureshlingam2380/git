@@ -51,3 +51,46 @@ liveboard:
         client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Total Extended Price\",\"columnProperty\": {}},{\"columnId\": \"Total Order Total Price\",\"columnProperty\": {}},{\"columnId\": \"Total Revenue\",\"columnProperty\": {}},{\"columnId\": \"Brand1\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"b36db1fc-bb2b-4230-9dca-39e2f3dc854c\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Order Total Price\"],\"isOpposite\": false}},{\"id\": \"d4025dc1-0e70-478c-b476-6c9259ffaa1d\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Total Extended Price\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Order Total Price\",\"color\": \"rgba(46,117,240,0.5)\"}]}"
       display_mode: CHART_MODE
     viz_guid: a633c57c-a73e-4075-be18-71297c34c3a7
+  - id: Viz_2
+    answer:
+      name: Total Extended Price by Brand1 and Category
+      tables:
+      - id: Parameters WS
+        name: Parameters WS
+        fqn: 540c4503-5bc7-4727-897b-f7f4d78dd2ff
+      search_query: "[Extended Price] [Brand1] [Category]"
+      answer_columns:
+      - name: Brand1
+      - name: Category
+      - name: Total Extended Price
+      table:
+        table_columns:
+        - column_id: Brand1
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Category
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Total Extended Price
+          headline_aggregation: SUM
+        ordered_column_ids:
+        - Brand1
+        - Category
+        - Total Extended Price
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: STACKED_COLUMN
+        chart_columns:
+        - column_id: Brand1
+        - column_id: Category
+        - column_id: Total Extended Price
+        axis_configs:
+        - x:
+          - Brand1
+          "y":
+          - Total Extended Price
+          color:
+          - Category
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Total Extended Price\",\"columnProperty\": {}},{\"columnId\": \"a71a0620-4691-46c1-ab34-e18331b924bd\",\"columnProperty\": {}},{\"columnId\": \"fe2be1b6-1afc-4b51-9600-bd44cb4fdb48\",\"columnProperty\": {}},{\"columnId\": \"Brand1\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"b36db1fc-bb2b-4230-9dca-39e2f3dc854c\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"a71a0620-4691-46c1-ab34-e18331b924bd\"],\"isOpposite\": false}},{\"id\": \"d4025dc1-0e70-478c-b476-6c9259ffaa1d\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Total Extended Price\"]}}],\"systemSeriesColors\": [{\"serieName\": \"a71a0620-4691-46c1-ab34-e18331b924bd\",\"color\": \"rgba(46,117,240,0.5)\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: 0f79b17f-b304-4774-a8ea-9200b1e282e8
