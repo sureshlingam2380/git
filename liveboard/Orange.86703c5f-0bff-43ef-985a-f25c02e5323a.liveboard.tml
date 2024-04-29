@@ -1,3 +1,47 @@
 guid: 86703c5f-0bff-43ef-985a-f25c02e5323a
 liveboard:
   name: Orange
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: Total Quantity by Total Discount
+      tables:
+      - id: Parameters WS
+        name: Parameters WS
+        fqn: 540c4503-5bc7-4727-897b-f7f4d78dd2ff
+      search_query: "[Discount] [Quantity] [Brand1]"
+      answer_columns:
+      - name: Brand1
+      - name: Total Discount
+      - name: Total Quantity
+      table:
+        table_columns:
+        - column_id: Brand1
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Total Discount
+          headline_aggregation: SUM
+        - column_id: Total Quantity
+          headline_aggregation: SUM
+        ordered_column_ids:
+        - Brand1
+        - Total Discount
+        - Total Quantity
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: SCATTER
+        chart_columns:
+        - column_id: Brand1
+        - column_id: Total Discount
+        - column_id: Total Quantity
+        axis_configs:
+        - x:
+          - Total Discount
+          "y":
+          - Total Quantity
+          category:
+          - Brand1
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Brand1\",\"columnProperty\": {}},{\"columnId\": \"Total Discount\",\"columnProperty\": {}},{\"columnId\": \"Total Quantity\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"e0381ae2-def4-4b5e-bdfd-82d9dfc3192a\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Quantity\"],\"isOpposite\": false}},{\"id\": \"f32dd5c4-c98c-4f92-a362-e5300538777c\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Total Discount\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Quantity\",\"color\": \"#747E8C\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: b5c35001-39c6-4544-914e-8eee7dbb91c5
