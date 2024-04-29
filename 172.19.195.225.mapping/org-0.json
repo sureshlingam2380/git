@@ -1,16 +1,26 @@
 [ {
   "originalGuid" : "a7fc012e-bdb3-4e75-9ce4-b3f731d90136",
   "mappedGuid" : "a7fc012e-bdb3-4e75-9ce4-b3f731d90136",
-  "counter" : 3,
+  "counter" : 4,
   "additionalMapping" : { }
 }, {
   "originalGuid" : "540c4503-5bc7-4727-897b-f7f4d78dd2ff",
   "mappedGuid" : "540c4503-5bc7-4727-897b-f7f4d78dd2ff",
-  "counter" : 3,
+  "counter" : 4,
+  "additionalMapping" : { }
+}, {
+  "originalGuid" : "3ab352ba-fd1a-42a4-a1a8-66b7c59f5aa2",
+  "mappedGuid" : "3ab352ba-fd1a-42a4-a1a8-66b7c59f5aa2",
+  "counter" : 0,
+  "additionalMapping" : { }
+}, {
+  "originalGuid" : "6d2c1c9b-a407-409c-8c0c-819aeb51350f",
+  "mappedGuid" : "6d2c1c9b-a407-409c-8c0c-819aeb51350f",
+  "counter" : 0,
   "additionalMapping" : { }
 }, {
   "originalGuid" : "2445fe81-30d6-46fa-9f42-f6b1b4e01623",
   "mappedGuid" : "2445fe81-30d6-46fa-9f42-f6b1b4e01623",
-  "counter" : 3,
+  "counter" : 4,
   "additionalMapping" : { }
 } ]
