@@ -35,3 +35,51 @@ liveboard:
         client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_OFF\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Brand1\",\"columnProperty\": {}},{\"columnId\": \"Total Discount\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"54e549b7-9017-48e7-a4d7-2e7d2de49b05\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Discount\"],\"isOpposite\": false}},{\"id\": \"3304bec4-55f1-45a7-8de0-fff60d05b049\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Brand1\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Discount\",\"color\": \"#06BF7F\"}]}"
       display_mode: CHART_MODE
     viz_guid: 5b0d53a1-f83b-429e-9ab4-dae2a34442b8
+  - id: Viz_2
+    answer:
+      name: "Total Discount, Total Extended Price by Brand1, Category, Line Number, Email Domain Masked Color"
+      tables:
+      - id: Parameters WS
+        name: Parameters WS
+        fqn: 540c4503-5bc7-4727-897b-f7f4d78dd2ff
+      search_query: "[Discount] [Extended Price] [Brand1] [Category] [Line Number] [Email Domain Masked Color]"
+      answer_columns:
+      - name: Brand1
+      - name: Category
+      - name: Email Domain Masked Color
+      - name: Line Number
+      - name: Total Discount
+      - name: Total Extended Price
+      table:
+        table_columns:
+        - column_id: Brand1
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Category
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Email Domain Masked Color
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Line Number
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Total Discount
+          headline_aggregation: SUM
+        - column_id: Total Extended Price
+          headline_aggregation: SUM
+        client_state: ""
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: Brand1
+        - column_id: Category
+        - column_id: Email Domain Masked Color
+        - column_id: Line Number
+        - column_id: Total Discount
+        - column_id: Total Extended Price
+        axis_configs:
+        - x:
+          - Email Domain Masked Color
+          "y":
+          - Total Discount
+          - Total Extended Price
+        client_state: ""
+      display_mode: TABLE_MODE
+    viz_guid: fe3ef1a3-6f29-4c82-b27d-642aca3b9600
