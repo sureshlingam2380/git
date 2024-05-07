@@ -29,6 +29,7 @@ liveboard:
         - column_id: Total Order Total Price
           headline_aggregation: SUM
         client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Brand1\",\"columnProperty\": {}},{\"columnId\": \"Container\",\"columnProperty\": {}},{\"columnId\": \"Color\",\"columnProperty\": {}},{\"columnId\": \"Total Extended Price\",\"columnProperty\": {}},{\"columnId\": \"Total Order Total Price\",\"columnProperty\": {}}]}"
       chart:
         type: COLUMN
         chart_columns:
@@ -44,6 +45,7 @@ liveboard:
           - Total Extended Price
           - Total Order Total Price
         client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Container\",\"columnProperty\": {}},{\"columnId\": \"Total Order Total Price\",\"columnProperty\": {}},{\"columnId\": \"Color\",\"columnProperty\": {}},{\"columnId\": \"Brand1\",\"columnProperty\": {}},{\"columnId\": \"Total Extended Price\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"56bca7bf-e115-470d-a4d0-77403b3ae0d5\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Extended Price\"],\"isOpposite\": false}},{\"id\": \"ee7f6904-7a02-4bcb-a08e-a5d9bd92d42c\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Order Total Price\"],\"isOpposite\": true}},{\"id\": \"78d9a359-4db7-4ed9-9dd5-9528bff99c8f\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Brand1\"]}}]}"
       display_mode: TABLE_MODE
     viz_guid: f775df4b-ca36-4896-bc5c-60434e80b29e
   - id: Viz_2
@@ -1147,6 +1149,7 @@ liveboard:
         - column_id: count(custkey)
           headline_aggregation: AVERAGE
         client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Total complexarithmetic\",\"columnProperty\": {}},{\"columnId\": \"count(custkey)\",\"columnProperty\": {}}]}"
       chart:
         type: KPI
         chart_columns:
@@ -1156,6 +1159,7 @@ liveboard:
         - "y":
           - Total complexarithmetic
         client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Total complexarithmetic\",\"columnProperty\": {}},{\"columnId\": \"count(custkey)\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"69651977-bf7f-4a3c-8d66-dc581fed7704\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total complexarithmetic\"],\"isOpposite\": false}},{\"id\": \"3aafee6c-f47d-4b2d-bfff-c2a4d777e443\",\"properties\": {\"axisType\": \"X\"}}]}"
       display_mode: CHART_MODE
     viz_guid: 08372f27-5a6b-421c-80ac-ea359df6e1e8
   layout:
