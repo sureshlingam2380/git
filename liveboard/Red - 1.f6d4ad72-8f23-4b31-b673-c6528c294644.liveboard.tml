@@ -1187,6 +1187,35 @@ liveboard:
         client_state: ""
       display_mode: CHART_MODE
     viz_guid: a870e961-c061-43cb-8c19-724569b46788
+  - id: Viz_29
+    answer:
+      name: Total const3
+      tables:
+      - id: Formula Worksheet
+        name: Formula Worksheet
+        fqn: 7d2fbbc1-d3bb-4ee4-9218-ec6421958c62
+      search_query: "[const3] [count(custkey)]"
+      answer_columns:
+      - name: Total const3
+      - name: count(custkey)
+      table:
+        table_columns:
+        - column_id: Total const3
+          headline_aggregation: SUM
+        - column_id: count(custkey)
+          headline_aggregation: AVERAGE
+        client_state: ""
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Total const3
+        - column_id: count(custkey)
+        axis_configs:
+        - "y":
+          - Total const3
+        client_state: ""
+      display_mode: CHART_MODE
+    viz_guid: 28eb53a8-2063-4605-bc9d-2052cbb7ac6f
   layout:
     tiles:
     - visualization_id: Viz_1
