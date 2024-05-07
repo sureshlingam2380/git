@@ -1520,6 +1520,39 @@ liveboard:
         client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Total rev/tax-NaN\",\"columnProperty\": {}},{\"columnId\": \"Total Revenue\",\"columnProperty\": {}},{\"columnId\": \"sum(rev)/sum(tax)\",\"columnProperty\": {}},{\"columnId\": \"Total rev+tax\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"cb076d42-402f-4234-ade1-fa9a22e4b37f\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total rev/tax-NaN\"],\"isOpposite\": false}},{\"id\": \"46eb9fa4-d870-4c9d-b707-d95525d5d699\",\"properties\": {\"axisType\": \"X\"}}]}"
       display_mode: CHART_MODE
     viz_guid: 823ef76a-d2a8-401e-aa09-de0a28574d7e
+  - id: Viz_38
+    answer:
+      name: Total Discount
+      tables:
+      - id: Formula Worksheet
+        name: Formula Worksheet
+        fqn: 7d2fbbc1-d3bb-4ee4-9218-ec6421958c62
+      search_query: "[Discount] [const3] [discount+2]"
+      answer_columns:
+      - name: Total Discount
+      - name: Total const3
+      - name: Total discount+2
+      table:
+        table_columns:
+        - column_id: Total Discount
+          headline_aggregation: SUM
+        - column_id: Total const3
+          headline_aggregation: SUM
+        - column_id: Total discount+2
+          headline_aggregation: TABLE_AGGR
+        client_state: ""
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Total Discount
+        - column_id: Total const3
+        - column_id: Total discount+2
+        axis_configs:
+        - "y":
+          - Total Discount
+        client_state: ""
+      display_mode: CHART_MODE
+    viz_guid: f8d62c01-90c3-4667-a943-3e5b3896f8bd
   layout:
     tiles:
     - visualization_id: Viz_1
