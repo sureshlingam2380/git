@@ -1,6 +1,6 @@
 guid: f6d4ad72-8f23-4b31-b673-c6528c294644
 liveboard:
-  name: Orange
+  name: Red
   visualizations:
   - id: Viz_1
     answer:
@@ -1158,3 +1158,59 @@ liveboard:
         client_state: ""
       display_mode: CHART_MODE
     viz_guid: 08372f27-5a6b-421c-80ac-ea359df6e1e8
+  layout:
+    tiles:
+    - visualization_id: Viz_1
+      size: LARGE
+    - visualization_id: Viz_2
+      size: MEDIUM
+    - visualization_id: Viz_3
+      size: MEDIUM
+    - visualization_id: Viz_4
+      size: MEDIUM
+    - visualization_id: Viz_5
+      size: MEDIUM
+    - visualization_id: Viz_6
+      size: MEDIUM
+    - visualization_id: Viz_7
+      size: MEDIUM
+    - visualization_id: Viz_8
+      size: MEDIUM
+    - visualization_id: Viz_9
+      size: MEDIUM
+    - visualization_id: Viz_10
+      size: MEDIUM
+    - visualization_id: Viz_11
+      size: MEDIUM
+    - visualization_id: Viz_12
+      size: MEDIUM
+    - visualization_id: Viz_13
+      size: MEDIUM
+    - visualization_id: Viz_14
+      size: MEDIUM
+    - visualization_id: Viz_15
+      size: MEDIUM
+    - visualization_id: Viz_16
+      size: MEDIUM
+    - visualization_id: Viz_17
+      size: MEDIUM
+    - visualization_id: Viz_18
+      size: MEDIUM
+    - visualization_id: Viz_19
+      size: MEDIUM
+    - visualization_id: Viz_20
+      size: MEDIUM
+    - visualization_id: Viz_21
+      size: MEDIUM
+    - visualization_id: Viz_22
+      size: MEDIUM
+    - visualization_id: Viz_23
+      size: MEDIUM
+    - visualization_id: Viz_24
+      size: MEDIUM
+    - visualization_id: Viz_25
+      size: MEDIUM
+    - visualization_id: Viz_26
+      size: MEDIUM
+    - visualization_id: Viz_27
+      size: EXTRA_SMALL
