@@ -1615,6 +1615,45 @@ liveboard:
         client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Username\",\"columnProperty\": {}},{\"columnId\": \"Size\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"90ba51da-189c-46f0-b1e4-d7646ffcf5c0\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Username\"],\"isOpposite\": false}},{\"id\": \"a3c52209-4d1e-4c46-8eeb-70fff3800a56\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Size\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Username\",\"color\": \"#FCC838\"}]}"
       display_mode: CHART_MODE
     viz_guid: cdc93ff4-36e0-4591-99de-addf853c20f0
+  - id: Viz_41
+    answer:
+      name: Total Tax by Brand1 and Order Priority
+      tables:
+      - id: Parameters WS
+        name: Parameters WS
+        fqn: 540c4503-5bc7-4727-897b-f7f4d78dd2ff
+      search_query: "[Brand1] [Tax] [Order Priority]"
+      answer_columns:
+      - name: Brand1
+      - name: Order Priority
+      - name: Total Tax
+      table:
+        table_columns:
+        - column_id: Brand1
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Order Priority
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Total Tax
+          headline_aggregation: SUM
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: STACKED_COLUMN
+        chart_columns:
+        - column_id: Brand1
+        - column_id: Order Priority
+        - column_id: Total Tax
+        axis_configs:
+        - x:
+          - Brand1
+          "y":
+          - Total Tax
+          color:
+          - Order Priority
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_OFF\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Brand1\",\"columnProperty\": {}},{\"columnId\": \"Total Tax\",\"columnProperty\": {}},{\"columnId\": \"Order Priority\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"b6873701-f046-4ee4-956f-cb0f4be6b82d\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Tax\"],\"isOpposite\": false}},{\"id\": \"5ccf1ec5-92b4-4adc-adab-cce10c4b3b74\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Brand1\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Tax\",\"color\": \"#FF8142\"},{\"serieName\": \"1-urgent\",\"color\": \"#06BF7F\"},{\"serieName\": \"2-high\",\"color\": \"#FCC838\"},{\"serieName\": \"3-medium\",\"color\": \"#48D1E0\"},{\"serieName\": \"4-not specified\",\"color\": \"#71A1F4\"},{\"serieName\": \"5-low\",\"color\": \"#2E75F0\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: 5647d278-3664-4fac-b9bc-bd35cdfd29e6
   layout:
     tiles:
     - visualization_id: Viz_1
