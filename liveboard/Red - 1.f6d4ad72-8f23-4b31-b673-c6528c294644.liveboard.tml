@@ -29,6 +29,7 @@ liveboard:
         - column_id: Total Order Total Price
           headline_aggregation: SUM
         client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Brand1\",\"columnProperty\": {}},{\"columnId\": \"Container\",\"columnProperty\": {}},{\"columnId\": \"Color\",\"columnProperty\": {}},{\"columnId\": \"Total Extended Price\",\"columnProperty\": {}},{\"columnId\": \"Total Order Total Price\",\"columnProperty\": {}}]}"
       chart:
         type: COLUMN
         chart_columns:
@@ -44,6 +45,7 @@ liveboard:
           - Total Extended Price
           - Total Order Total Price
         client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Container\",\"columnProperty\": {}},{\"columnId\": \"Brand1\",\"columnProperty\": {}},{\"columnId\": \"Color\",\"columnProperty\": {}},{\"columnId\": \"Total Extended Price\",\"columnProperty\": {}},{\"columnId\": \"Total Order Total Price\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"93f85c1b-62a8-4fe4-b245-24450e6d022d\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Extended Price\"],\"isOpposite\": false}},{\"id\": \"99f26455-e1f3-4e36-813b-5dfe2671a82a\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Order Total Price\"],\"isOpposite\": true}},{\"id\": \"ffe30ae8-8902-4d5d-b896-e8f2e64326fe\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Brand1\"]}}]}"
       display_mode: TABLE_MODE
     viz_guid: f775df4b-ca36-4896-bc5c-60434e80b29e
   - id: Viz_2
@@ -1147,6 +1149,7 @@ liveboard:
         - column_id: count(custkey)
           headline_aggregation: AVERAGE
         client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Total complexarithmetic\",\"columnProperty\": {}},{\"columnId\": \"count(custkey)\",\"columnProperty\": {}}]}"
       chart:
         type: KPI
         chart_columns:
@@ -1156,6 +1159,7 @@ liveboard:
         - "y":
           - Total complexarithmetic
         client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"count(custkey)\",\"columnProperty\": {}},{\"columnId\": \"Total complexarithmetic\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"87326943-b2f5-40f8-adaa-b5118e59f3c0\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total complexarithmetic\"],\"isOpposite\": false}},{\"id\": \"bdfcc231-22ac-44ca-9350-1c00b5185154\",\"properties\": {\"axisType\": \"X\"}}]}"
       display_mode: CHART_MODE
     viz_guid: 08372f27-5a6b-421c-80ac-ea359df6e1e8
   - id: Viz_28
@@ -1176,6 +1180,7 @@ liveboard:
         - column_id: Total const1
           headline_aggregation: SUM
         client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Total complexarithmetic\",\"columnProperty\": {}},{\"columnId\": \"Total const1\",\"columnProperty\": {}}]}"
       chart:
         type: KPI
         chart_columns:
@@ -1185,6 +1190,7 @@ liveboard:
         - "y":
           - Total complexarithmetic
         client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Total complexarithmetic\",\"columnProperty\": {}},{\"columnId\": \"Total const1\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"1edc29c3-4c37-4a88-8355-dac85df7cb4a\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total complexarithmetic\"],\"isOpposite\": false}},{\"id\": \"b1616817-6bd9-48d5-a805-a5e288ea913c\",\"properties\": {\"axisType\": \"X\"}}]}"
       display_mode: CHART_MODE
     viz_guid: a870e961-c061-43cb-8c19-724569b46788
   - id: Viz_29
@@ -1205,6 +1211,7 @@ liveboard:
         - column_id: count(custkey)
           headline_aggregation: AVERAGE
         client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Total const3\",\"columnProperty\": {}},{\"columnId\": \"count(custkey)\",\"columnProperty\": {}}]}"
       chart:
         type: KPI
         chart_columns:
@@ -1214,6 +1221,7 @@ liveboard:
         - "y":
           - Total const3
         client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Total const3\",\"columnProperty\": {}},{\"columnId\": \"count(custkey)\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"7ff67fac-0876-460c-941b-88e9c937804b\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total const3\"],\"isOpposite\": false}},{\"id\": \"a2d5348a-37c5-4c2a-9af2-f7b98dcd0ffe\",\"properties\": {\"axisType\": \"X\"}}]}"
       display_mode: CHART_MODE
     viz_guid: 28eb53a8-2063-4605-bc9d-2052cbb7ac6f
   - id: Viz_30
@@ -1231,6 +1239,7 @@ liveboard:
         - column_id: Total Discount
           headline_aggregation: SUM
         client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Total Discount\",\"columnProperty\": {}}]}"
       chart:
         type: KPI
         chart_columns:
@@ -1239,6 +1248,7 @@ liveboard:
         - "y":
           - Total Discount
         client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Total Discount\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"3db83470-c685-452e-baf9-79d58da75856\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Discount\"],\"isOpposite\": false}},{\"id\": \"52356265-e8b1-4347-927f-9b3d46695d69\",\"properties\": {\"axisType\": \"X\"}}]}"
       display_mode: CHART_MODE
     viz_guid: 55b2a1ec-084d-469b-a3d3-40fae3a1652b
   - id: Viz_31
@@ -1265,6 +1275,7 @@ liveboard:
         - column_id: Total discount+2
           headline_aggregation: TABLE_AGGR
         client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Total Quantity\",\"columnProperty\": {}},{\"columnId\": \"Total Order Total Price\",\"columnProperty\": {}},{\"columnId\": \"Total Extended Price\",\"columnProperty\": {}},{\"columnId\": \"Total discount+2\",\"columnProperty\": {}}]}"
       chart:
         type: KPI
         chart_columns:
@@ -1276,6 +1287,7 @@ liveboard:
         - "y":
           - Total Quantity
         client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Total discount+2\",\"columnProperty\": {}},{\"columnId\": \"Total Quantity\",\"columnProperty\": {}},{\"columnId\": \"Total Order Total Price\",\"columnProperty\": {}},{\"columnId\": \"Total Extended Price\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"87751d75-926f-4df3-842c-dbc666917597\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Quantity\"],\"isOpposite\": false}},{\"id\": \"75eba50b-e5cb-4d2b-8d72-da8ae7214889\",\"properties\": {\"axisType\": \"X\"}}]}"
       display_mode: CHART_MODE
     viz_guid: d84c5291-21ee-4d93-b507-4a56660e51c9
   - id: Viz_32
@@ -1302,6 +1314,7 @@ liveboard:
         - column_id: sum(rev)/sum(tax)
           headline_aggregation: TABLE_AGGR
         client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Total rev/tax-NaN\",\"columnProperty\": {}},{\"columnId\": \"Total rev+tax\",\"columnProperty\": {}},{\"columnId\": \"Total Revenue\",\"columnProperty\": {}},{\"columnId\": \"sum(rev)/sum(tax)\",\"columnProperty\": {}}]}"
       chart:
         type: KPI
         chart_columns:
@@ -1313,6 +1326,7 @@ liveboard:
         - "y":
           - Total rev/tax-NaN
         client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Total rev/tax-NaN\",\"columnProperty\": {}},{\"columnId\": \"Total Revenue\",\"columnProperty\": {}},{\"columnId\": \"Total rev+tax\",\"columnProperty\": {}},{\"columnId\": \"sum(rev)/sum(tax)\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"ca8aa79a-fea8-45a6-912a-f20bcdb5b0de\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total rev/tax-NaN\"],\"isOpposite\": false}},{\"id\": \"7997ea1b-76f6-418d-aa03-21b07e0091c2\",\"properties\": {\"axisType\": \"X\"}}]}"
       display_mode: CHART_MODE
     viz_guid: ad660b2e-bbc8-4262-985c-78a8d9ca6d2c
   - id: Viz_33
@@ -1345,6 +1359,7 @@ liveboard:
         - column_id: count(custkey)
           headline_aggregation: AVERAGE
         client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Total complexarithmetic\",\"columnProperty\": {}},{\"columnId\": \"Total const1\",\"columnProperty\": {}},{\"columnId\": \"Total Discount\",\"columnProperty\": {}},{\"columnId\": \"count(custkey)\",\"columnProperty\": {}},{\"columnId\": \"Total const3\",\"columnProperty\": {}},{\"columnId\": \"Total discount+2\",\"columnProperty\": {}}]}"
       chart:
         type: KPI
         chart_columns:
@@ -1358,6 +1373,7 @@ liveboard:
         - "y":
           - Total complexarithmetic
         client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Total discount+2\",\"columnProperty\": {}},{\"columnId\": \"Total const3\",\"columnProperty\": {}},{\"columnId\": \"count(custkey)\",\"columnProperty\": {}},{\"columnId\": \"Total const1\",\"columnProperty\": {}},{\"columnId\": \"Total complexarithmetic\",\"columnProperty\": {}},{\"columnId\": \"Total Discount\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"5006bcc2-8d87-4b63-ab84-fdc869579596\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total complexarithmetic\"],\"isOpposite\": false}},{\"id\": \"83077a17-cc49-426b-9e5f-20f27668d996\",\"properties\": {\"axisType\": \"X\"}}]}"
       display_mode: CHART_MODE
     viz_guid: ba86cf65-8e51-450b-a583-0cde5d4531cf
   - id: Viz_34
@@ -1399,109 +1415,6 @@ liveboard:
         client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_OFF\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Brand1\",\"columnProperty\": {}},{\"columnId\": \"Category\",\"columnProperty\": {}},{\"columnId\": \"Total Extended Price\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"13dd2288-5138-4e50-a835-d7ec42f8008d\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Extended Price\"],\"isOpposite\": false}},{\"id\": \"a1b1581e-1ebc-4a76-a71a-ebcb83ba5c75\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Brand1\"]}}],\"systemSeriesColors\": [{\"serieName\": \"mfgr#11\",\"color\": \"#47515F\"},{\"serieName\": \"mfgr#12\",\"color\": \"#BEC6D0\"},{\"serieName\": \"mfgr#13\",\"color\": \"#747E8C\"},{\"serieName\": \"mfgr#14\",\"color\": \"#C26232\"},{\"serieName\": \"mfgr#15\",\"color\": \"#FFCCB3\"},{\"serieName\": \"mfgr#21\",\"color\": \"#FF8142\"},{\"serieName\": \"mfgr#22\",\"color\": \"#6A4ABA\"},{\"serieName\": \"mfgr#23\",\"color\": \"#D1C0FB\"},{\"serieName\": \"mfgr#24\",\"color\": \"#8C62F5\"},{\"serieName\": \"mfgr#25\",\"color\": \"#56D3A8\"},{\"serieName\": \"mfgr#31\",\"color\": \"#049160\"},{\"serieName\": \"mfgr#32\",\"color\": \"#9BE5CB\"},{\"serieName\": \"mfgr#33\",\"color\": \"#06BF7F\"},{\"serieName\": \"mfgr#34\",\"color\": \"#FCD977\"},{\"serieName\": \"mfgr#35\",\"color\": \"#BF982A\"},{\"serieName\": \"mfgr#41\",\"color\": \"#FDE9AF\"},{\"serieName\": \"mfgr#42\",\"color\": \"#FCC838\"},{\"serieName\": \"mfgr#43\",\"color\": \"#82DFE9\"},{\"serieName\": \"mfgr#44\",\"color\": \"#369FAA\"},{\"serieName\": \"mfgr#45\",\"color\": \"#B5ECF2\"},{\"serieName\": \"mfgr#51\",\"color\": \"#48D1E0\"},{\"serieName\": \"mfgr#52\",\"color\": \"#71A1F4\"},{\"serieName\": \"mfgr#53\",\"color\": \"#2359B6\"},{\"serieName\": \"mfgr#54\",\"color\": \"#ABC7F9\"},{\"serieName\": \"mfgr#55\",\"color\": \"#2E75F0\"}]}"
       display_mode: CHART_MODE
     viz_guid: ffd21126-8410-46a6-a0c6-2ae20e62bf1d
-  - id: Viz_35
-    answer:
-      name: Total Tax by Brand1
-      tables:
-      - id: Parameters WS
-        name: Parameters WS
-        fqn: 540c4503-5bc7-4727-897b-f7f4d78dd2ff
-      search_query: "[Brand1] [Tax]"
-      answer_columns:
-      - name: Brand1
-      - name: Total Tax
-      table:
-        table_columns:
-        - column_id: Brand1
-          headline_aggregation: COUNT_DISTINCT
-        - column_id: Total Tax
-          headline_aggregation: SUM
-        client_state: ""
-        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
-      chart:
-        type: COLUMN
-        chart_columns:
-        - column_id: Brand1
-        - column_id: Total Tax
-        axis_configs:
-        - x:
-          - Brand1
-          "y":
-          - Total Tax
-        client_state: ""
-        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_OFF\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Brand1\",\"columnProperty\": {}},{\"columnId\": \"Total Tax\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"b6873701-f046-4ee4-956f-cb0f4be6b82d\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Tax\"],\"isOpposite\": false}},{\"id\": \"5ccf1ec5-92b4-4adc-adab-cce10c4b3b74\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Brand1\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Tax\",\"color\": \"#FF8142\"}]}"
-      display_mode: CHART_MODE
-    viz_guid: e2a30d1d-205a-4650-b4aa-6b7500521cc1
-  - id: Viz_36
-    answer:
-      name: Total Revenue by Color
-      tables:
-      - id: Parameters WS
-        name: Parameters WS
-        fqn: 540c4503-5bc7-4727-897b-f7f4d78dd2ff
-      search_query: "[Color] [Revenue]"
-      answer_columns:
-      - name: Color
-      - name: Total Revenue
-      table:
-        table_columns:
-        - column_id: Color
-          headline_aggregation: COUNT_DISTINCT
-        - column_id: Total Revenue
-          headline_aggregation: SUM
-        client_state: ""
-        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
-      chart:
-        type: COLUMN
-        chart_columns:
-        - column_id: Color
-        - column_id: Total Revenue
-        axis_configs:
-        - x:
-          - Color
-          "y":
-          - Total Revenue
-        client_state: ""
-        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_OFF\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Color\",\"columnProperty\": {}},{\"columnId\": \"Total Revenue\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"04c879cf-fb62-443c-a8b4-de9c062ef6d2\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Revenue\"],\"isOpposite\": false}},{\"id\": \"277494fe-dd79-410f-9319-e11bf23412a1\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Color\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Revenue\",\"color\": \"#06BF7F\"}]}"
-      display_mode: CHART_MODE
-    viz_guid: 5efa93e5-0607-4882-94e3-101b8fb2298d
-  - id: Viz_37
-    answer:
-      name: Total rev/tax-NaN
-      tables:
-      - id: Formula Worksheet
-        name: Formula Worksheet
-        fqn: 7d2fbbc1-d3bb-4ee4-9218-ec6421958c62
-      search_query: "[rev/tax-NaN] [rev+tax] [Revenue] [sum(rev)/sum(tax)]"
-      answer_columns:
-      - name: Total Revenue
-      - name: Total rev+tax
-      - name: Total rev/tax-NaN
-      - name: sum(rev)/sum(tax)
-      table:
-        table_columns:
-        - column_id: Total Revenue
-          headline_aggregation: SUM
-        - column_id: Total rev+tax
-          headline_aggregation: TABLE_AGGR
-        - column_id: Total rev/tax-NaN
-          headline_aggregation: TABLE_AGGR
-        - column_id: sum(rev)/sum(tax)
-          headline_aggregation: TABLE_AGGR
-        client_state: ""
-      chart:
-        type: KPI
-        chart_columns:
-        - column_id: Total Revenue
-        - column_id: Total rev+tax
-        - column_id: Total rev/tax-NaN
-        - column_id: sum(rev)/sum(tax)
-        axis_configs:
-        - "y":
-          - Total rev/tax-NaN
-        client_state: ""
-      display_mode: CHART_MODE
-    viz_guid: 823ef76a-d2a8-401e-aa09-de0a28574d7e
   layout:
     tiles:
     - visualization_id: Viz_1
@@ -1558,3 +1471,17 @@ liveboard:
       size: MEDIUM
     - visualization_id: Viz_27
       size: EXTRA_SMALL
+    - visualization_id: Viz_28
+      size: EXTRA_SMALL
+    - visualization_id: Viz_29
+      size: EXTRA_SMALL
+    - visualization_id: Viz_30
+      size: EXTRA_SMALL
+    - visualization_id: Viz_31
+      size: EXTRA_SMALL
+    - visualization_id: Viz_32
+      size: EXTRA_SMALL
+    - visualization_id: Viz_33
+      size: EXTRA_SMALL
+    - visualization_id: Viz_34
+      size: MEDIUM
