@@ -1241,6 +1241,43 @@ liveboard:
         client_state: ""
       display_mode: CHART_MODE
     viz_guid: 55b2a1ec-084d-469b-a3d3-40fae3a1652b
+  - id: Viz_31
+    answer:
+      name: Total Quantity
+      tables:
+      - id: Formula Worksheet
+        name: Formula Worksheet
+        fqn: 7d2fbbc1-d3bb-4ee4-9218-ec6421958c62
+      search_query: "[Quantity] [Order Total Price] [Extended Price] [discount+2]"
+      answer_columns:
+      - name: Total Extended Price
+      - name: Total Order Total Price
+      - name: Total Quantity
+      - name: Total discount+2
+      table:
+        table_columns:
+        - column_id: Total Extended Price
+          headline_aggregation: SUM
+        - column_id: Total Order Total Price
+          headline_aggregation: SUM
+        - column_id: Total Quantity
+          headline_aggregation: SUM
+        - column_id: Total discount+2
+          headline_aggregation: TABLE_AGGR
+        client_state: ""
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Total Extended Price
+        - column_id: Total Order Total Price
+        - column_id: Total Quantity
+        - column_id: Total discount+2
+        axis_configs:
+        - "y":
+          - Total Quantity
+        client_state: ""
+      display_mode: CHART_MODE
+    viz_guid: d84c5291-21ee-4d93-b507-4a56660e51c9
   layout:
     tiles:
     - visualization_id: Viz_1
