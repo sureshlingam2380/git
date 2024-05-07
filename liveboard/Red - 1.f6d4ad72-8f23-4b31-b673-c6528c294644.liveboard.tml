@@ -1158,6 +1158,35 @@ liveboard:
         client_state: ""
       display_mode: CHART_MODE
     viz_guid: 08372f27-5a6b-421c-80ac-ea359df6e1e8
+  - id: Viz_28
+    answer:
+      name: Total complexarithmetic
+      tables:
+      - id: Formula Worksheet
+        name: Formula Worksheet
+        fqn: 7d2fbbc1-d3bb-4ee4-9218-ec6421958c62
+      search_query: "[complexarithmetic] [const1]"
+      answer_columns:
+      - name: Total complexarithmetic
+      - name: Total const1
+      table:
+        table_columns:
+        - column_id: Total complexarithmetic
+          headline_aggregation: TABLE_AGGR
+        - column_id: Total const1
+          headline_aggregation: SUM
+        client_state: ""
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Total complexarithmetic
+        - column_id: Total const1
+        axis_configs:
+        - "y":
+          - Total complexarithmetic
+        client_state: ""
+      display_mode: CHART_MODE
+    viz_guid: a870e961-c061-43cb-8c19-724569b46788
   layout:
     tiles:
     - visualization_id: Viz_1
