@@ -1582,6 +1582,39 @@ liveboard:
         client_state: ""
       display_mode: CHART_MODE
     viz_guid: a22de1e5-3b7c-4882-a9ee-909efc20d81a
+  - id: Viz_40
+    answer:
+      name: Username by Size
+      tables:
+      - id: Parameters WS
+        name: Parameters WS
+        fqn: 540c4503-5bc7-4727-897b-f7f4d78dd2ff
+      search_query: "[Username] [Size]"
+      answer_columns:
+      - name: Size
+      - name: Username
+      table:
+        table_columns:
+        - column_id: Size
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Username
+          headline_aggregation: COUNT_DISTINCT
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: SCATTER
+        chart_columns:
+        - column_id: Size
+        - column_id: Username
+        axis_configs:
+        - x:
+          - Size
+          "y":
+          - Username
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Username\",\"columnProperty\": {}},{\"columnId\": \"Size\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"90ba51da-189c-46f0-b1e4-d7646ffcf5c0\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Username\"],\"isOpposite\": false}},{\"id\": \"a3c52209-4d1e-4c46-8eeb-70fff3800a56\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Size\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Username\",\"color\": \"#FCC838\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: cdc93ff4-36e0-4591-99de-addf853c20f0
   layout:
     tiles:
     - visualization_id: Viz_1
