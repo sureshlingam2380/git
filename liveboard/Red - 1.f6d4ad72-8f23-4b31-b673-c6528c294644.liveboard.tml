@@ -1465,6 +1465,43 @@ liveboard:
         client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_OFF\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Color\",\"columnProperty\": {}},{\"columnId\": \"Total Revenue\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"04c879cf-fb62-443c-a8b4-de9c062ef6d2\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Revenue\"],\"isOpposite\": false}},{\"id\": \"277494fe-dd79-410f-9319-e11bf23412a1\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Color\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Revenue\",\"color\": \"#06BF7F\"}]}"
       display_mode: CHART_MODE
     viz_guid: 5efa93e5-0607-4882-94e3-101b8fb2298d
+  - id: Viz_37
+    answer:
+      name: Total rev/tax-NaN
+      tables:
+      - id: Formula Worksheet
+        name: Formula Worksheet
+        fqn: 7d2fbbc1-d3bb-4ee4-9218-ec6421958c62
+      search_query: "[rev/tax-NaN] [rev+tax] [Revenue] [sum(rev)/sum(tax)]"
+      answer_columns:
+      - name: Total Revenue
+      - name: Total rev+tax
+      - name: Total rev/tax-NaN
+      - name: sum(rev)/sum(tax)
+      table:
+        table_columns:
+        - column_id: Total Revenue
+          headline_aggregation: SUM
+        - column_id: Total rev+tax
+          headline_aggregation: TABLE_AGGR
+        - column_id: Total rev/tax-NaN
+          headline_aggregation: TABLE_AGGR
+        - column_id: sum(rev)/sum(tax)
+          headline_aggregation: TABLE_AGGR
+        client_state: ""
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Total Revenue
+        - column_id: Total rev+tax
+        - column_id: Total rev/tax-NaN
+        - column_id: sum(rev)/sum(tax)
+        axis_configs:
+        - "y":
+          - Total rev/tax-NaN
+        client_state: ""
+      display_mode: CHART_MODE
+    viz_guid: 823ef76a-d2a8-401e-aa09-de0a28574d7e
   layout:
     tiles:
     - visualization_id: Viz_1
