@@ -1129,3 +1129,32 @@ liveboard:
         client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"DATE_MONTH\",\"columnProperty\": {}},{\"columnId\": \"Total DATE_YEAR\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"4e952498-7961-4080-83cd-7409e38544e1\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total DATE_YEAR\"],\"isOpposite\": false}},{\"id\": \"44ce7c07-a75c-4b12-9d07-7bdb65771789\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"DATE_MONTH\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total DATE_YEAR\",\"color\": \"#2E75F0\"}]}"
       display_mode: CHART_MODE
     viz_guid: 16d950e7-0757-4a82-86db-b1d03a853a72
+  - id: Viz_27
+    answer:
+      name: Total complexarithmetic
+      tables:
+      - id: Formula Worksheet
+        name: Formula Worksheet
+        fqn: 7d2fbbc1-d3bb-4ee4-9218-ec6421958c62
+      search_query: "[complexarithmetic] [count(custkey)]"
+      answer_columns:
+      - name: Total complexarithmetic
+      - name: count(custkey)
+      table:
+        table_columns:
+        - column_id: Total complexarithmetic
+          headline_aggregation: TABLE_AGGR
+        - column_id: count(custkey)
+          headline_aggregation: AVERAGE
+        client_state: ""
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Total complexarithmetic
+        - column_id: count(custkey)
+        axis_configs:
+        - "y":
+          - Total complexarithmetic
+        client_state: ""
+      display_mode: CHART_MODE
+    viz_guid: 08372f27-5a6b-421c-80ac-ea359df6e1e8
