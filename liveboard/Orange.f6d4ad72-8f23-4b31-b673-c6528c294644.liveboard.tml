@@ -1096,3 +1096,36 @@ liveboard:
         client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"DATE_MONTH\",\"columnProperty\": {}},{\"columnId\": \"Total DATE_YEAR\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"4e952498-7961-4080-83cd-7409e38544e1\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total DATE_YEAR\"],\"isOpposite\": false}},{\"id\": \"44ce7c07-a75c-4b12-9d07-7bdb65771789\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"DATE_MONTH\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total DATE_YEAR\",\"color\": \"#2E75F0\"}]}"
       display_mode: CHART_MODE
     viz_guid: fcc98db6-099b-4fef-a49d-4409948845cb
+  - id: Viz_26
+    answer:
+      name: Total DATE_YEAR by DATE_MONTH
+      tables:
+      - id: rls-chasm-ws
+        name: rls-chasm-ws
+        fqn: cd231212-6890-4aa5-b94d-6223d36d47ff
+      search_query: "[DATE_YEAR] [DATE_MONTH]"
+      answer_columns:
+      - name: DATE_MONTH
+      - name: Total DATE_YEAR
+      table:
+        table_columns:
+        - column_id: DATE_MONTH
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Total DATE_YEAR
+          headline_aggregation: SUM
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: DATE_MONTH
+        - column_id: Total DATE_YEAR
+        axis_configs:
+        - x:
+          - DATE_MONTH
+          "y":
+          - Total DATE_YEAR
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"DATE_MONTH\",\"columnProperty\": {}},{\"columnId\": \"Total DATE_YEAR\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"4e952498-7961-4080-83cd-7409e38544e1\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total DATE_YEAR\"],\"isOpposite\": false}},{\"id\": \"44ce7c07-a75c-4b12-9d07-7bdb65771789\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"DATE_MONTH\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total DATE_YEAR\",\"color\": \"#2E75F0\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: 16d950e7-0757-4a82-86db-b1d03a853a72
