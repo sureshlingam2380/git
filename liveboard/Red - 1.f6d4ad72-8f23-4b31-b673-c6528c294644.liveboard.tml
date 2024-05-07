@@ -1553,6 +1553,35 @@ liveboard:
         client_state: ""
       display_mode: CHART_MODE
     viz_guid: f8d62c01-90c3-4667-a943-3e5b3896f8bd
+  - id: Viz_39
+    answer:
+      name: Total rev+tax
+      tables:
+      - id: Formula Worksheet
+        name: Formula Worksheet
+        fqn: 7d2fbbc1-d3bb-4ee4-9218-ec6421958c62
+      search_query: "[rev+tax] [Revenue]"
+      answer_columns:
+      - name: Total Revenue
+      - name: Total rev+tax
+      table:
+        table_columns:
+        - column_id: Total Revenue
+          headline_aggregation: SUM
+        - column_id: Total rev+tax
+          headline_aggregation: TABLE_AGGR
+        client_state: ""
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Total Revenue
+        - column_id: Total rev+tax
+        axis_configs:
+        - "y":
+          - Total rev+tax
+        client_state: ""
+      display_mode: CHART_MODE
+    viz_guid: a22de1e5-3b7c-4882-a9ee-909efc20d81a
   layout:
     tiles:
     - visualization_id: Viz_1
