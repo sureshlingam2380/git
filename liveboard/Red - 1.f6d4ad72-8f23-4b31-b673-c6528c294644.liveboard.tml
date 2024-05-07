@@ -1552,7 +1552,7 @@ liveboard:
         - "y":
           - Total Discount
         client_state: ""
-        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Total discount+2\",\"columnProperty\": {}},{\"columnId\": \"Total Discount\",\"columnProperty\": {}},{\"columnId\": \"Total const3\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"6d7f8b90-b536-4191-a54e-db06f8672359\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Discount\"],\"isOpposite\": false}},{\"id\": \"c16fe35c-63f9-47c2-b147-99a001ae9b58\",\"properties\": {\"axisType\": \"X\"}}]}"
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Total discount+2\",\"columnProperty\": {}},{\"columnId\": \"Total const3\",\"columnProperty\": {}},{\"columnId\": \"Total Discount\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"d728c195-7494-476b-afe6-da15af32b3a8\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Discount\"],\"isOpposite\": false}},{\"id\": \"6f370f42-9e24-4e57-bb5b-89e0824a6c64\",\"properties\": {\"axisType\": \"X\"}}]}"
       display_mode: CHART_MODE
     viz_guid: f8d62c01-90c3-4667-a943-3e5b3896f8bd
   - id: Viz_39
@@ -1583,7 +1583,7 @@ liveboard:
         - "y":
           - Total rev+tax
         client_state: ""
-        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Total Revenue\",\"columnProperty\": {}},{\"columnId\": \"Total rev+tax\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"44022254-78d8-4a23-bf0e-8922b24463e4\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total rev+tax\"],\"isOpposite\": false}},{\"id\": \"a04fec36-24ab-4125-bc83-71563326313e\",\"properties\": {\"axisType\": \"X\"}}]}"
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Total Revenue\",\"columnProperty\": {}},{\"columnId\": \"Total rev+tax\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"fc6b00ac-2d30-452d-b6e8-7d7cad24f088\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total rev+tax\"],\"isOpposite\": false}},{\"id\": \"9101a3a5-7294-4c72-bc2d-4efd6a965842\",\"properties\": {\"axisType\": \"X\"}}]}"
       display_mode: CHART_MODE
     viz_guid: a22de1e5-3b7c-4882-a9ee-909efc20d81a
   - id: Viz_40
@@ -1619,6 +1619,78 @@ liveboard:
         client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Username\",\"columnProperty\": {}},{\"columnId\": \"Size\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"90ba51da-189c-46f0-b1e4-d7646ffcf5c0\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Username\"],\"isOpposite\": false}},{\"id\": \"a3c52209-4d1e-4c46-8eeb-70fff3800a56\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Size\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Username\",\"color\": \"#FCC838\"}]}"
       display_mode: CHART_MODE
     viz_guid: cdc93ff4-36e0-4591-99de-addf853c20f0
+  - id: Viz_41
+    answer:
+      name: Total Tax by Brand1 and Order Priority
+      tables:
+      - id: Parameters WS
+        name: Parameters WS
+        fqn: 540c4503-5bc7-4727-897b-f7f4d78dd2ff
+      search_query: "[Brand1] [Tax] [Order Priority]"
+      answer_columns:
+      - name: Brand1
+      - name: Order Priority
+      - name: Total Tax
+      table:
+        table_columns:
+        - column_id: Brand1
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Order Priority
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Total Tax
+          headline_aggregation: SUM
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: STACKED_COLUMN
+        chart_columns:
+        - column_id: Brand1
+        - column_id: Order Priority
+        - column_id: Total Tax
+        axis_configs:
+        - x:
+          - Brand1
+          "y":
+          - Total Tax
+          color:
+          - Order Priority
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_OFF\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Brand1\",\"columnProperty\": {}},{\"columnId\": \"Total Tax\",\"columnProperty\": {}},{\"columnId\": \"Order Priority\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"b6873701-f046-4ee4-956f-cb0f4be6b82d\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Tax\"],\"isOpposite\": false}},{\"id\": \"5ccf1ec5-92b4-4adc-adab-cce10c4b3b74\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Brand1\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Tax\",\"color\": \"#FF8142\"},{\"serieName\": \"1-urgent\",\"color\": \"#06BF7F\"},{\"serieName\": \"2-high\",\"color\": \"#FCC838\"},{\"serieName\": \"3-medium\",\"color\": \"#48D1E0\"},{\"serieName\": \"4-not specified\",\"color\": \"#71A1F4\"},{\"serieName\": \"5-low\",\"color\": \"#2E75F0\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: 5647d278-3664-4fac-b9bc-bd35cdfd29e6
+  - id: Viz_42
+    answer:
+      name: Brand1 by Category
+      tables:
+      - id: Parameters WS
+        name: Parameters WS
+        fqn: 540c4503-5bc7-4727-897b-f7f4d78dd2ff
+      search_query: "[Brand1] [Category]"
+      answer_columns:
+      - name: Brand1
+      - name: Category
+      table:
+        table_columns:
+        - column_id: Brand1
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Category
+          headline_aggregation: COUNT_DISTINCT
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: SCATTER
+        chart_columns:
+        - column_id: Brand1
+        - column_id: Category
+        axis_configs:
+        - x:
+          - Category
+          "y":
+          - Brand1
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_OFF\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Brand1\",\"columnProperty\": {}},{\"columnId\": \"Category\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"899f2c06-c6d2-4ce8-af6b-4e0092a480a1\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Brand1\"],\"isOpposite\": false}},{\"id\": \"0c53b02d-d597-4767-80d7-a0e15bb21647\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Category\"]}}],\"systemSeriesColors\": [{\"serieName\": \"mfgr#11\",\"color\": \"#47515F\"},{\"serieName\": \"mfgr#12\",\"color\": \"#BEC6D0\"},{\"serieName\": \"mfgr#13\",\"color\": \"#747E8C\"},{\"serieName\": \"mfgr#14\",\"color\": \"#C26232\"},{\"serieName\": \"mfgr#15\",\"color\": \"#FFCCB3\"},{\"serieName\": \"mfgr#21\",\"color\": \"#FF8142\"},{\"serieName\": \"mfgr#22\",\"color\": \"#6A4ABA\"},{\"serieName\": \"mfgr#23\",\"color\": \"#D1C0FB\"},{\"serieName\": \"mfgr#24\",\"color\": \"#8C62F5\"},{\"serieName\": \"mfgr#25\",\"color\": \"#56D3A8\"},{\"serieName\": \"mfgr#31\",\"color\": \"#049160\"},{\"serieName\": \"mfgr#32\",\"color\": \"#9BE5CB\"},{\"serieName\": \"mfgr#33\",\"color\": \"#06BF7F\"},{\"serieName\": \"mfgr#34\",\"color\": \"#FCD977\"},{\"serieName\": \"mfgr#35\",\"color\": \"#BF982A\"},{\"serieName\": \"mfgr#41\",\"color\": \"#FDE9AF\"},{\"serieName\": \"mfgr#42\",\"color\": \"#FCC838\"},{\"serieName\": \"mfgr#43\",\"color\": \"#82DFE9\"},{\"serieName\": \"mfgr#44\",\"color\": \"#369FAA\"},{\"serieName\": \"mfgr#45\",\"color\": \"#B5ECF2\"},{\"serieName\": \"mfgr#51\",\"color\": \"#48D1E0\"},{\"serieName\": \"mfgr#52\",\"color\": \"#71A1F4\"},{\"serieName\": \"mfgr#53\",\"color\": \"#2359B6\"},{\"serieName\": \"mfgr#54\",\"color\": \"#ABC7F9\"},{\"serieName\": \"mfgr#55\",\"color\": \"#2E75F0\"},{\"serieName\": \"Brand1\",\"color\": \"#2E75F0\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: 7e799f03-676c-4e93-bf2c-a12a7ebac2d4
   layout:
     tiles:
     - visualization_id: Viz_1
@@ -1700,4 +1772,8 @@ liveboard:
     - visualization_id: Viz_39
       size: EXTRA_SMALL
     - visualization_id: Viz_40
+      size: MEDIUM
+    - visualization_id: Viz_41
+      size: MEDIUM
+    - visualization_id: Viz_42
       size: MEDIUM
