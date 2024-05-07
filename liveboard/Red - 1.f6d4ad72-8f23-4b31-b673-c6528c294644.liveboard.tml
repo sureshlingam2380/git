@@ -1216,6 +1216,31 @@ liveboard:
         client_state: ""
       display_mode: CHART_MODE
     viz_guid: 28eb53a8-2063-4605-bc9d-2052cbb7ac6f
+  - id: Viz_30
+    answer:
+      name: Total Discount
+      tables:
+      - id: Formula Worksheet
+        name: Formula Worksheet
+        fqn: 7d2fbbc1-d3bb-4ee4-9218-ec6421958c62
+      search_query: "[Discount]"
+      answer_columns:
+      - name: Total Discount
+      table:
+        table_columns:
+        - column_id: Total Discount
+          headline_aggregation: SUM
+        client_state: ""
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Total Discount
+        axis_configs:
+        - "y":
+          - Total Discount
+        client_state: ""
+      display_mode: CHART_MODE
+    viz_guid: 55b2a1ec-084d-469b-a3d3-40fae3a1652b
   layout:
     tiles:
     - visualization_id: Viz_1
