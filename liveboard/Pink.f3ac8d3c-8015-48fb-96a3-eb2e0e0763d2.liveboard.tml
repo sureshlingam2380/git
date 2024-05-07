@@ -1,0 +1,43 @@
+guid: f3ac8d3c-8015-48fb-96a3-eb2e0e0763d2
+liveboard:
+  name: Pink
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: Total Discount by Brand1 and Container
+      tables:
+      - id: Parameters WS
+        name: Parameters WS
+        fqn: 540c4503-5bc7-4727-897b-f7f4d78dd2ff
+      search_query: "[Discount] [Brand1] [Container]"
+      answer_columns:
+      - name: Brand1
+      - name: Container
+      - name: Total Discount
+      table:
+        table_columns:
+        - column_id: Brand1
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Container
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Total Discount
+          headline_aggregation: SUM
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: Brand1
+        - column_id: Container
+        - column_id: Total Discount
+        axis_configs:
+        - x:
+          - Brand1
+          "y":
+          - Total Discount
+          color:
+          - Container
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_OFF\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Brand1\",\"columnProperty\": {}},{\"columnId\": \"Container\",\"columnProperty\": {}},{\"columnId\": \"Total Discount\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"f6c030c7-7029-4b00-af92-2659257f3230\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Discount\"],\"isOpposite\": false}},{\"id\": \"bd476024-340d-4925-83c1-112792268634\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Brand1\"]}}],\"systemSeriesColors\": [{\"serieName\": \"jumbo bag\",\"color\": \"#721F27\"},{\"serieName\": \"jumbo box\",\"color\": \"#F47E89\"},{\"serieName\": \"jumbo can\",\"color\": \"#B6313E\"},{\"serieName\": \"jumbo case\",\"color\": \"#F9B3B9\"},{\"serieName\": \"jumbo drum\",\"color\": \"#F04152\"},{\"serieName\": \"jumbo jar\",\"color\": \"#2F3947\"},{\"serieName\": \"jumbo pack\",\"color\": \"#A2ACBA\"},{\"serieName\": \"jumbo pkg\",\"color\": \"#47515F\"},{\"serieName\": \"lg bag\",\"color\": \"#BEC6D0\"},{\"serieName\": \"lg box\",\"color\": \"#747E8C\"},{\"serieName\": \"lg can\",\"color\": \"#7A3D1F\"},{\"serieName\": \"lg case\",\"color\": \"#FFA97E\"},{\"serieName\": \"lg drum\",\"color\": \"#C26232\"},{\"serieName\": \"lg jar\",\"color\": \"#FFCCB3\"},{\"serieName\": \"lg pack\",\"color\": \"#FF8142\"},{\"serieName\": \"lg pkg\",\"color\": \"#422E75\"},{\"serieName\": \"med bag\",\"color\": \"#B094F8\"},{\"serieName\": \"med box\",\"color\": \"#6A4ABA\"},{\"serieName\": \"med can\",\"color\": \"#D1C0FB\"},{\"serieName\": \"med case\",\"color\": \"#8C62F5\"},{\"serieName\": \"med drum\",\"color\": \"#025B3C\"},{\"serieName\": \"med jar\",\"color\": \"#56D3A8\"},{\"serieName\": \"med pack\",\"color\": \"#049160\"},{\"serieName\": \"med pkg\",\"color\": \"#9BE5CB\"},{\"serieName\": \"sm bag\",\"color\": \"#06BF7F\"},{\"serieName\": \"sm box\",\"color\": \"#785F1A\"},{\"serieName\": \"sm can\",\"color\": \"#FCD977\"},{\"serieName\": \"sm case\",\"color\": \"#BF982A\"},{\"serieName\": \"sm drum\",\"color\": \"#FDE9AF\"},{\"serieName\": \"sm jar\",\"color\": \"#FCC838\"},{\"serieName\": \"sm pack\",\"color\": \"#22636B\"},{\"serieName\": \"sm pkg\",\"color\": \"#82DFE9\"},{\"serieName\": \"wrap bag\",\"color\": \"#369FAA\"},{\"serieName\": \"wrap box\",\"color\": \"#B5ECF2\"},{\"serieName\": \"wrap can\",\"color\": \"#48D1E0\"},{\"serieName\": \"wrap case\",\"color\": \"#163772\"},{\"serieName\": \"wrap drum\",\"color\": \"#71A1F4\"},{\"serieName\": \"wrap jar\",\"color\": \"#2359B6\"},{\"serieName\": \"wrap pack\",\"color\": \"#ABC7F9\"},{\"serieName\": \"wrap pkg\",\"color\": \"#2E75F0\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: 9a93609f-b9ac-4b42-a67d-bd32fafcbe59
