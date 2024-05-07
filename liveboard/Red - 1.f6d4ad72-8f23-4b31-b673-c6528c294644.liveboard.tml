@@ -1315,6 +1315,51 @@ liveboard:
         client_state: ""
       display_mode: CHART_MODE
     viz_guid: ad660b2e-bbc8-4262-985c-78a8d9ca6d2c
+  - id: Viz_33
+    answer:
+      name: Total complexarithmetic
+      tables:
+      - id: Formula Worksheet
+        name: Formula Worksheet
+        fqn: 7d2fbbc1-d3bb-4ee4-9218-ec6421958c62
+      search_query: "[complexarithmetic] [const1] [Discount] [count(custkey)] [const3] [discount+2]"
+      answer_columns:
+      - name: Total Discount
+      - name: Total complexarithmetic
+      - name: Total const1
+      - name: Total const3
+      - name: Total discount+2
+      - name: count(custkey)
+      table:
+        table_columns:
+        - column_id: Total Discount
+          headline_aggregation: SUM
+        - column_id: Total complexarithmetic
+          headline_aggregation: TABLE_AGGR
+        - column_id: Total const1
+          headline_aggregation: SUM
+        - column_id: Total const3
+          headline_aggregation: SUM
+        - column_id: Total discount+2
+          headline_aggregation: TABLE_AGGR
+        - column_id: count(custkey)
+          headline_aggregation: AVERAGE
+        client_state: ""
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Total Discount
+        - column_id: Total complexarithmetic
+        - column_id: Total const1
+        - column_id: Total const3
+        - column_id: Total discount+2
+        - column_id: count(custkey)
+        axis_configs:
+        - "y":
+          - Total complexarithmetic
+        client_state: ""
+      display_mode: CHART_MODE
+    viz_guid: ba86cf65-8e51-450b-a583-0cde5d4531cf
   layout:
     tiles:
     - visualization_id: Viz_1
