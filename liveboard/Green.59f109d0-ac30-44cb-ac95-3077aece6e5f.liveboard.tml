@@ -1,0 +1,37 @@
+guid: 59f109d0-ac30-44cb-ac95-3077aece6e5f
+liveboard:
+  name: Green
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: Total Tax
+      tables:
+      - id: Parameters WS
+        name: Parameters WS
+        fqn: 540c4503-5bc7-4727-897b-f7f4d78dd2ff
+      search_query: "[Tax] [Supply Cost] [Quantity]"
+      answer_columns:
+      - name: Total Quantity
+      - name: Total Supply Cost
+      - name: Total Tax
+      table:
+        table_columns:
+        - column_id: Total Quantity
+          headline_aggregation: SUM
+        - column_id: Total Supply Cost
+          headline_aggregation: SUM
+        - column_id: Total Tax
+          headline_aggregation: SUM
+        client_state: ""
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Total Quantity
+        - column_id: Total Supply Cost
+        - column_id: Total Tax
+        axis_configs:
+        - "y":
+          - Total Tax
+        client_state: ""
+      display_mode: CHART_MODE
+    viz_guid: 8a75601b-c40e-4dd7-a366-467903686e83
