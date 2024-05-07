@@ -1278,6 +1278,43 @@ liveboard:
         client_state: ""
       display_mode: CHART_MODE
     viz_guid: d84c5291-21ee-4d93-b507-4a56660e51c9
+  - id: Viz_32
+    answer:
+      name: Total rev/tax-NaN
+      tables:
+      - id: Formula Worksheet
+        name: Formula Worksheet
+        fqn: 7d2fbbc1-d3bb-4ee4-9218-ec6421958c62
+      search_query: "[rev/tax-NaN] [rev+tax] [Revenue] [sum(rev)/sum(tax)]"
+      answer_columns:
+      - name: Total Revenue
+      - name: Total rev+tax
+      - name: Total rev/tax-NaN
+      - name: sum(rev)/sum(tax)
+      table:
+        table_columns:
+        - column_id: Total Revenue
+          headline_aggregation: SUM
+        - column_id: Total rev+tax
+          headline_aggregation: TABLE_AGGR
+        - column_id: Total rev/tax-NaN
+          headline_aggregation: TABLE_AGGR
+        - column_id: sum(rev)/sum(tax)
+          headline_aggregation: TABLE_AGGR
+        client_state: ""
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Total Revenue
+        - column_id: Total rev+tax
+        - column_id: Total rev/tax-NaN
+        - column_id: sum(rev)/sum(tax)
+        axis_configs:
+        - "y":
+          - Total rev/tax-NaN
+        client_state: ""
+      display_mode: CHART_MODE
+    viz_guid: ad660b2e-bbc8-4262-985c-78a8d9ca6d2c
   layout:
     tiles:
     - visualization_id: Viz_1
