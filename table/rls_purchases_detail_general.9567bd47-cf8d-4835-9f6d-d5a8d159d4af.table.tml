@@ -1,0 +1,27 @@
+guid: 9567bd47-cf8d-4835-9f6d-d5a8d159d4af
+table:
+  name: rls_purchases_detail_general
+  db: rls_test
+  schema: falcon_default_schema
+  db_table: rls_purchases_detail_general
+  columns:
+  - name: PURCHASE_DETAIL_ID
+    db_column_name: PURCHASE_DETAIL_ID
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: INT32
+  - name: PURCHASE_DETAIL_DESCRIPTION
+    db_column_name: PURCHASE_DETAIL_DESCRIPTION
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  joins_with:
+  - name: Generic Relationship To Mapping Table
+    destination:
+      name: rls_purchases_detail_mapping
+      fqn: 228bab26-1c2e-46e4-a5b5-7391a2b6f340
+    "on": "([rls_purchases_detail_general::PURCHASE_DETAIL_ID] = [rls_purchases_detail_mapping::PURCHASE_DETAIL_ID])"
+    type: INNER

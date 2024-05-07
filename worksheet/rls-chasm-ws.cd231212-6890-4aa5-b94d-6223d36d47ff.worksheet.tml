@@ -1,0 +1,156 @@
+guid: cd231212-6890-4aa5-b94d-6223d36d47ff
+worksheet:
+  name: rls-chasm-ws
+  tables:
+  - name: rls_date_general
+    fqn: 9c358115-372e-4da6-aad2-ed9dc01bec20
+  - name: rls_products_general
+    fqn: 5a2c4992-2259-4738-9c08-0faace3a4037
+  - name: rls_purchases_fact
+    fqn: 629e77e0-8c53-455c-bd5d-f427ffc2c4bf
+  - name: rls_sales_detail_general
+    fqn: 6fc92c45-cfdc-43b7-a1e9-7e54a4f41b95
+  - name: rls_sales_fact
+    fqn: c9ba7f46-a9f7-4ef6-9a48-a5a345c1ff97
+  joins:
+  - name: PURCHASE_PRODUCT_ID - PRODUCT_ID
+    source: rls_purchases_fact
+    destination: rls_products_general
+    type: INNER
+    is_one_to_one: false
+  - name: PURCHASE_LISCENCE_END - DATE_DATEKEY
+    source: rls_purchases_fact
+    destination: rls_date_general
+    type: INNER
+    is_one_to_one: false
+  - name: SALE_DETAIL_ID - SALE_DETAIL_ID
+    source: rls_sales_fact
+    destination: rls_sales_detail_general
+    type: INNER
+    is_one_to_one: false
+  - name: SALE_LISCENCE_END - DATE_DATEKEY
+    source: rls_sales_fact
+    destination: rls_date_general
+    type: INNER
+    is_one_to_one: false
+  - name: SALE_PRODUCT_ID - PRODUCT_ID
+    source: rls_sales_fact
+    destination: rls_products_general
+    type: INNER
+    is_one_to_one: false
+  table_paths:
+  - id: rls_date_general_1
+    table: rls_date_general
+    join_path:
+    - join:
+      - SALE_LISCENCE_END - DATE_DATEKEY
+    - join:
+      - PURCHASE_LISCENCE_END - DATE_DATEKEY
+  - id: rls_products_general_1
+    table: rls_products_general
+    join_path:
+    - join:
+      - PURCHASE_PRODUCT_ID - PRODUCT_ID
+    - join:
+      - SALE_PRODUCT_ID - PRODUCT_ID
+  - id: rls_purchases_fact_1
+    table: rls_purchases_fact
+    join_path:
+    - {}
+  - id: rls_sales_detail_general_1
+    table: rls_sales_detail_general
+    join_path:
+    - join:
+      - SALE_DETAIL_ID - SALE_DETAIL_ID
+  - id: rls_sales_fact_1
+    table: rls_sales_fact
+    join_path:
+    - {}
+  worksheet_columns:
+  - name: PURCHASE_DETAIL_ID
+    column_id: rls_purchases_fact_1::PURCHASE_DETAIL_ID
+    properties:
+      column_type: ATTRIBUTE
+      format_pattern: "#,###"
+  - name: PURCHASE_DISCOUNT
+    column_id: rls_purchases_fact_1::PURCHASE_DISCOUNT
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      format_pattern: "#,###"
+  - name: PURCHASE_LISCENCE_START
+    column_id: rls_purchases_fact_1::PURCHASE_LISCENCE_START
+    properties:
+      column_type: ATTRIBUTE
+      format_pattern: MM/dd/yyyy
+  - name: PURCHASE_PRODUCT_NAME
+    column_id: rls_purchases_fact_1::PURCHASE_PRODUCT_NAME
+    properties:
+      column_type: ATTRIBUTE
+  - name: PURCHASE_SUPPLIER
+    column_id: rls_purchases_fact_1::PURCHASE_SUPPLIER
+    properties:
+      column_type: ATTRIBUTE
+  - name: PRODUCT_ID
+    column_id: rls_products_general_1::PRODUCT_ID
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+      format_pattern: "#,###"
+  - name: PRODUCT_NAME
+    column_id: rls_products_general_1::PRODUCT_NAME
+    properties:
+      column_type: ATTRIBUTE
+  - name: DATE_DATE
+    column_id: rls_date_general_1::DATE_DATE
+    properties:
+      column_type: ATTRIBUTE
+  - name: DATE_MONTH
+    column_id: rls_date_general_1::DATE_MONTH
+    properties:
+      column_type: ATTRIBUTE
+  - name: DATE_YEAR
+    column_id: rls_date_general_1::DATE_YEAR
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      format_pattern: "#,###"
+  - name: SALE_CUSTOMER
+    column_id: rls_sales_fact_1::SALE_CUSTOMER
+    properties:
+      column_type: ATTRIBUTE
+  - name: SALE_DISCOUNT
+    column_id: rls_sales_fact_1::SALE_DISCOUNT
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      format_pattern: "#,###"
+  - name: SALE_CHANNEL_ID
+    column_id: rls_sales_fact_1::SALE_CHANNEL_ID
+    properties:
+      column_type: ATTRIBUTE
+      format_pattern: "#,###"
+  - name: SALE_PRODUCT_ID
+    column_id: rls_sales_fact_1::SALE_PRODUCT_ID
+    properties:
+      column_type: ATTRIBUTE
+      format_pattern: "#,###"
+  - name: SALE_PRICE
+    column_id: rls_sales_fact_1::SALE_PRICE
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      format_pattern: "#,###"
+  - name: SALE_DETAIL_ID
+    column_id: rls_sales_detail_general_1::SALE_DETAIL_ID
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+      format_pattern: "#,###"
+  - name: SALE_DETAIL_DESCRIPTION
+    column_id: rls_sales_detail_general_1::SALE_DETAIL_DESCRIPTION
+    properties:
+      column_type: ATTRIBUTE
+  properties:
+    is_bypass_rls: false
+    join_progressive: true

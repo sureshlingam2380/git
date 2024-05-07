@@ -1,0 +1,1032 @@
+guid: f6d4ad72-8f23-4b31-b673-c6528c294644
+liveboard:
+  name: Orange
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: "Total Extended Price, Total Order Total Price by Brand1, Container, Color"
+      tables:
+      - id: Parameters WS
+        name: Parameters WS
+        fqn: 540c4503-5bc7-4727-897b-f7f4d78dd2ff
+      search_query: "[Extended Price] [Order Total Price] [Brand1] [Container] [Color]"
+      answer_columns:
+      - name: Brand1
+      - name: Color
+      - name: Container
+      - name: Total Extended Price
+      - name: Total Order Total Price
+      table:
+        table_columns:
+        - column_id: Brand1
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Color
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Container
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Total Extended Price
+          headline_aggregation: SUM
+        - column_id: Total Order Total Price
+          headline_aggregation: SUM
+        client_state: ""
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: Brand1
+        - column_id: Color
+        - column_id: Container
+        - column_id: Total Extended Price
+        - column_id: Total Order Total Price
+        axis_configs:
+        - x:
+          - Brand1
+          "y":
+          - Total Extended Price
+          - Total Order Total Price
+        client_state: ""
+      display_mode: TABLE_MODE
+    viz_guid: f775df4b-ca36-4896-bc5c-60434e80b29e
+  - id: Viz_2
+    answer:
+      name: "Total Extended Price, Total Order Total Price by Brand1"
+      tables:
+      - id: Parameters WS
+        name: Parameters WS
+        fqn: 540c4503-5bc7-4727-897b-f7f4d78dd2ff
+      search_query: "[Extended Price] [Order Total Price] [Brand1] [Container] [Color]"
+      answer_columns:
+      - name: Brand1
+      - name: Color
+      - name: Container
+      - name: Total Extended Price
+      - name: Total Order Total Price
+      table:
+        table_columns:
+        - column_id: Brand1
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Color
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Container
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Total Extended Price
+          headline_aggregation: SUM
+        - column_id: Total Order Total Price
+          headline_aggregation: SUM
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: Brand1
+        - column_id: Color
+        - column_id: Container
+        - column_id: Total Extended Price
+        - column_id: Total Order Total Price
+        axis_configs:
+        - x:
+          - Brand1
+          "y":
+          - Total Extended Price
+          - Total Order Total Price
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_OFF\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Brand1\",\"columnProperty\": {}},{\"columnId\": \"Total Extended Price\",\"columnProperty\": {}},{\"columnId\": \"Total Order Total Price\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"b188f6c9-9df3-45c0-9094-2e1f652b95ce\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Extended Price\"],\"isOpposite\": false}},{\"id\": \"489855e7-bfc4-4cc3-a1b0-72676ccf3cf2\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Order Total Price\"],\"isOpposite\": true}},{\"id\": \"0ef95a1d-a733-4b3c-b448-6555a3ec9397\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Brand1\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Extended Price\",\"color\": \"#48D1E0\"},{\"serieName\": \"Total Order Total Price\",\"color\": \"#2E75F0\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: ba2ebc1c-f055-4365-abd5-c1568a969066
+  - id: Viz_3
+    answer:
+      name: Lineorder Partkey by Lineorder Suppkey and Manufacturer
+      tables:
+      - id: Parameters WS
+        name: Parameters WS
+        fqn: 540c4503-5bc7-4727-897b-f7f4d78dd2ff
+      search_query: "[Brand1] [Container] [Color] [Category] [Lineorder Partkey] [Lineorder Suppkey] [Manufacturer]"
+      answer_columns:
+      - name: Brand1
+      - name: Category
+      - name: Color
+      - name: Container
+      - name: Lineorder Partkey
+      - name: Lineorder Suppkey
+      - name: Manufacturer
+      table:
+        table_columns:
+        - column_id: Brand1
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Category
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Color
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Container
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Lineorder Partkey
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Lineorder Suppkey
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Manufacturer
+          headline_aggregation: COUNT_DISTINCT
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: SCATTER
+        chart_columns:
+        - column_id: Brand1
+        - column_id: Category
+        - column_id: Color
+        - column_id: Container
+        - column_id: Lineorder Partkey
+        - column_id: Lineorder Suppkey
+        - column_id: Manufacturer
+        axis_configs:
+        - x:
+          - Lineorder Suppkey
+          "y":
+          - Lineorder Partkey
+          color:
+          - Manufacturer
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_OFF\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Lineorder Suppkey\",\"columnProperty\": {}},{\"columnId\": \"Lineorder Partkey\",\"columnProperty\": {}},{\"columnId\": \"Manufacturer\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"b776206e-d393-46bb-b2c2-487473cf113f\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Lineorder Partkey\"],\"isOpposite\": false}},{\"id\": \"748bebdf-ee98-4036-8225-60f8b1ab605b\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Lineorder Suppkey\"]}}],\"systemSeriesColors\": [{\"serieName\": \"cbff2002-8464-4653-aa75-c1a0b60b2203\",\"color\": \"#48D1E0\"},{\"serieName\": \"cdba6e10-ad0c-42e2-9377-23dae319d1bc\",\"color\": \"#2E75F0\"},{\"serieName\": \"mfgr#1\",\"color\": \"#06BF7F\"},{\"serieName\": \"mfgr#2\",\"color\": \"#FCC838\"},{\"serieName\": \"mfgr#3\",\"color\": \"#48D1E0\"},{\"serieName\": \"mfgr#4\",\"color\": \"#71A1F4\"},{\"serieName\": \"mfgr#5\",\"color\": \"#2E75F0\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: bbb9df84-4edd-42d0-b7e9-f473d7529734
+  - id: Viz_4
+    answer:
+      name: Total Supply Cost by Total Revenue and Category
+      tables:
+      - id: Parameters WS
+        name: Parameters WS
+        fqn: 540c4503-5bc7-4727-897b-f7f4d78dd2ff
+      search_query: "[Revenue] [Supply Cost] [Brand1] [Category]"
+      answer_columns:
+      - name: Brand1
+      - name: Category
+      - name: Total Revenue
+      - name: Total Supply Cost
+      table:
+        table_columns:
+        - column_id: Brand1
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Category
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Total Revenue
+          headline_aggregation: SUM
+        - column_id: Total Supply Cost
+          headline_aggregation: SUM
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: SCATTER
+        chart_columns:
+        - column_id: Brand1
+        - column_id: Category
+        - column_id: Total Revenue
+        - column_id: Total Supply Cost
+        axis_configs:
+        - x:
+          - Total Revenue
+          "y":
+          - Total Supply Cost
+          color:
+          - Category
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Category\",\"columnProperty\": {}},{\"columnId\": \"Total Revenue\",\"columnProperty\": {}},{\"columnId\": \"Total Supply Cost\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"b762a3e3-eae0-465c-9b36-4dd1222a6548\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Supply Cost\"],\"isOpposite\": false}},{\"id\": \"85f7d877-6556-49a4-b8ad-94ba427b9bd5\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Total Revenue\"]}}],\"systemSeriesColors\": [{\"serieName\": \"mfgr#11\",\"color\": \"#47515F\"},{\"serieName\": \"mfgr#12\",\"color\": \"#BEC6D0\"},{\"serieName\": \"mfgr#13\",\"color\": \"#747E8C\"},{\"serieName\": \"mfgr#14\",\"color\": \"#C26232\"},{\"serieName\": \"mfgr#15\",\"color\": \"#FFCCB3\"},{\"serieName\": \"mfgr#21\",\"color\": \"#FF8142\"},{\"serieName\": \"mfgr#22\",\"color\": \"#6A4ABA\"},{\"serieName\": \"mfgr#23\",\"color\": \"#D1C0FB\"},{\"serieName\": \"mfgr#24\",\"color\": \"#8C62F5\"},{\"serieName\": \"mfgr#25\",\"color\": \"#56D3A8\"},{\"serieName\": \"mfgr#31\",\"color\": \"#049160\"},{\"serieName\": \"mfgr#32\",\"color\": \"#9BE5CB\"},{\"serieName\": \"mfgr#33\",\"color\": \"#06BF7F\"},{\"serieName\": \"mfgr#34\",\"color\": \"#FCD977\"},{\"serieName\": \"mfgr#35\",\"color\": \"#BF982A\"},{\"serieName\": \"mfgr#41\",\"color\": \"#FDE9AF\"},{\"serieName\": \"mfgr#42\",\"color\": \"#FCC838\"},{\"serieName\": \"mfgr#43\",\"color\": \"#82DFE9\"},{\"serieName\": \"mfgr#44\",\"color\": \"#369FAA\"},{\"serieName\": \"mfgr#45\",\"color\": \"#B5ECF2\"},{\"serieName\": \"mfgr#51\",\"color\": \"#48D1E0\"},{\"serieName\": \"mfgr#52\",\"color\": \"#71A1F4\"},{\"serieName\": \"mfgr#53\",\"color\": \"#2359B6\"},{\"serieName\": \"mfgr#54\",\"color\": \"#ABC7F9\"},{\"serieName\": \"mfgr#55\",\"color\": \"#2E75F0\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: b4a55661-8933-438c-aaa4-b4d6e4f1e4c9
+  - id: Viz_5
+    answer:
+      name: Total Revenue by Part Partkey and Ship Mode
+      tables:
+      - id: Parameters WS
+        name: Parameters WS
+        fqn: 540c4503-5bc7-4727-897b-f7f4d78dd2ff
+      search_query: "[Revenue] [Brand1] [Category] [Part Name] [Part Partkey] [Ship Mode]"
+      answer_columns:
+      - name: Brand1
+      - name: Category
+      - name: Part Name
+      - name: Part Partkey
+      - name: Ship Mode
+      - name: Total Revenue
+      table:
+        table_columns:
+        - column_id: Brand1
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Category
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Part Name
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Part Partkey
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Ship Mode
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Total Revenue
+          headline_aggregation: SUM
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: Brand1
+        - column_id: Category
+        - column_id: Part Name
+        - column_id: Part Partkey
+        - column_id: Ship Mode
+        - column_id: Total Revenue
+        axis_configs:
+        - x:
+          - Part Partkey
+          "y":
+          - Total Revenue
+          color:
+          - Ship Mode
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_OFF\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Total Revenue\",\"columnProperty\": {}},{\"columnId\": \"Part Partkey\",\"columnProperty\": {}},{\"columnId\": \"Ship Mode\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"b7eceeb8-f491-404f-9442-8187ee89faa9\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Revenue\"],\"isOpposite\": false}},{\"id\": \"0f82d992-38b8-431f-8d1f-596751f00015\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Part Partkey\"]}}],\"systemSeriesColors\": [{\"serieName\": \"mfgr#11\",\"color\": \"#47515F\"},{\"serieName\": \"mfgr#12\",\"color\": \"#BEC6D0\"},{\"serieName\": \"mfgr#13\",\"color\": \"#747E8C\"},{\"serieName\": \"mfgr#14\",\"color\": \"#C26232\"},{\"serieName\": \"mfgr#15\",\"color\": \"#FFCCB3\"},{\"serieName\": \"mfgr#21\",\"color\": \"#FF8142\"},{\"serieName\": \"mfgr#22\",\"color\": \"#6A4ABA\"},{\"serieName\": \"mfgr#23\",\"color\": \"#D1C0FB\"},{\"serieName\": \"mfgr#24\",\"color\": \"#8C62F5\"},{\"serieName\": \"mfgr#25\",\"color\": \"#56D3A8\"},{\"serieName\": \"mfgr#31\",\"color\": \"#049160\"},{\"serieName\": \"mfgr#32\",\"color\": \"#9BE5CB\"},{\"serieName\": \"mfgr#33\",\"color\": \"#06BF7F\"},{\"serieName\": \"mfgr#34\",\"color\": \"#FCD977\"},{\"serieName\": \"mfgr#35\",\"color\": \"#BF982A\"},{\"serieName\": \"mfgr#41\",\"color\": \"#FDE9AF\"},{\"serieName\": \"mfgr#42\",\"color\": \"#FCC838\"},{\"serieName\": \"mfgr#43\",\"color\": \"#82DFE9\"},{\"serieName\": \"mfgr#44\",\"color\": \"#369FAA\"},{\"serieName\": \"mfgr#45\",\"color\": \"#B5ECF2\"},{\"serieName\": \"mfgr#51\",\"color\": \"#48D1E0\"},{\"serieName\": \"mfgr#52\",\"color\": \"#71A1F4\"},{\"serieName\": \"mfgr#53\",\"color\": \"#2359B6\"},{\"serieName\": \"mfgr#54\",\"color\": \"#ABC7F9\"},{\"serieName\": \"mfgr#55\",\"color\": \"#2E75F0\"},{\"serieName\": \"{null}\",\"color\": \"#56D3A8\"},{\"serieName\": \"air\",\"color\": \"#06BF7F\"},{\"serieName\": \"fob\",\"color\": \"#FCD977\"},{\"serieName\": \"mail\",\"color\": \"#FCC838\"},{\"serieName\": \"rail\",\"color\": \"#82DFE9\"},{\"serieName\": \"reg air\",\"color\": \"#48D1E0\"},{\"serieName\": \"ship\",\"color\": \"#71A1F4\"},{\"serieName\": \"truck\",\"color\": \"#2E75F0\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: 3f77f87e-b4d2-4a6e-90de-e095b4275fff
+  - id: Viz_6
+    answer:
+      name: Total Revenue by Email Domain and Ship Mode
+      tables:
+      - id: Parameters WS
+        name: Parameters WS
+        fqn: 540c4503-5bc7-4727-897b-f7f4d78dd2ff
+      search_query: "[Revenue] [Part Name] [Ship Mode] [Container] [Email Domain]"
+      answer_columns:
+      - name: Container
+      - name: Email Domain
+      - name: Part Name
+      - name: Ship Mode
+      - name: Total Revenue
+      table:
+        table_columns:
+        - column_id: Container
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Email Domain
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Part Name
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Ship Mode
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Total Revenue
+          headline_aggregation: SUM
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: Container
+        - column_id: Email Domain
+        - column_id: Part Name
+        - column_id: Ship Mode
+        - column_id: Total Revenue
+        axis_configs:
+        - x:
+          - Email Domain
+          "y":
+          - Total Revenue
+          color:
+          - Ship Mode
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Total Revenue\",\"columnProperty\": {}},{\"columnId\": \"Ship Mode\",\"columnProperty\": {}},{\"columnId\": \"Email Domain\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"3a562224-d35b-4881-a3c1-b61e8abfc0dd\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Revenue\"],\"isOpposite\": false}},{\"id\": \"f7546d49-a892-44fa-98cc-1ccb70b4359f\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Email Domain\"]}}],\"systemSeriesColors\": [{\"serieName\": \"mfgr#11\",\"color\": \"#47515F\"},{\"serieName\": \"mfgr#12\",\"color\": \"#BEC6D0\"},{\"serieName\": \"mfgr#13\",\"color\": \"#747E8C\"},{\"serieName\": \"mfgr#14\",\"color\": \"#C26232\"},{\"serieName\": \"mfgr#15\",\"color\": \"#FFCCB3\"},{\"serieName\": \"mfgr#21\",\"color\": \"#FF8142\"},{\"serieName\": \"mfgr#22\",\"color\": \"#6A4ABA\"},{\"serieName\": \"mfgr#23\",\"color\": \"#D1C0FB\"},{\"serieName\": \"mfgr#24\",\"color\": \"#8C62F5\"},{\"serieName\": \"mfgr#25\",\"color\": \"#56D3A8\"},{\"serieName\": \"mfgr#31\",\"color\": \"#049160\"},{\"serieName\": \"mfgr#32\",\"color\": \"#9BE5CB\"},{\"serieName\": \"mfgr#33\",\"color\": \"#06BF7F\"},{\"serieName\": \"mfgr#34\",\"color\": \"#FCD977\"},{\"serieName\": \"mfgr#35\",\"color\": \"#BF982A\"},{\"serieName\": \"mfgr#41\",\"color\": \"#FDE9AF\"},{\"serieName\": \"mfgr#42\",\"color\": \"#FCC838\"},{\"serieName\": \"mfgr#43\",\"color\": \"#82DFE9\"},{\"serieName\": \"mfgr#44\",\"color\": \"#369FAA\"},{\"serieName\": \"mfgr#45\",\"color\": \"#B5ECF2\"},{\"serieName\": \"mfgr#51\",\"color\": \"#48D1E0\"},{\"serieName\": \"mfgr#52\",\"color\": \"#71A1F4\"},{\"serieName\": \"mfgr#53\",\"color\": \"#2359B6\"},{\"serieName\": \"mfgr#54\",\"color\": \"#ABC7F9\"},{\"serieName\": \"mfgr#55\",\"color\": \"#2E75F0\"},{\"serieName\": \"{null}\",\"color\": \"#56D3A8\"},{\"serieName\": \"air\",\"color\": \"#06BF7F\"},{\"serieName\": \"fob\",\"color\": \"#FCD977\"},{\"serieName\": \"mail\",\"color\": \"#FCC838\"},{\"serieName\": \"rail\",\"color\": \"#82DFE9\"},{\"serieName\": \"reg air\",\"color\": \"#48D1E0\"},{\"serieName\": \"ship\",\"color\": \"#71A1F4\"},{\"serieName\": \"truck\",\"color\": \"#2E75F0\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: 7624f391-7e25-4b47-8927-c755586474d0
+  - id: Viz_7
+    answer:
+      name: Total Revenue by Email Domain and Ship Mode
+      tables:
+      - id: Parameters WS
+        name: Parameters WS
+        fqn: 540c4503-5bc7-4727-897b-f7f4d78dd2ff
+      search_query: "[Revenue] [Part Name] [Ship Mode] [Container] [Email Domain]"
+      answer_columns:
+      - name: Container
+      - name: Email Domain
+      - name: Part Name
+      - name: Ship Mode
+      - name: Total Revenue
+      table:
+        table_columns:
+        - column_id: Container
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Email Domain
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Part Name
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Ship Mode
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Total Revenue
+          headline_aggregation: SUM
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: Container
+        - column_id: Email Domain
+        - column_id: Part Name
+        - column_id: Ship Mode
+        - column_id: Total Revenue
+        axis_configs:
+        - x:
+          - Email Domain
+          "y":
+          - Total Revenue
+          color:
+          - Ship Mode
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Total Revenue\",\"columnProperty\": {}},{\"columnId\": \"Ship Mode\",\"columnProperty\": {}},{\"columnId\": \"Email Domain\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"3a562224-d35b-4881-a3c1-b61e8abfc0dd\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Revenue\"],\"isOpposite\": false}},{\"id\": \"f7546d49-a892-44fa-98cc-1ccb70b4359f\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Email Domain\"]}}],\"systemSeriesColors\": [{\"serieName\": \"mfgr#11\",\"color\": \"#47515F\"},{\"serieName\": \"mfgr#12\",\"color\": \"#BEC6D0\"},{\"serieName\": \"mfgr#13\",\"color\": \"#747E8C\"},{\"serieName\": \"mfgr#14\",\"color\": \"#C26232\"},{\"serieName\": \"mfgr#15\",\"color\": \"#FFCCB3\"},{\"serieName\": \"mfgr#21\",\"color\": \"#FF8142\"},{\"serieName\": \"mfgr#22\",\"color\": \"#6A4ABA\"},{\"serieName\": \"mfgr#23\",\"color\": \"#D1C0FB\"},{\"serieName\": \"mfgr#24\",\"color\": \"#8C62F5\"},{\"serieName\": \"mfgr#25\",\"color\": \"#56D3A8\"},{\"serieName\": \"mfgr#31\",\"color\": \"#049160\"},{\"serieName\": \"mfgr#32\",\"color\": \"#9BE5CB\"},{\"serieName\": \"mfgr#33\",\"color\": \"#06BF7F\"},{\"serieName\": \"mfgr#34\",\"color\": \"#FCD977\"},{\"serieName\": \"mfgr#35\",\"color\": \"#BF982A\"},{\"serieName\": \"mfgr#41\",\"color\": \"#FDE9AF\"},{\"serieName\": \"mfgr#42\",\"color\": \"#FCC838\"},{\"serieName\": \"mfgr#43\",\"color\": \"#82DFE9\"},{\"serieName\": \"mfgr#44\",\"color\": \"#369FAA\"},{\"serieName\": \"mfgr#45\",\"color\": \"#B5ECF2\"},{\"serieName\": \"mfgr#51\",\"color\": \"#48D1E0\"},{\"serieName\": \"mfgr#52\",\"color\": \"#71A1F4\"},{\"serieName\": \"mfgr#53\",\"color\": \"#2359B6\"},{\"serieName\": \"mfgr#54\",\"color\": \"#ABC7F9\"},{\"serieName\": \"mfgr#55\",\"color\": \"#2E75F0\"},{\"serieName\": \"{null}\",\"color\": \"#56D3A8\"},{\"serieName\": \"air\",\"color\": \"#06BF7F\"},{\"serieName\": \"fob\",\"color\": \"#FCD977\"},{\"serieName\": \"mail\",\"color\": \"#FCC838\"},{\"serieName\": \"rail\",\"color\": \"#82DFE9\"},{\"serieName\": \"reg air\",\"color\": \"#48D1E0\"},{\"serieName\": \"ship\",\"color\": \"#71A1F4\"},{\"serieName\": \"truck\",\"color\": \"#2E75F0\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: 586412fd-9ccf-49d5-bd2c-568ba53c0392
+  - id: Viz_8
+    answer:
+      name: Total Revenue by Email Domain and Ship Mode
+      tables:
+      - id: Parameters WS
+        name: Parameters WS
+        fqn: 540c4503-5bc7-4727-897b-f7f4d78dd2ff
+      search_query: "[Revenue] [Part Name] [Ship Mode] [Container] [Email Domain]"
+      answer_columns:
+      - name: Container
+      - name: Email Domain
+      - name: Part Name
+      - name: Ship Mode
+      - name: Total Revenue
+      table:
+        table_columns:
+        - column_id: Container
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Email Domain
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Part Name
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Ship Mode
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Total Revenue
+          headline_aggregation: SUM
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: Container
+        - column_id: Email Domain
+        - column_id: Part Name
+        - column_id: Ship Mode
+        - column_id: Total Revenue
+        axis_configs:
+        - x:
+          - Email Domain
+          "y":
+          - Total Revenue
+          color:
+          - Ship Mode
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Total Revenue\",\"columnProperty\": {}},{\"columnId\": \"Ship Mode\",\"columnProperty\": {}},{\"columnId\": \"Email Domain\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"3a562224-d35b-4881-a3c1-b61e8abfc0dd\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Revenue\"],\"isOpposite\": false}},{\"id\": \"f7546d49-a892-44fa-98cc-1ccb70b4359f\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Email Domain\"]}}],\"systemSeriesColors\": [{\"serieName\": \"mfgr#11\",\"color\": \"#47515F\"},{\"serieName\": \"mfgr#12\",\"color\": \"#BEC6D0\"},{\"serieName\": \"mfgr#13\",\"color\": \"#747E8C\"},{\"serieName\": \"mfgr#14\",\"color\": \"#C26232\"},{\"serieName\": \"mfgr#15\",\"color\": \"#FFCCB3\"},{\"serieName\": \"mfgr#21\",\"color\": \"#FF8142\"},{\"serieName\": \"mfgr#22\",\"color\": \"#6A4ABA\"},{\"serieName\": \"mfgr#23\",\"color\": \"#D1C0FB\"},{\"serieName\": \"mfgr#24\",\"color\": \"#8C62F5\"},{\"serieName\": \"mfgr#25\",\"color\": \"#56D3A8\"},{\"serieName\": \"mfgr#31\",\"color\": \"#049160\"},{\"serieName\": \"mfgr#32\",\"color\": \"#9BE5CB\"},{\"serieName\": \"mfgr#33\",\"color\": \"#06BF7F\"},{\"serieName\": \"mfgr#34\",\"color\": \"#FCD977\"},{\"serieName\": \"mfgr#35\",\"color\": \"#BF982A\"},{\"serieName\": \"mfgr#41\",\"color\": \"#FDE9AF\"},{\"serieName\": \"mfgr#42\",\"color\": \"#FCC838\"},{\"serieName\": \"mfgr#43\",\"color\": \"#82DFE9\"},{\"serieName\": \"mfgr#44\",\"color\": \"#369FAA\"},{\"serieName\": \"mfgr#45\",\"color\": \"#B5ECF2\"},{\"serieName\": \"mfgr#51\",\"color\": \"#48D1E0\"},{\"serieName\": \"mfgr#52\",\"color\": \"#71A1F4\"},{\"serieName\": \"mfgr#53\",\"color\": \"#2359B6\"},{\"serieName\": \"mfgr#54\",\"color\": \"#ABC7F9\"},{\"serieName\": \"mfgr#55\",\"color\": \"#2E75F0\"},{\"serieName\": \"{null}\",\"color\": \"#56D3A8\"},{\"serieName\": \"air\",\"color\": \"#06BF7F\"},{\"serieName\": \"fob\",\"color\": \"#FCD977\"},{\"serieName\": \"mail\",\"color\": \"#FCC838\"},{\"serieName\": \"rail\",\"color\": \"#82DFE9\"},{\"serieName\": \"reg air\",\"color\": \"#48D1E0\"},{\"serieName\": \"ship\",\"color\": \"#71A1F4\"},{\"serieName\": \"truck\",\"color\": \"#2E75F0\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: 10b6ce27-9796-4a8a-95cf-633c92fd465f
+  - id: Viz_9
+    answer:
+      name: Total Revenue by Email Domain and Ship Mode
+      tables:
+      - id: Parameters WS
+        name: Parameters WS
+        fqn: 540c4503-5bc7-4727-897b-f7f4d78dd2ff
+      search_query: "[Revenue] [Part Name] [Ship Mode] [Container] [Email Domain]"
+      answer_columns:
+      - name: Container
+      - name: Email Domain
+      - name: Part Name
+      - name: Ship Mode
+      - name: Total Revenue
+      table:
+        table_columns:
+        - column_id: Container
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Email Domain
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Part Name
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Ship Mode
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Total Revenue
+          headline_aggregation: SUM
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: Container
+        - column_id: Email Domain
+        - column_id: Part Name
+        - column_id: Ship Mode
+        - column_id: Total Revenue
+        axis_configs:
+        - x:
+          - Email Domain
+          "y":
+          - Total Revenue
+          color:
+          - Ship Mode
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Total Revenue\",\"columnProperty\": {}},{\"columnId\": \"Ship Mode\",\"columnProperty\": {}},{\"columnId\": \"Email Domain\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"3a562224-d35b-4881-a3c1-b61e8abfc0dd\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Revenue\"],\"isOpposite\": false}},{\"id\": \"f7546d49-a892-44fa-98cc-1ccb70b4359f\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Email Domain\"]}}],\"systemSeriesColors\": [{\"serieName\": \"mfgr#11\",\"color\": \"#47515F\"},{\"serieName\": \"mfgr#12\",\"color\": \"#BEC6D0\"},{\"serieName\": \"mfgr#13\",\"color\": \"#747E8C\"},{\"serieName\": \"mfgr#14\",\"color\": \"#C26232\"},{\"serieName\": \"mfgr#15\",\"color\": \"#FFCCB3\"},{\"serieName\": \"mfgr#21\",\"color\": \"#FF8142\"},{\"serieName\": \"mfgr#22\",\"color\": \"#6A4ABA\"},{\"serieName\": \"mfgr#23\",\"color\": \"#D1C0FB\"},{\"serieName\": \"mfgr#24\",\"color\": \"#8C62F5\"},{\"serieName\": \"mfgr#25\",\"color\": \"#56D3A8\"},{\"serieName\": \"mfgr#31\",\"color\": \"#049160\"},{\"serieName\": \"mfgr#32\",\"color\": \"#9BE5CB\"},{\"serieName\": \"mfgr#33\",\"color\": \"#06BF7F\"},{\"serieName\": \"mfgr#34\",\"color\": \"#FCD977\"},{\"serieName\": \"mfgr#35\",\"color\": \"#BF982A\"},{\"serieName\": \"mfgr#41\",\"color\": \"#FDE9AF\"},{\"serieName\": \"mfgr#42\",\"color\": \"#FCC838\"},{\"serieName\": \"mfgr#43\",\"color\": \"#82DFE9\"},{\"serieName\": \"mfgr#44\",\"color\": \"#369FAA\"},{\"serieName\": \"mfgr#45\",\"color\": \"#B5ECF2\"},{\"serieName\": \"mfgr#51\",\"color\": \"#48D1E0\"},{\"serieName\": \"mfgr#52\",\"color\": \"#71A1F4\"},{\"serieName\": \"mfgr#53\",\"color\": \"#2359B6\"},{\"serieName\": \"mfgr#54\",\"color\": \"#ABC7F9\"},{\"serieName\": \"mfgr#55\",\"color\": \"#2E75F0\"},{\"serieName\": \"{null}\",\"color\": \"#56D3A8\"},{\"serieName\": \"air\",\"color\": \"#06BF7F\"},{\"serieName\": \"fob\",\"color\": \"#FCD977\"},{\"serieName\": \"mail\",\"color\": \"#FCC838\"},{\"serieName\": \"rail\",\"color\": \"#82DFE9\"},{\"serieName\": \"reg air\",\"color\": \"#48D1E0\"},{\"serieName\": \"ship\",\"color\": \"#71A1F4\"},{\"serieName\": \"truck\",\"color\": \"#2E75F0\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: 4333230f-b96d-46d1-8ac1-8fee93236d06
+  - id: Viz_10
+    answer:
+      name: Total Revenue by Email Domain and Ship Mode
+      tables:
+      - id: Parameters WS
+        name: Parameters WS
+        fqn: 540c4503-5bc7-4727-897b-f7f4d78dd2ff
+      search_query: "[Revenue] [Part Name] [Ship Mode] [Container] [Email Domain]"
+      answer_columns:
+      - name: Container
+      - name: Email Domain
+      - name: Part Name
+      - name: Ship Mode
+      - name: Total Revenue
+      table:
+        table_columns:
+        - column_id: Container
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Email Domain
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Part Name
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Ship Mode
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Total Revenue
+          headline_aggregation: SUM
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: Container
+        - column_id: Email Domain
+        - column_id: Part Name
+        - column_id: Ship Mode
+        - column_id: Total Revenue
+        axis_configs:
+        - x:
+          - Email Domain
+          "y":
+          - Total Revenue
+          color:
+          - Ship Mode
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Total Revenue\",\"columnProperty\": {}},{\"columnId\": \"Ship Mode\",\"columnProperty\": {}},{\"columnId\": \"Email Domain\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"3a562224-d35b-4881-a3c1-b61e8abfc0dd\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Revenue\"],\"isOpposite\": false}},{\"id\": \"f7546d49-a892-44fa-98cc-1ccb70b4359f\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Email Domain\"]}}],\"systemSeriesColors\": [{\"serieName\": \"mfgr#11\",\"color\": \"#47515F\"},{\"serieName\": \"mfgr#12\",\"color\": \"#BEC6D0\"},{\"serieName\": \"mfgr#13\",\"color\": \"#747E8C\"},{\"serieName\": \"mfgr#14\",\"color\": \"#C26232\"},{\"serieName\": \"mfgr#15\",\"color\": \"#FFCCB3\"},{\"serieName\": \"mfgr#21\",\"color\": \"#FF8142\"},{\"serieName\": \"mfgr#22\",\"color\": \"#6A4ABA\"},{\"serieName\": \"mfgr#23\",\"color\": \"#D1C0FB\"},{\"serieName\": \"mfgr#24\",\"color\": \"#8C62F5\"},{\"serieName\": \"mfgr#25\",\"color\": \"#56D3A8\"},{\"serieName\": \"mfgr#31\",\"color\": \"#049160\"},{\"serieName\": \"mfgr#32\",\"color\": \"#9BE5CB\"},{\"serieName\": \"mfgr#33\",\"color\": \"#06BF7F\"},{\"serieName\": \"mfgr#34\",\"color\": \"#FCD977\"},{\"serieName\": \"mfgr#35\",\"color\": \"#BF982A\"},{\"serieName\": \"mfgr#41\",\"color\": \"#FDE9AF\"},{\"serieName\": \"mfgr#42\",\"color\": \"#FCC838\"},{\"serieName\": \"mfgr#43\",\"color\": \"#82DFE9\"},{\"serieName\": \"mfgr#44\",\"color\": \"#369FAA\"},{\"serieName\": \"mfgr#45\",\"color\": \"#B5ECF2\"},{\"serieName\": \"mfgr#51\",\"color\": \"#48D1E0\"},{\"serieName\": \"mfgr#52\",\"color\": \"#71A1F4\"},{\"serieName\": \"mfgr#53\",\"color\": \"#2359B6\"},{\"serieName\": \"mfgr#54\",\"color\": \"#ABC7F9\"},{\"serieName\": \"mfgr#55\",\"color\": \"#2E75F0\"},{\"serieName\": \"{null}\",\"color\": \"#56D3A8\"},{\"serieName\": \"air\",\"color\": \"#06BF7F\"},{\"serieName\": \"fob\",\"color\": \"#FCD977\"},{\"serieName\": \"mail\",\"color\": \"#FCC838\"},{\"serieName\": \"rail\",\"color\": \"#82DFE9\"},{\"serieName\": \"reg air\",\"color\": \"#48D1E0\"},{\"serieName\": \"ship\",\"color\": \"#71A1F4\"},{\"serieName\": \"truck\",\"color\": \"#2E75F0\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: fdc0e781-611a-46cd-8ddf-8fabbd4be987
+  - id: Viz_11
+    answer:
+      name: Total Revenue by Email Domain and Ship Mode
+      tables:
+      - id: Parameters WS
+        name: Parameters WS
+        fqn: 540c4503-5bc7-4727-897b-f7f4d78dd2ff
+      search_query: "[Revenue] [Part Name] [Ship Mode] [Container] [Email Domain]"
+      answer_columns:
+      - name: Container
+      - name: Email Domain
+      - name: Part Name
+      - name: Ship Mode
+      - name: Total Revenue
+      table:
+        table_columns:
+        - column_id: Container
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Email Domain
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Part Name
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Ship Mode
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Total Revenue
+          headline_aggregation: SUM
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: Container
+        - column_id: Email Domain
+        - column_id: Part Name
+        - column_id: Ship Mode
+        - column_id: Total Revenue
+        axis_configs:
+        - x:
+          - Email Domain
+          "y":
+          - Total Revenue
+          color:
+          - Ship Mode
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Total Revenue\",\"columnProperty\": {}},{\"columnId\": \"Ship Mode\",\"columnProperty\": {}},{\"columnId\": \"Email Domain\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"3a562224-d35b-4881-a3c1-b61e8abfc0dd\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Revenue\"],\"isOpposite\": false}},{\"id\": \"f7546d49-a892-44fa-98cc-1ccb70b4359f\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Email Domain\"]}}],\"systemSeriesColors\": [{\"serieName\": \"mfgr#11\",\"color\": \"#47515F\"},{\"serieName\": \"mfgr#12\",\"color\": \"#BEC6D0\"},{\"serieName\": \"mfgr#13\",\"color\": \"#747E8C\"},{\"serieName\": \"mfgr#14\",\"color\": \"#C26232\"},{\"serieName\": \"mfgr#15\",\"color\": \"#FFCCB3\"},{\"serieName\": \"mfgr#21\",\"color\": \"#FF8142\"},{\"serieName\": \"mfgr#22\",\"color\": \"#6A4ABA\"},{\"serieName\": \"mfgr#23\",\"color\": \"#D1C0FB\"},{\"serieName\": \"mfgr#24\",\"color\": \"#8C62F5\"},{\"serieName\": \"mfgr#25\",\"color\": \"#56D3A8\"},{\"serieName\": \"mfgr#31\",\"color\": \"#049160\"},{\"serieName\": \"mfgr#32\",\"color\": \"#9BE5CB\"},{\"serieName\": \"mfgr#33\",\"color\": \"#06BF7F\"},{\"serieName\": \"mfgr#34\",\"color\": \"#FCD977\"},{\"serieName\": \"mfgr#35\",\"color\": \"#BF982A\"},{\"serieName\": \"mfgr#41\",\"color\": \"#FDE9AF\"},{\"serieName\": \"mfgr#42\",\"color\": \"#FCC838\"},{\"serieName\": \"mfgr#43\",\"color\": \"#82DFE9\"},{\"serieName\": \"mfgr#44\",\"color\": \"#369FAA\"},{\"serieName\": \"mfgr#45\",\"color\": \"#B5ECF2\"},{\"serieName\": \"mfgr#51\",\"color\": \"#48D1E0\"},{\"serieName\": \"mfgr#52\",\"color\": \"#71A1F4\"},{\"serieName\": \"mfgr#53\",\"color\": \"#2359B6\"},{\"serieName\": \"mfgr#54\",\"color\": \"#ABC7F9\"},{\"serieName\": \"mfgr#55\",\"color\": \"#2E75F0\"},{\"serieName\": \"{null}\",\"color\": \"#56D3A8\"},{\"serieName\": \"air\",\"color\": \"#06BF7F\"},{\"serieName\": \"fob\",\"color\": \"#FCD977\"},{\"serieName\": \"mail\",\"color\": \"#FCC838\"},{\"serieName\": \"rail\",\"color\": \"#82DFE9\"},{\"serieName\": \"reg air\",\"color\": \"#48D1E0\"},{\"serieName\": \"ship\",\"color\": \"#71A1F4\"},{\"serieName\": \"truck\",\"color\": \"#2E75F0\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: a03f36eb-d88d-4386-be4a-98b4b2ce748e
+  - id: Viz_12
+    answer:
+      name: Total Revenue by Email Domain and Ship Mode
+      tables:
+      - id: Parameters WS
+        name: Parameters WS
+        fqn: 540c4503-5bc7-4727-897b-f7f4d78dd2ff
+      search_query: "[Revenue] [Part Name] [Ship Mode] [Container] [Email Domain]"
+      answer_columns:
+      - name: Container
+      - name: Email Domain
+      - name: Part Name
+      - name: Ship Mode
+      - name: Total Revenue
+      table:
+        table_columns:
+        - column_id: Container
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Email Domain
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Part Name
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Ship Mode
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Total Revenue
+          headline_aggregation: SUM
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: Container
+        - column_id: Email Domain
+        - column_id: Part Name
+        - column_id: Ship Mode
+        - column_id: Total Revenue
+        axis_configs:
+        - x:
+          - Email Domain
+          "y":
+          - Total Revenue
+          color:
+          - Ship Mode
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Total Revenue\",\"columnProperty\": {}},{\"columnId\": \"Ship Mode\",\"columnProperty\": {}},{\"columnId\": \"Email Domain\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"3a562224-d35b-4881-a3c1-b61e8abfc0dd\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Revenue\"],\"isOpposite\": false}},{\"id\": \"f7546d49-a892-44fa-98cc-1ccb70b4359f\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Email Domain\"]}}],\"systemSeriesColors\": [{\"serieName\": \"mfgr#11\",\"color\": \"#47515F\"},{\"serieName\": \"mfgr#12\",\"color\": \"#BEC6D0\"},{\"serieName\": \"mfgr#13\",\"color\": \"#747E8C\"},{\"serieName\": \"mfgr#14\",\"color\": \"#C26232\"},{\"serieName\": \"mfgr#15\",\"color\": \"#FFCCB3\"},{\"serieName\": \"mfgr#21\",\"color\": \"#FF8142\"},{\"serieName\": \"mfgr#22\",\"color\": \"#6A4ABA\"},{\"serieName\": \"mfgr#23\",\"color\": \"#D1C0FB\"},{\"serieName\": \"mfgr#24\",\"color\": \"#8C62F5\"},{\"serieName\": \"mfgr#25\",\"color\": \"#56D3A8\"},{\"serieName\": \"mfgr#31\",\"color\": \"#049160\"},{\"serieName\": \"mfgr#32\",\"color\": \"#9BE5CB\"},{\"serieName\": \"mfgr#33\",\"color\": \"#06BF7F\"},{\"serieName\": \"mfgr#34\",\"color\": \"#FCD977\"},{\"serieName\": \"mfgr#35\",\"color\": \"#BF982A\"},{\"serieName\": \"mfgr#41\",\"color\": \"#FDE9AF\"},{\"serieName\": \"mfgr#42\",\"color\": \"#FCC838\"},{\"serieName\": \"mfgr#43\",\"color\": \"#82DFE9\"},{\"serieName\": \"mfgr#44\",\"color\": \"#369FAA\"},{\"serieName\": \"mfgr#45\",\"color\": \"#B5ECF2\"},{\"serieName\": \"mfgr#51\",\"color\": \"#48D1E0\"},{\"serieName\": \"mfgr#52\",\"color\": \"#71A1F4\"},{\"serieName\": \"mfgr#53\",\"color\": \"#2359B6\"},{\"serieName\": \"mfgr#54\",\"color\": \"#ABC7F9\"},{\"serieName\": \"mfgr#55\",\"color\": \"#2E75F0\"},{\"serieName\": \"{null}\",\"color\": \"#56D3A8\"},{\"serieName\": \"air\",\"color\": \"#06BF7F\"},{\"serieName\": \"fob\",\"color\": \"#FCD977\"},{\"serieName\": \"mail\",\"color\": \"#FCC838\"},{\"serieName\": \"rail\",\"color\": \"#82DFE9\"},{\"serieName\": \"reg air\",\"color\": \"#48D1E0\"},{\"serieName\": \"ship\",\"color\": \"#71A1F4\"},{\"serieName\": \"truck\",\"color\": \"#2E75F0\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: 68cd2593-22c5-4992-87c0-962a096f6701
+  - id: Viz_13
+    answer:
+      name: Total Revenue by Email Domain and Ship Mode
+      tables:
+      - id: Parameters WS
+        name: Parameters WS
+        fqn: 540c4503-5bc7-4727-897b-f7f4d78dd2ff
+      search_query: "[Revenue] [Part Name] [Ship Mode] [Container] [Email Domain]"
+      answer_columns:
+      - name: Container
+      - name: Email Domain
+      - name: Part Name
+      - name: Ship Mode
+      - name: Total Revenue
+      table:
+        table_columns:
+        - column_id: Container
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Email Domain
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Part Name
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Ship Mode
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Total Revenue
+          headline_aggregation: SUM
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: Container
+        - column_id: Email Domain
+        - column_id: Part Name
+        - column_id: Ship Mode
+        - column_id: Total Revenue
+        axis_configs:
+        - x:
+          - Email Domain
+          "y":
+          - Total Revenue
+          color:
+          - Ship Mode
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Total Revenue\",\"columnProperty\": {}},{\"columnId\": \"Ship Mode\",\"columnProperty\": {}},{\"columnId\": \"Email Domain\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"3a562224-d35b-4881-a3c1-b61e8abfc0dd\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Revenue\"],\"isOpposite\": false}},{\"id\": \"f7546d49-a892-44fa-98cc-1ccb70b4359f\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Email Domain\"]}}],\"systemSeriesColors\": [{\"serieName\": \"mfgr#11\",\"color\": \"#47515F\"},{\"serieName\": \"mfgr#12\",\"color\": \"#BEC6D0\"},{\"serieName\": \"mfgr#13\",\"color\": \"#747E8C\"},{\"serieName\": \"mfgr#14\",\"color\": \"#C26232\"},{\"serieName\": \"mfgr#15\",\"color\": \"#FFCCB3\"},{\"serieName\": \"mfgr#21\",\"color\": \"#FF8142\"},{\"serieName\": \"mfgr#22\",\"color\": \"#6A4ABA\"},{\"serieName\": \"mfgr#23\",\"color\": \"#D1C0FB\"},{\"serieName\": \"mfgr#24\",\"color\": \"#8C62F5\"},{\"serieName\": \"mfgr#25\",\"color\": \"#56D3A8\"},{\"serieName\": \"mfgr#31\",\"color\": \"#049160\"},{\"serieName\": \"mfgr#32\",\"color\": \"#9BE5CB\"},{\"serieName\": \"mfgr#33\",\"color\": \"#06BF7F\"},{\"serieName\": \"mfgr#34\",\"color\": \"#FCD977\"},{\"serieName\": \"mfgr#35\",\"color\": \"#BF982A\"},{\"serieName\": \"mfgr#41\",\"color\": \"#FDE9AF\"},{\"serieName\": \"mfgr#42\",\"color\": \"#FCC838\"},{\"serieName\": \"mfgr#43\",\"color\": \"#82DFE9\"},{\"serieName\": \"mfgr#44\",\"color\": \"#369FAA\"},{\"serieName\": \"mfgr#45\",\"color\": \"#B5ECF2\"},{\"serieName\": \"mfgr#51\",\"color\": \"#48D1E0\"},{\"serieName\": \"mfgr#52\",\"color\": \"#71A1F4\"},{\"serieName\": \"mfgr#53\",\"color\": \"#2359B6\"},{\"serieName\": \"mfgr#54\",\"color\": \"#ABC7F9\"},{\"serieName\": \"mfgr#55\",\"color\": \"#2E75F0\"},{\"serieName\": \"{null}\",\"color\": \"#56D3A8\"},{\"serieName\": \"air\",\"color\": \"#06BF7F\"},{\"serieName\": \"fob\",\"color\": \"#FCD977\"},{\"serieName\": \"mail\",\"color\": \"#FCC838\"},{\"serieName\": \"rail\",\"color\": \"#82DFE9\"},{\"serieName\": \"reg air\",\"color\": \"#48D1E0\"},{\"serieName\": \"ship\",\"color\": \"#71A1F4\"},{\"serieName\": \"truck\",\"color\": \"#2E75F0\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: 0d4550c3-965d-4bac-bccf-8e35a364bc79
+  - id: Viz_14
+    answer:
+      name: Total Revenue by Email Domain and Ship Mode
+      tables:
+      - id: Parameters WS
+        name: Parameters WS
+        fqn: 540c4503-5bc7-4727-897b-f7f4d78dd2ff
+      search_query: "[Revenue] [Part Name] [Ship Mode] [Container] [Email Domain]"
+      answer_columns:
+      - name: Container
+      - name: Email Domain
+      - name: Part Name
+      - name: Ship Mode
+      - name: Total Revenue
+      table:
+        table_columns:
+        - column_id: Container
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Email Domain
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Part Name
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Ship Mode
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Total Revenue
+          headline_aggregation: SUM
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: Container
+        - column_id: Email Domain
+        - column_id: Part Name
+        - column_id: Ship Mode
+        - column_id: Total Revenue
+        axis_configs:
+        - x:
+          - Email Domain
+          "y":
+          - Total Revenue
+          color:
+          - Ship Mode
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Total Revenue\",\"columnProperty\": {}},{\"columnId\": \"Ship Mode\",\"columnProperty\": {}},{\"columnId\": \"Email Domain\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"3a562224-d35b-4881-a3c1-b61e8abfc0dd\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Revenue\"],\"isOpposite\": false}},{\"id\": \"f7546d49-a892-44fa-98cc-1ccb70b4359f\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Email Domain\"]}}],\"systemSeriesColors\": [{\"serieName\": \"mfgr#11\",\"color\": \"#47515F\"},{\"serieName\": \"mfgr#12\",\"color\": \"#BEC6D0\"},{\"serieName\": \"mfgr#13\",\"color\": \"#747E8C\"},{\"serieName\": \"mfgr#14\",\"color\": \"#C26232\"},{\"serieName\": \"mfgr#15\",\"color\": \"#FFCCB3\"},{\"serieName\": \"mfgr#21\",\"color\": \"#FF8142\"},{\"serieName\": \"mfgr#22\",\"color\": \"#6A4ABA\"},{\"serieName\": \"mfgr#23\",\"color\": \"#D1C0FB\"},{\"serieName\": \"mfgr#24\",\"color\": \"#8C62F5\"},{\"serieName\": \"mfgr#25\",\"color\": \"#56D3A8\"},{\"serieName\": \"mfgr#31\",\"color\": \"#049160\"},{\"serieName\": \"mfgr#32\",\"color\": \"#9BE5CB\"},{\"serieName\": \"mfgr#33\",\"color\": \"#06BF7F\"},{\"serieName\": \"mfgr#34\",\"color\": \"#FCD977\"},{\"serieName\": \"mfgr#35\",\"color\": \"#BF982A\"},{\"serieName\": \"mfgr#41\",\"color\": \"#FDE9AF\"},{\"serieName\": \"mfgr#42\",\"color\": \"#FCC838\"},{\"serieName\": \"mfgr#43\",\"color\": \"#82DFE9\"},{\"serieName\": \"mfgr#44\",\"color\": \"#369FAA\"},{\"serieName\": \"mfgr#45\",\"color\": \"#B5ECF2\"},{\"serieName\": \"mfgr#51\",\"color\": \"#48D1E0\"},{\"serieName\": \"mfgr#52\",\"color\": \"#71A1F4\"},{\"serieName\": \"mfgr#53\",\"color\": \"#2359B6\"},{\"serieName\": \"mfgr#54\",\"color\": \"#ABC7F9\"},{\"serieName\": \"mfgr#55\",\"color\": \"#2E75F0\"},{\"serieName\": \"{null}\",\"color\": \"#56D3A8\"},{\"serieName\": \"air\",\"color\": \"#06BF7F\"},{\"serieName\": \"fob\",\"color\": \"#FCD977\"},{\"serieName\": \"mail\",\"color\": \"#FCC838\"},{\"serieName\": \"rail\",\"color\": \"#82DFE9\"},{\"serieName\": \"reg air\",\"color\": \"#48D1E0\"},{\"serieName\": \"ship\",\"color\": \"#71A1F4\"},{\"serieName\": \"truck\",\"color\": \"#2E75F0\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: 8a838b5a-7db4-4aac-b078-ff81f3572d8a
+  - id: Viz_15
+    answer:
+      name: Total Revenue by Total Extended Price
+      tables:
+      - id: Container Worksheet
+        name: Container Worksheet
+        fqn: 286933b5-fc30-46b8-9216-31f669f46a15
+      search_query: "[Extended Price] [Revenue] [Color] [Customer City]"
+      answer_columns:
+      - name: Color
+      - name: Customer City
+      - name: Total Extended Price
+      - name: Total Revenue
+      table:
+        table_columns:
+        - column_id: Color
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Customer City
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Total Extended Price
+          headline_aggregation: SUM
+        - column_id: Total Revenue
+          headline_aggregation: SUM
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: SCATTER
+        chart_columns:
+        - column_id: Color
+        - column_id: Customer City
+        - column_id: Total Extended Price
+        - column_id: Total Revenue
+        axis_configs:
+        - x:
+          - Total Extended Price
+          "y":
+          - Total Revenue
+          category:
+          - Color
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Color\",\"columnProperty\": {}},{\"columnId\": \"Total Extended Price\",\"columnProperty\": {}},{\"columnId\": \"Total Revenue\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"7c73fd13-6bc3-41dd-8a79-e52cabe7e9e7\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Revenue\"],\"isOpposite\": false}},{\"id\": \"a2299892-cbaf-4b1c-b01a-d5c907606a51\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Total Extended Price\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Revenue\",\"color\": \"#06BF7F\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: 9f8e8067-3c70-4e0e-b655-9df25bd60313
+  - id: Viz_16
+    answer:
+      name: Total Revenue by Total Extended Price
+      tables:
+      - id: Container Worksheet
+        name: Container Worksheet
+        fqn: 286933b5-fc30-46b8-9216-31f669f46a15
+      search_query: "[Extended Price] [Revenue] [Color] [Customer City]"
+      answer_columns:
+      - name: Color
+      - name: Customer City
+      - name: Total Extended Price
+      - name: Total Revenue
+      table:
+        table_columns:
+        - column_id: Color
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Customer City
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Total Extended Price
+          headline_aggregation: SUM
+        - column_id: Total Revenue
+          headline_aggregation: SUM
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: SCATTER
+        chart_columns:
+        - column_id: Color
+        - column_id: Customer City
+        - column_id: Total Extended Price
+        - column_id: Total Revenue
+        axis_configs:
+        - x:
+          - Total Extended Price
+          "y":
+          - Total Revenue
+          category:
+          - Color
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Color\",\"columnProperty\": {}},{\"columnId\": \"Total Extended Price\",\"columnProperty\": {}},{\"columnId\": \"Total Revenue\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"7c73fd13-6bc3-41dd-8a79-e52cabe7e9e7\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Revenue\"],\"isOpposite\": false}},{\"id\": \"a2299892-cbaf-4b1c-b01a-d5c907606a51\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Total Extended Price\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Revenue\",\"color\": \"#06BF7F\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: 09788388-77d0-44ae-a6f9-471d61f7ef9b
+  - id: Viz_17
+    answer:
+      name: Total Revenue by Total Extended Price
+      tables:
+      - id: Container Worksheet
+        name: Container Worksheet
+        fqn: 286933b5-fc30-46b8-9216-31f669f46a15
+      search_query: "[Extended Price] [Revenue] [Color] [Customer City]"
+      answer_columns:
+      - name: Color
+      - name: Customer City
+      - name: Total Extended Price
+      - name: Total Revenue
+      table:
+        table_columns:
+        - column_id: Color
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Customer City
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Total Extended Price
+          headline_aggregation: SUM
+        - column_id: Total Revenue
+          headline_aggregation: SUM
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: SCATTER
+        chart_columns:
+        - column_id: Color
+        - column_id: Customer City
+        - column_id: Total Extended Price
+        - column_id: Total Revenue
+        axis_configs:
+        - x:
+          - Total Extended Price
+          "y":
+          - Total Revenue
+          category:
+          - Color
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Color\",\"columnProperty\": {}},{\"columnId\": \"Total Extended Price\",\"columnProperty\": {}},{\"columnId\": \"Total Revenue\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"7c73fd13-6bc3-41dd-8a79-e52cabe7e9e7\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Revenue\"],\"isOpposite\": false}},{\"id\": \"a2299892-cbaf-4b1c-b01a-d5c907606a51\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Total Extended Price\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Revenue\",\"color\": \"#06BF7F\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: c9d9a6b4-b6c8-4773-9cfe-f88164e848b7
+  - id: Viz_18
+    answer:
+      name: Total Revenue by Total Extended Price and Month Commit Date
+      tables:
+      - id: Container Worksheet
+        name: Container Worksheet
+        fqn: 286933b5-fc30-46b8-9216-31f669f46a15
+      search_query: "[Extended Price] [Revenue] [Month Commit Date] [Month Order Date]"
+      answer_columns:
+      - name: Month Commit Date
+      - name: Month Order Date
+      - name: Total Extended Price
+      - name: Total Revenue
+      table:
+        table_columns:
+        - column_id: Month Commit Date
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Month Order Date
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Total Extended Price
+          headline_aggregation: SUM
+        - column_id: Total Revenue
+          headline_aggregation: SUM
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: SCATTER
+        chart_columns:
+        - column_id: Month Commit Date
+        - column_id: Month Order Date
+        - column_id: Total Extended Price
+        - column_id: Total Revenue
+        axis_configs:
+        - x:
+          - Total Extended Price
+          "y":
+          - Total Revenue
+          color:
+          - Month Commit Date
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Total Extended Price\",\"columnProperty\": {}},{\"columnId\": \"Total Revenue\",\"columnProperty\": {}},{\"columnId\": \"Month Commit Date\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"7c73fd13-6bc3-41dd-8a79-e52cabe7e9e7\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Revenue\"],\"isOpposite\": false}},{\"id\": \"a2299892-cbaf-4b1c-b01a-d5c907606a51\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Total Extended Price\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Revenue\",\"color\": \"#06BF7F\"},{\"serieName\": \"april\",\"color\": \"#B094F8\"},{\"serieName\": \"augest\",\"color\": \"#8C62F5\"},{\"serieName\": \"december\",\"color\": \"#56D3A8\"},{\"serieName\": \"february\",\"color\": \"#06BF7F\"},{\"serieName\": \"january\",\"color\": \"#FCD977\"},{\"serieName\": \"july\",\"color\": \"#FCC838\"},{\"serieName\": \"june\",\"color\": \"#369FAA\"},{\"serieName\": \"march\",\"color\": \"#82DFE9\"},{\"serieName\": \"may\",\"color\": \"#48D1E0\"},{\"serieName\": \"november\",\"color\": \"#2359B6\"},{\"serieName\": \"octorber\",\"color\": \"#71A1F4\"},{\"serieName\": \"september\",\"color\": \"#2E75F0\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: 17aeaea4-6e49-450d-b7ec-6862ab29a9a7
+  - id: Viz_19
+    answer:
+      name: "Total Extended Price, Total Revenue by Supplier Region"
+      tables:
+      - id: Container Worksheet
+        name: Container Worksheet
+        fqn: 286933b5-fc30-46b8-9216-31f669f46a15
+      search_query: "[Extended Price] [Revenue] [Supplier Region]"
+      answer_columns:
+      - name: Supplier Region
+      - name: Total Extended Price
+      - name: Total Revenue
+      table:
+        table_columns:
+        - column_id: Supplier Region
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Total Extended Price
+          headline_aggregation: SUM
+        - column_id: Total Revenue
+          headline_aggregation: SUM
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: Supplier Region
+        - column_id: Total Extended Price
+        - column_id: Total Revenue
+        axis_configs:
+        - x:
+          - Supplier Region
+          "y":
+          - Total Extended Price
+          - Total Revenue
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Total Extended Price\",\"columnProperty\": {}},{\"columnId\": \"Total Revenue\",\"columnProperty\": {}},{\"columnId\": \"Supplier Region\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"44c3f20e-0dbb-48af-850d-6380c28ab5c8\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Extended Price\"],\"isOpposite\": false}},{\"id\": \"9a6b62c2-a1e2-4bf2-b9b6-d2a5131f926b\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Revenue\"],\"isOpposite\": true}},{\"id\": \"f1665daa-5a15-491a-b2b5-3f319ea1852a\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Supplier Region\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Revenue\",\"color\": \"#06BF7F\"},{\"serieName\": \"april\",\"color\": \"#B094F8\"},{\"serieName\": \"augest\",\"color\": \"#8C62F5\"},{\"serieName\": \"december\",\"color\": \"#56D3A8\"},{\"serieName\": \"february\",\"color\": \"#06BF7F\"},{\"serieName\": \"january\",\"color\": \"#FCD977\"},{\"serieName\": \"july\",\"color\": \"#FCC838\"},{\"serieName\": \"june\",\"color\": \"#369FAA\"},{\"serieName\": \"march\",\"color\": \"#82DFE9\"},{\"serieName\": \"may\",\"color\": \"#48D1E0\"},{\"serieName\": \"november\",\"color\": \"#2359B6\"},{\"serieName\": \"octorber\",\"color\": \"#71A1F4\"},{\"serieName\": \"september\",\"color\": \"#2E75F0\"},{\"serieName\": \"Total Extended Price\",\"color\": \"#48D1E0\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: 49aa598c-1646-4b92-be5c-cfc6ead44d29
+  - id: Viz_20
+    answer:
+      name: Total PURCHASE_DISCOUNT by DATE_DATE and PRODUCT_NAME
+      tables:
+      - id: rls-chasm-ws
+        name: rls-chasm-ws
+        fqn: cd231212-6890-4aa5-b94d-6223d36d47ff
+      search_query: "[DATE_DATE] [PRODUCT_NAME] [PURCHASE_DISCOUNT]"
+      answer_columns:
+      - name: DATE_DATE
+      - name: PRODUCT_NAME
+      - name: Total PURCHASE_DISCOUNT
+      table:
+        table_columns:
+        - column_id: DATE_DATE
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: PRODUCT_NAME
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Total PURCHASE_DISCOUNT
+          headline_aggregation: SUM
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: DATE_DATE
+        - column_id: PRODUCT_NAME
+        - column_id: Total PURCHASE_DISCOUNT
+        axis_configs:
+        - x:
+          - DATE_DATE
+          "y":
+          - Total PURCHASE_DISCOUNT
+          color:
+          - PRODUCT_NAME
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"DATE_DATE\",\"columnProperty\": {}},{\"columnId\": \"PRODUCT_NAME\",\"columnProperty\": {}},{\"columnId\": \"Total PURCHASE_DISCOUNT\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"a87b6f1a-d43e-4465-a75c-85471e67bf99\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total PURCHASE_DISCOUNT\"],\"isOpposite\": false}},{\"id\": \"a4154aaf-67d6-4873-b4a5-f777fe21f8b5\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"DATE_DATE\"]}}],\"systemSeriesColors\": [{\"serieName\": \"falcon\",\"color\": \"#06BF7F\"},{\"serieName\": \"lucid\",\"color\": \"#FCC838\"},{\"serieName\": \"orion\",\"color\": \"#48D1E0\"},{\"serieName\": \"sage\",\"color\": \"#2E75F0\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: 57169800-599d-426c-a688-abe34031f350
+  - id: Viz_21
+    answer:
+      name: PRODUCT_NAME by SALE_CHANNEL_ID and DATE_MONTH
+      tables:
+      - id: rls-chasm-ws
+        name: rls-chasm-ws
+        fqn: cd231212-6890-4aa5-b94d-6223d36d47ff
+      search_query: "[PRODUCT_NAME] [DATE_MONTH] [SALE_CHANNEL_ID]"
+      answer_columns:
+      - name: DATE_MONTH
+      - name: PRODUCT_NAME
+      - name: SALE_CHANNEL_ID
+      table:
+        table_columns:
+        - column_id: DATE_MONTH
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: PRODUCT_NAME
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: SALE_CHANNEL_ID
+          headline_aggregation: COUNT_DISTINCT
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: SCATTER
+        chart_columns:
+        - column_id: DATE_MONTH
+        - column_id: PRODUCT_NAME
+        - column_id: SALE_CHANNEL_ID
+        axis_configs:
+        - x:
+          - SALE_CHANNEL_ID
+          "y":
+          - PRODUCT_NAME
+          color:
+          - DATE_MONTH
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"PRODUCT_NAME\",\"columnProperty\": {}},{\"columnId\": \"SALE_CHANNEL_ID\",\"columnProperty\": {}},{\"columnId\": \"DATE_MONTH\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"3e77133a-550d-47e7-8b24-8446b40abe7f\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"PRODUCT_NAME\"],\"isOpposite\": false}},{\"id\": \"ad91e52b-25de-42be-bd47-eb65c6ee64e1\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"SALE_CHANNEL_ID\"]}}],\"systemSeriesColors\": [{\"serieName\": \"falcon\",\"color\": \"#06BF7F\"},{\"serieName\": \"lucid\",\"color\": \"#FCC838\"},{\"serieName\": \"orion\",\"color\": \"#48D1E0\"},{\"serieName\": \"sage\",\"color\": \"#2E75F0\"},{\"serieName\": \"december\",\"color\": \"#48D1E0\"},{\"serieName\": \"september\",\"color\": \"#2E75F0\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: f11f2fdb-393c-44fa-9bf8-bd6ce74668f3
+  - id: Viz_22
+    answer:
+      name: PRODUCT_NAME by SALE_CHANNEL_ID and DATE_MONTH
+      tables:
+      - id: rls-chasm-ws
+        name: rls-chasm-ws
+        fqn: cd231212-6890-4aa5-b94d-6223d36d47ff
+      search_query: "[PRODUCT_NAME] [DATE_MONTH] [SALE_CHANNEL_ID]"
+      answer_columns:
+      - name: DATE_MONTH
+      - name: PRODUCT_NAME
+      - name: SALE_CHANNEL_ID
+      table:
+        table_columns:
+        - column_id: DATE_MONTH
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: PRODUCT_NAME
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: SALE_CHANNEL_ID
+          headline_aggregation: COUNT_DISTINCT
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: SCATTER
+        chart_columns:
+        - column_id: DATE_MONTH
+        - column_id: PRODUCT_NAME
+        - column_id: SALE_CHANNEL_ID
+        axis_configs:
+        - x:
+          - SALE_CHANNEL_ID
+          "y":
+          - PRODUCT_NAME
+          color:
+          - DATE_MONTH
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"PRODUCT_NAME\",\"columnProperty\": {}},{\"columnId\": \"SALE_CHANNEL_ID\",\"columnProperty\": {}},{\"columnId\": \"DATE_MONTH\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"3e77133a-550d-47e7-8b24-8446b40abe7f\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"PRODUCT_NAME\"],\"isOpposite\": false}},{\"id\": \"ad91e52b-25de-42be-bd47-eb65c6ee64e1\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"SALE_CHANNEL_ID\"]}}],\"systemSeriesColors\": [{\"serieName\": \"falcon\",\"color\": \"#06BF7F\"},{\"serieName\": \"lucid\",\"color\": \"#FCC838\"},{\"serieName\": \"orion\",\"color\": \"#48D1E0\"},{\"serieName\": \"sage\",\"color\": \"#2E75F0\"},{\"serieName\": \"december\",\"color\": \"#48D1E0\"},{\"serieName\": \"september\",\"color\": \"#2E75F0\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: 05f17387-31e3-4b93-82e6-e0b5a9155ab3
+  - id: Viz_23
+    answer:
+      name: PRODUCT_NAME by SALE_CHANNEL_ID and DATE_MONTH
+      tables:
+      - id: rls-chasm-ws
+        name: rls-chasm-ws
+        fqn: cd231212-6890-4aa5-b94d-6223d36d47ff
+      search_query: "[PRODUCT_NAME] [DATE_MONTH] [SALE_CHANNEL_ID]"
+      answer_columns:
+      - name: DATE_MONTH
+      - name: PRODUCT_NAME
+      - name: SALE_CHANNEL_ID
+      table:
+        table_columns:
+        - column_id: DATE_MONTH
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: PRODUCT_NAME
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: SALE_CHANNEL_ID
+          headline_aggregation: COUNT_DISTINCT
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: SCATTER
+        chart_columns:
+        - column_id: DATE_MONTH
+        - column_id: PRODUCT_NAME
+        - column_id: SALE_CHANNEL_ID
+        axis_configs:
+        - x:
+          - SALE_CHANNEL_ID
+          "y":
+          - PRODUCT_NAME
+          color:
+          - DATE_MONTH
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"PRODUCT_NAME\",\"columnProperty\": {}},{\"columnId\": \"SALE_CHANNEL_ID\",\"columnProperty\": {}},{\"columnId\": \"DATE_MONTH\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"3e77133a-550d-47e7-8b24-8446b40abe7f\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"PRODUCT_NAME\"],\"isOpposite\": false}},{\"id\": \"ad91e52b-25de-42be-bd47-eb65c6ee64e1\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"SALE_CHANNEL_ID\"]}}],\"systemSeriesColors\": [{\"serieName\": \"falcon\",\"color\": \"#06BF7F\"},{\"serieName\": \"lucid\",\"color\": \"#FCC838\"},{\"serieName\": \"orion\",\"color\": \"#48D1E0\"},{\"serieName\": \"sage\",\"color\": \"#2E75F0\"},{\"serieName\": \"december\",\"color\": \"#48D1E0\"},{\"serieName\": \"september\",\"color\": \"#2E75F0\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: 5c517802-0658-469e-aa07-826be87a54db

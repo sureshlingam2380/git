@@ -1,0 +1,20 @@
+guid: 228bab26-1c2e-46e4-a5b5-7391a2b6f340
+table:
+  name: rls_purchases_detail_mapping
+  db: rls_test
+  schema: falcon_default_schema
+  db_table: rls_purchases_detail_mapping
+  columns:
+  - name: PURCHASE_DETAIL_ID
+    db_column_name: PURCHASE_DETAIL_ID
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: INT32
+  - name: GROUP_NAME
+    db_column_name: GROUP_NAME
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
