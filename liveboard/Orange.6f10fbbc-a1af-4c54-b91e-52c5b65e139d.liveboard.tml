@@ -1,0 +1,33 @@
+guid: 6f10fbbc-a1af-4c54-b91e-52c5b65e139d
+liveboard:
+  name: Orange
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: Total Discount
+      tables:
+      - id: Parameters WS
+        name: Parameters WS
+        fqn: 540c4503-5bc7-4727-897b-f7f4d78dd2ff
+      search_query: "[Discount] [Extended Price]"
+      answer_columns:
+      - name: Total Discount
+      - name: Total Extended Price
+      table:
+        table_columns:
+        - column_id: Total Discount
+          headline_aggregation: SUM
+        - column_id: Total Extended Price
+          headline_aggregation: SUM
+        client_state: ""
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Total Discount
+        - column_id: Total Extended Price
+        axis_configs:
+        - "y":
+          - Total Discount
+        client_state: ""
+      display_mode: CHART_MODE
+    viz_guid: 78f6d8d6-9b06-43ba-8caa-76e162a17ffc
