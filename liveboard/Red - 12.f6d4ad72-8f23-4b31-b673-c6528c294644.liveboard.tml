@@ -1,6 +1,6 @@
 guid: f6d4ad72-8f23-4b31-b673-c6528c294644
 liveboard:
-  name: Red - 1
+  name: Red - 12
   visualizations:
   - id: Viz_1
     answer:
@@ -1842,4 +1842,8 @@ liveboard:
     - visualization_id: Viz_41
       size: MEDIUM
     - visualization_id: Viz_42
+      size: MEDIUM
+    - visualization_id: Viz_43
+      size: MEDIUM
+    - visualization_id: Viz_44
       size: MEDIUM
