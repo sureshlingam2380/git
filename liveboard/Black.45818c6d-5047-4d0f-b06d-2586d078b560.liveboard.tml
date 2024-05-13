@@ -1,3 +1,42 @@
 guid: 45818c6d-5047-4d0f-b06d-2586d078b560
 liveboard:
   name: Black
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: "Total Extended Price, Total Org Masked Revenue by Category"
+      tables:
+      - id: Parameters WS
+        name: Parameters WS
+        fqn: 540c4503-5bc7-4727-897b-f7f4d78dd2ff
+      search_query: "[Extended Price] [Org Masked Revenue] [Category]"
+      answer_columns:
+      - name: Category
+      - name: Total Extended Price
+      - name: Total Org Masked Revenue
+      table:
+        table_columns:
+        - column_id: Category
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Total Extended Price
+          headline_aggregation: SUM
+        - column_id: Total Org Masked Revenue
+          headline_aggregation: TABLE_AGGR
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: Category
+        - column_id: Total Extended Price
+        - column_id: Total Org Masked Revenue
+        axis_configs:
+        - x:
+          - Category
+          "y":
+          - Total Extended Price
+          - Total Org Masked Revenue
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Total Extended Price\",\"columnProperty\": {}},{\"columnId\": \"Category\",\"columnProperty\": {}},{\"columnId\": \"Total Org Masked Revenue\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"6bd3678d-f547-4e8d-8c0a-7206557e1137\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Extended Price\"],\"isOpposite\": false}},{\"id\": \"a87f437f-3b81-4da6-828d-923cb1189c6b\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Org Masked Revenue\"],\"isOpposite\": true}},{\"id\": \"6ff2c276-36c0-4125-b7d8-2bd7a8b3ed46\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Category\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Extended Price\",\"color\": \"#48D1E0\"},{\"serieName\": \"Total Org Masked Revenue\",\"color\": \"#2E75F0\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: 11c28eea-fd52-4e26-87d4-68bf53a91da6
