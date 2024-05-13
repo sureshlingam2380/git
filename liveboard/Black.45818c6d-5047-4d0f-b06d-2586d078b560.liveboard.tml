@@ -630,6 +630,39 @@ liveboard:
         client_state: ""
       display_mode: CHART_MODE
     viz_guid: 9eafa107-6d35-45ea-ba71-7b64c1657333
+  - id: Viz_19
+    answer:
+      name: Total Extended Price by Category
+      tables:
+      - id: Parameters WS
+        name: Parameters WS
+        fqn: 540c4503-5bc7-4727-897b-f7f4d78dd2ff
+      search_query: "[Extended Price] [Category]"
+      answer_columns:
+      - name: Category
+      - name: Total Extended Price
+      table:
+        table_columns:
+        - column_id: Category
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Total Extended Price
+          headline_aggregation: SUM
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: Category
+        - column_id: Total Extended Price
+        axis_configs:
+        - x:
+          - Category
+          "y":
+          - Total Extended Price
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Total Extended Price\",\"columnProperty\": {}},{\"columnId\": \"Category\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"04e5da4b-001b-42e5-bb8e-297e73ed550b\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Extended Price\"],\"isOpposite\": false}},{\"id\": \"12da3b21-43b5-4318-b873-54ac9f7adc2b\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Category\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Extended Price\",\"color\": \"#747E8C\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: d87c2dbf-422f-41d1-9c00-84f43ee8b4e6
   layout:
     tiles:
     - visualization_id: Viz_1
