@@ -159,6 +159,35 @@ liveboard:
         client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_OFF\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Brand1\",\"columnProperty\": {}},{\"columnId\": \"307bd5a7-f16d-4f52-917b-af58f6863c18\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"2d56102a-0108-42f6-a951-f35e09b23c24\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"307bd5a7-f16d-4f52-917b-af58f6863c18\"],\"isOpposite\": false}},{\"id\": \"49e87a2e-58ba-44f1-82eb-441f7ee47470\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Brand1\"]}}],\"systemSeriesColors\": [{\"serieName\": \"307bd5a7-f16d-4f52-917b-af58f6863c18\",\"color\": \"#FF8142\"}]}"
       display_mode: TABLE_MODE
     viz_guid: 42981b86-326c-47d1-9144-c20a3db56633
+  - id: Viz_5
+    answer:
+      name: Total Discount
+      tables:
+      - id: Parameters WS
+        name: Parameters WS
+        fqn: 540c4503-5bc7-4727-897b-f7f4d78dd2ff
+      search_query: "[Discount] [Extended Price]"
+      answer_columns:
+      - name: Total Discount
+      - name: Total Extended Price
+      table:
+        table_columns:
+        - column_id: Total Discount
+          headline_aggregation: SUM
+        - column_id: Total Extended Price
+          headline_aggregation: SUM
+        client_state: ""
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Total Discount
+        - column_id: Total Extended Price
+        axis_configs:
+        - "y":
+          - Total Discount
+        client_state: ""
+      display_mode: CHART_MODE
+    viz_guid: c5c0e401-be5a-40d7-aeec-ed66dd578ced
   layout:
     tiles:
     - visualization_id: Viz_1
