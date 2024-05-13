@@ -227,6 +227,31 @@ liveboard:
         client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Brand1\",\"columnProperty\": {}},{\"columnId\": \"Total Revenue\",\"columnProperty\": {}},{\"columnId\": \"Total Quantity\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"fe55956a-2594-4c91-91f9-133e9b7514b9\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Quantity\"],\"isOpposite\": false}},{\"id\": \"ec2d7707-fc25-4a46-95f7-f32be44149e3\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Total Revenue\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Quantity\",\"color\": \"#FF8142\"}]}"
       display_mode: CHART_MODE
     viz_guid: 63986985-1c54-4a90-b2a1-bd7968d8b745
+  - id: Viz_7
+    answer:
+      name: Total Supply Cost
+      tables:
+      - id: Parameters WS
+        name: Parameters WS
+        fqn: 540c4503-5bc7-4727-897b-f7f4d78dd2ff
+      search_query: "[Supply Cost]"
+      answer_columns:
+      - name: Total Supply Cost
+      table:
+        table_columns:
+        - column_id: Total Supply Cost
+          headline_aggregation: SUM
+        client_state: ""
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Total Supply Cost
+        axis_configs:
+        - "y":
+          - Total Supply Cost
+        client_state: ""
+      display_mode: CHART_MODE
+    viz_guid: cd8c4300-fa3e-4a9c-9ea9-f9175e872694
   layout:
     tiles:
     - visualization_id: Viz_1
