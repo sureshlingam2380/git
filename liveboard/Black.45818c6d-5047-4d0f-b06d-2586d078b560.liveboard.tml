@@ -188,6 +188,45 @@ liveboard:
         client_state: ""
       display_mode: CHART_MODE
     viz_guid: c5c0e401-be5a-40d7-aeec-ed66dd578ced
+  - id: Viz_6
+    answer:
+      name: Total Quantity by Total Revenue
+      tables:
+      - id: Parameters WS
+        name: Parameters WS
+        fqn: 540c4503-5bc7-4727-897b-f7f4d78dd2ff
+      search_query: "[Revenue] [Quantity] [Brand1]"
+      answer_columns:
+      - name: Brand1
+      - name: Total Quantity
+      - name: Total Revenue
+      table:
+        table_columns:
+        - column_id: Brand1
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Total Quantity
+          headline_aggregation: SUM
+        - column_id: Total Revenue
+          headline_aggregation: SUM
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: SCATTER
+        chart_columns:
+        - column_id: Brand1
+        - column_id: Total Quantity
+        - column_id: Total Revenue
+        axis_configs:
+        - x:
+          - Total Revenue
+          "y":
+          - Total Quantity
+          category:
+          - Brand1
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Brand1\",\"columnProperty\": {}},{\"columnId\": \"Total Revenue\",\"columnProperty\": {}},{\"columnId\": \"Total Quantity\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"fe55956a-2594-4c91-91f9-133e9b7514b9\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Quantity\"],\"isOpposite\": false}},{\"id\": \"ec2d7707-fc25-4a46-95f7-f32be44149e3\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Total Revenue\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Quantity\",\"color\": \"#FF8142\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: 63986985-1c54-4a90-b2a1-bd7968d8b745
   layout:
     tiles:
     - visualization_id: Viz_1
