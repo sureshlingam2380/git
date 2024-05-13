@@ -77,6 +77,49 @@ liveboard:
         client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_OFF\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Brand1\",\"columnProperty\": {}},{\"columnId\": \"Total Discount\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"2d56102a-0108-42f6-a951-f35e09b23c24\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Discount\"],\"isOpposite\": false}},{\"id\": \"49e87a2e-58ba-44f1-82eb-441f7ee47470\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Brand1\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Discount\",\"color\": \"#FF8142\"}]}"
       display_mode: CHART_MODE
     viz_guid: 0c2f1ccf-beba-4898-9b04-d292df04b644
+  - id: Viz_3
+    answer:
+      name: "Total Discount by Brand1, Size, Part Name"
+      tables:
+      - id: Parameters WS
+        name: Parameters WS
+        fqn: 540c4503-5bc7-4727-897b-f7f4d78dd2ff
+      search_query: "[Discount] [Brand1] [Size] [Part Name]"
+      answer_columns:
+      - name: Brand1
+      - name: Part Name
+      - name: Size
+      - name: Total Discount
+      table:
+        table_columns:
+        - column_id: Brand1
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Part Name
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Size
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Total Discount
+          headline_aggregation: SUM
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: Brand1
+        - column_id: Part Name
+        - column_id: Size
+        - column_id: Total Discount
+        axis_configs:
+        - x:
+          - Part Name
+          "y":
+          - Total Discount
+          color:
+          - Size
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_OFF\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Brand1\",\"columnProperty\": {}},{\"columnId\": \"Total Discount\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"2d56102a-0108-42f6-a951-f35e09b23c24\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Discount\"],\"isOpposite\": false}},{\"id\": \"49e87a2e-58ba-44f1-82eb-441f7ee47470\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Brand1\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Discount\",\"color\": \"#FF8142\"}]}"
+      display_mode: TABLE_MODE
+    viz_guid: d2185b1d-3f38-440b-b750-5d9b8f292c27
   layout:
     tiles:
     - visualization_id: Viz_1
