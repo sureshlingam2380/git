@@ -120,6 +120,45 @@ liveboard:
         client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_OFF\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Brand1\",\"columnProperty\": {}},{\"columnId\": \"Total Discount\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"2d56102a-0108-42f6-a951-f35e09b23c24\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Discount\"],\"isOpposite\": false}},{\"id\": \"49e87a2e-58ba-44f1-82eb-441f7ee47470\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Brand1\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Discount\",\"color\": \"#FF8142\"}]}"
       display_mode: TABLE_MODE
     viz_guid: d2185b1d-3f38-440b-b750-5d9b8f292c27
+  - id: Viz_4
+    answer:
+      name: "Brand1, Size, Part Name"
+      tables:
+      - id: Parameters WS
+        name: Parameters WS
+        fqn: 540c4503-5bc7-4727-897b-f7f4d78dd2ff
+      search_query: "[Brand1] [Size] [Part Name]"
+      answer_columns:
+      - name: Brand1
+      - name: Part Name
+      - name: Size
+      table:
+        table_columns:
+        - column_id: Brand1
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Part Name
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Size
+          headline_aggregation: COUNT_DISTINCT
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: SCATTER
+        chart_columns:
+        - column_id: Brand1
+        - column_id: Part Name
+        - column_id: Size
+        axis_configs:
+        - x:
+          - Brand1
+          "y":
+          - Part Name
+          color:
+          - Size
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_OFF\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Brand1\",\"columnProperty\": {}},{\"columnId\": \"307bd5a7-f16d-4f52-917b-af58f6863c18\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"2d56102a-0108-42f6-a951-f35e09b23c24\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"307bd5a7-f16d-4f52-917b-af58f6863c18\"],\"isOpposite\": false}},{\"id\": \"49e87a2e-58ba-44f1-82eb-441f7ee47470\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Brand1\"]}}],\"systemSeriesColors\": [{\"serieName\": \"307bd5a7-f16d-4f52-917b-af58f6863c18\",\"color\": \"#FF8142\"}]}"
+      display_mode: TABLE_MODE
+    viz_guid: 42981b86-326c-47d1-9144-c20a3db56633
   layout:
     tiles:
     - visualization_id: Viz_1
