@@ -1,33 +1,3 @@
 guid: 4954acdd-a3dd-4a06-aa0a-fbb85c84b92b
 liveboard:
   name: lb1
-  visualizations:
-  - id: Viz_1
-    answer:
-      name: Total LO_CUSTKEY
-      tables:
-      - id: LINEORDER
-        name: LINEORDER
-        fqn: 0f92706f-1155-48d8-94cc-2c86075a5ea7
-      search_query: "[LO_CUSTKEY] [LO_DISCOUNT]"
-      answer_columns:
-      - name: Total LO_CUSTKEY
-      - name: Total LO_DISCOUNT
-      table:
-        table_columns:
-        - column_id: Total LO_CUSTKEY
-          show_headline: false
-        - column_id: Total LO_DISCOUNT
-          show_headline: false
-        client_state: ""
-      chart:
-        type: KPI
-        chart_columns:
-        - column_id: Total LO_CUSTKEY
-        - column_id: Total LO_DISCOUNT
-        axis_configs:
-        - "y":
-          - Total LO_CUSTKEY
-        client_state: ""
-      display_mode: CHART_MODE
-    viz_guid: df0c68c0-9d7c-4b15-8921-1898e44d1c40
