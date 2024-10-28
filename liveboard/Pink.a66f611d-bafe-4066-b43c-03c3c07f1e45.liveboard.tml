@@ -1,0 +1,38 @@
+guid: a66f611d-bafe-4066-b43c-03c3c07f1e45
+liveboard:
+  name: Pink
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: Total Discount by Brand1
+      tables:
+      - id: Parameters WS
+        name: Parameters WS
+        fqn: 540c4503-5bc7-4727-897b-f7f4d78dd2ff
+      search_query: "[Discount] [Brand1]"
+      answer_columns:
+      - name: Brand1
+      - name: Total Discount
+      table:
+        table_columns:
+        - column_id: Brand1
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Total Discount
+          headline_aggregation: SUM
+        ordered_column_ids:
+        - Brand1
+        - Total Discount
+        client_state: ""
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: Brand1
+        - column_id: Total Discount
+        axis_configs:
+        - x:
+          - Brand1
+          "y":
+          - Total Discount
+        client_state: ""
+      display_mode: CHART_MODE
+    viz_guid: af219f62-1617-469c-bb37-e6334ba129fd
