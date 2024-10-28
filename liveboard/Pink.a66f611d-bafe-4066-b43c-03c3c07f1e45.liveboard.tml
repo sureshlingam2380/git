@@ -23,6 +23,7 @@ liveboard:
         - Brand1
         - Total Discount
         client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Brand1\",\"columnProperty\": {}},{\"columnId\": \"Total Discount\",\"columnProperty\": {}}]}"
       chart:
         type: COLUMN
         chart_columns:
@@ -34,46 +35,10 @@ liveboard:
           "y":
           - Total Discount
         client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Brand1\",\"columnProperty\": {}},{\"columnId\": \"Total Discount\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"894bbdbb-2a27-4e90-8d0e-c9cbbebb88ef\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Discount\"],\"isOpposite\": false}},{\"id\": \"dc138480-c082-4493-a851-7dc0ab10ad68\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Brand1\"]}}]}"
       display_mode: CHART_MODE
     viz_guid: af219f62-1617-469c-bb37-e6334ba129fd
-  - id: Viz_2
-    answer:
-      name: Total Tax by Color and Category
-      tables:
-      - id: Parameters WS
-        name: Parameters WS
-        fqn: 540c4503-5bc7-4727-897b-f7f4d78dd2ff
-      search_query: "[Color] [Category] [Tax]"
-      answer_columns:
-      - name: Category
-      - name: Color
-      - name: Total Tax
-      table:
-        table_columns:
-        - column_id: Category
-          headline_aggregation: COUNT_DISTINCT
-        - column_id: Color
-          headline_aggregation: COUNT_DISTINCT
-        - column_id: Total Tax
-          headline_aggregation: SUM
-        ordered_column_ids:
-        - Color
-        - Category
-        - Total Tax
-        client_state: ""
-      chart:
-        type: STACKED_COLUMN
-        chart_columns:
-        - column_id: Category
-        - column_id: Color
-        - column_id: Total Tax
-        axis_configs:
-        - x:
-          - Color
-          "y":
-          - Total Tax
-          color:
-          - Category
-        client_state: ""
-      display_mode: CHART_MODE
-    viz_guid: 49d02d27-d436-431b-8b8d-c079869a6877
+  layout:
+    tiles:
+    - visualization_id: Viz_1
+      size: MEDIUM
