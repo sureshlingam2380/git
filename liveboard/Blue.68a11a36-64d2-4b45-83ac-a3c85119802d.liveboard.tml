@@ -38,3 +38,37 @@ liveboard:
         client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"county\",\"columnProperty\": {}},{\"columnId\": \"Total quantity purchased\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"d0d259d7-0a32-4d93-994b-c88e3ebfc7a4\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total quantity purchased\"],\"isOpposite\": false}},{\"id\": \"18ab185b-8e63-4f4e-91e1-825e44d370f2\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"county\"]}}],\"systemMultiColorSeriesColors\": [{\"serieName\": \"Total quantity purchased\",\"colorMap\": [{\"serieName\": \"county\",\"color\": [\"#ffffb2\",\"#fddd87\",\"#fba35d\",\"#f75534\",\"#f9140a\",\"#d70315\",\"#b10026\"]}]}]}"
       display_mode: CHART_MODE
     viz_guid: ee6ced21-3037-4106-8a25-cdbc776cae2d
+  - id: Viz_2
+    answer:
+      name: Total quantity purchased by product
+      tables:
+      - id: (Sample) Retail - Apparel
+        name: (Sample) Retail - Apparel
+        fqn: cd252e5c-b552-49a8-821d-3eadaa049cca
+      search_query: "[product] [quantity purchased]"
+      answer_columns:
+      - name: Total quantity purchased
+      - name: product
+      table:
+        table_columns:
+        - column_id: Total quantity purchased
+          show_headline: false
+        - column_id: product
+          show_headline: false
+        ordered_column_ids:
+        - product
+        - Total quantity purchased
+        client_state: ""
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: Total quantity purchased
+        - column_id: product
+        axis_configs:
+        - x:
+          - product
+          "y":
+          - Total quantity purchased
+        client_state: ""
+      display_mode: CHART_MODE
+    viz_guid: 1e982f92-956b-4a6e-826c-0ca9b66e3746
