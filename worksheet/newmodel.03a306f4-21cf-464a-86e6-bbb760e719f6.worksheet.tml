@@ -1,0 +1,145 @@
+guid: 03a306f4-21cf-464a-86e6-bbb760e719f6
+model:
+  name: newmodel
+  model_tables:
+  - name: CUSTOMER
+    fqn: ac3b8c04-bba1-4409-9597-8f4bdbc9bbd9
+  - name: LINEORDER
+    fqn: 9f046fe3-0538-4cb7-8ca6-541082676777
+    joins:
+    - with: CUSTOMER
+      referencing_join: LINEORDER_CUSTOMER
+  columns:
+  - name: C Custkey
+    column_id: CUSTOMER::C_CUSTKEY
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+  - name: C Nation
+    column_id: CUSTOMER::C_NATION
+    properties:
+      column_type: ATTRIBUTE
+  - name: C Region
+    column_id: CUSTOMER::C_REGION
+    properties:
+      column_type: ATTRIBUTE
+  - name: C Address
+    column_id: CUSTOMER::C_ADDRESS
+    properties:
+      column_type: ATTRIBUTE
+  - name: C Phone
+    column_id: CUSTOMER::C_PHONE
+    properties:
+      column_type: ATTRIBUTE
+  - name: C City
+    column_id: CUSTOMER::C_CITY
+    properties:
+      column_type: ATTRIBUTE
+  - name: C Mktsegment
+    column_id: CUSTOMER::C_MKTSEGMENT
+    properties:
+      column_type: ATTRIBUTE
+  - name: C Name
+    column_id: CUSTOMER::C_NAME
+    properties:
+      column_type: ATTRIBUTE
+  - name: Lo Partkey
+    column_id: LINEORDER::LO_PARTKEY
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+  - name: Lo Orderkey
+    column_id: LINEORDER::LO_ORDERKEY
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+  - name: Lo Suppkey
+    column_id: LINEORDER::LO_SUPPKEY
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+  - name: Lo Quantity
+    column_id: LINEORDER::LO_QUANTITY
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+  - name: Lo Extendedprice
+    column_id: LINEORDER::LO_EXTENDEDPRICE
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+  - name: Lo Shippriority
+    column_id: LINEORDER::LO_SHIPPRIORITY
+    properties:
+      column_type: ATTRIBUTE
+  - name: Lo Ordtotalprice
+    column_id: LINEORDER::LO_ORDTOTALPRICE
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+  - name: Lo Commitdate
+    column_id: LINEORDER::LO_COMMITDATE
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+  - name: Lo Custkey
+    column_id: LINEORDER::LO_CUSTKEY
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+  - name: Lo Discount
+    column_id: LINEORDER::LO_DISCOUNT
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+  - name: Lo Shipmode
+    column_id: LINEORDER::LO_SHIPMODE
+    properties:
+      column_type: ATTRIBUTE
+  - name: Lo Revenue
+    column_id: LINEORDER::LO_REVENUE
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+  - name: Lo Tax
+    column_id: LINEORDER::LO_TAX
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+  - name: Lo Linenumber
+    column_id: LINEORDER::LO_LINENUMBER
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+  - name: Lo Orderdate
+    column_id: LINEORDER::LO_ORDERDATE
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+  - name: Lo Supplycost
+    column_id: LINEORDER::LO_SUPPLYCOST
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+  - name: Lo Orderpriority
+    column_id: LINEORDER::LO_ORDERPRIORITY
+    properties:
+      column_type: ATTRIBUTE
+  properties:
+    is_bypass_rls: false
+    join_progressive: true
+    sage_config:
+      is_sage_enabled: false

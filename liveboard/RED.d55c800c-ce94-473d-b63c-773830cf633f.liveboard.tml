@@ -1,0 +1,38 @@
+guid: d55c800c-ce94-473d-b63c-773830cf633f
+liveboard:
+  name: RED
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: Total Lo Revenue by C Phone
+      tables:
+      - id: newmodel
+        name: newmodel
+        fqn: 03a306f4-21cf-464a-86e6-bbb760e719f6
+      search_query: "[C Phone] [Lo Revenue]"
+      answer_columns:
+      - name: C Phone
+      - name: Total Lo Revenue
+      table:
+        table_columns:
+        - column_id: C Phone
+          show_headline: false
+        - column_id: Total Lo Revenue
+          show_headline: false
+        ordered_column_ids:
+        - C Phone
+        - Total Lo Revenue
+        client_state: ""
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: C Phone
+        - column_id: Total Lo Revenue
+        axis_configs:
+        - x:
+          - C Phone
+          "y":
+          - Total Lo Revenue
+        client_state: ""
+      display_mode: CHART_MODE
+    viz_guid: 4671eaf4-2673-4393-bed7-c26f6d9d5bf3
