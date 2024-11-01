@@ -1,0 +1,41 @@
+guid: 530a3881-ae74-4bd0-85c9-145bda5e1e9a
+answer:
+  name: Cat - Answer
+  tables:
+  - id: newmodel
+    name: newmodel
+    fqn: 03a306f4-21cf-464a-86e6-bbb760e719f6
+  search_query: "[C Custkey] [Lo Shippriority] [Lo Custkey]"
+  answer_columns:
+  - name: Lo Shippriority
+  - name: Total C Custkey
+  - name: Total Lo Custkey
+  table:
+    table_columns:
+    - column_id: Lo Shippriority
+      show_headline: false
+    - column_id: Total C Custkey
+      show_headline: false
+    - column_id: Total Lo Custkey
+      show_headline: false
+    ordered_column_ids:
+    - Lo Shippriority
+    - Total C Custkey
+    - Total Lo Custkey
+    client_state: ""
+    client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+  chart:
+    type: COLUMN
+    chart_columns:
+    - column_id: Lo Shippriority
+    - column_id: Total C Custkey
+    - column_id: Total Lo Custkey
+    axis_configs:
+    - x:
+      - Lo Shippriority
+      "y":
+      - Total C Custkey
+      - Total Lo Custkey
+    client_state: ""
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Lo Shippriority\",\"columnProperty\": {}},{\"columnId\": \"Total C Custkey\",\"columnProperty\": {}},{\"columnId\": \"Total Lo Custkey\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"ce8ed103-1128-4885-bb56-7c1c30e5fa40\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total C Custkey\"],\"isOpposite\": false}},{\"id\": \"87592d61-0a5c-40c2-909c-59d84256aace\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Lo Custkey\"],\"isOpposite\": true}},{\"id\": \"317cdf7b-438f-4343-9690-c595f7cf72ed\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Lo Shippriority\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total C Custkey\",\"color\": \"#48D1E0\"},{\"serieName\": \"Total Lo Custkey\",\"color\": \"#2E75F0\"}]}"
+  display_mode: CHART_MODE
