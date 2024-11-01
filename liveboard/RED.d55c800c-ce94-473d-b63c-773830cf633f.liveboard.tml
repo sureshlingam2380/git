@@ -36,3 +36,37 @@ liveboard:
         client_state: ""
       display_mode: CHART_MODE
     viz_guid: 4671eaf4-2673-4393-bed7-c26f6d9d5bf3
+  - id: Viz_2
+    answer:
+      name: Total Lo Extendedprice by Monthly Lo Orderdate
+      tables:
+      - id: newmodel
+        name: newmodel
+        fqn: 03a306f4-21cf-464a-86e6-bbb760e719f6
+      search_query: "[Lo Extendedprice] [Lo Orderdate] [Lo Orderdate].monthly"
+      answer_columns:
+      - name: Month(Lo Orderdate)
+      - name: Total Lo Extendedprice
+      table:
+        table_columns:
+        - column_id: Month(Lo Orderdate)
+          show_headline: false
+        - column_id: Total Lo Extendedprice
+          show_headline: false
+        ordered_column_ids:
+        - Month(Lo Orderdate)
+        - Total Lo Extendedprice
+        client_state: ""
+      chart:
+        type: LINE
+        chart_columns:
+        - column_id: Month(Lo Orderdate)
+        - column_id: Total Lo Extendedprice
+        axis_configs:
+        - x:
+          - Month(Lo Orderdate)
+          "y":
+          - Total Lo Extendedprice
+        client_state: ""
+      display_mode: CHART_MODE
+    viz_guid: 784fd81b-86e9-4d88-8d67-b2843640c356
