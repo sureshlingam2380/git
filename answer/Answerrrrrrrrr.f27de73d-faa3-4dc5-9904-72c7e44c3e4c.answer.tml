@@ -1,0 +1,35 @@
+guid: f27de73d-faa3-4dc5-9904-72c7e44c3e4c
+answer:
+  name: Answerrrrrrrrr
+  tables:
+  - id: newmodel
+    name: newmodel
+    fqn: 03a306f4-21cf-464a-86e6-bbb760e719f6
+  search_query: "[C Custkey] [Lo Shippriority]"
+  answer_columns:
+  - name: Lo Shippriority
+  - name: Total C Custkey
+  table:
+    table_columns:
+    - column_id: Lo Shippriority
+      show_headline: false
+    - column_id: Total C Custkey
+      show_headline: false
+    ordered_column_ids:
+    - Lo Shippriority
+    - Total C Custkey
+    client_state: ""
+    client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+  chart:
+    type: COLUMN
+    chart_columns:
+    - column_id: Lo Shippriority
+    - column_id: Total C Custkey
+    axis_configs:
+    - x:
+      - Lo Shippriority
+      "y":
+      - Total C Custkey
+    client_state: ""
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Lo Shippriority\",\"columnProperty\": {}},{\"columnId\": \"Total C Custkey\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"37cd6abd-0b40-4d88-ab5d-3193876ad1bf\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total C Custkey\"],\"isOpposite\": false}},{\"id\": \"660d78e2-ad9b-47ff-8e9c-1fe9b7372969\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Lo Shippriority\"]}}]}"
+  display_mode: CHART_MODE
