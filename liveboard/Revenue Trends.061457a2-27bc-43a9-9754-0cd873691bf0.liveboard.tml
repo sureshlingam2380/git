@@ -7,7 +7,7 @@ liveboard:
       name: Total Revenue Trend
       description: |-
         Filters:
-        Commit Date : >= 01/01/1995 < 04/23/1995
+        Commit Date : &gt;&#61; 01/01/1995 &lt; 04/23/1995
       tables:
       - id: LINEORDER
         name: LINEORDER
@@ -63,7 +63,7 @@ liveboard:
       name: Total Revenue by Commit Date by Ship Mode
       description: |-
         Filters:
-        Commit Date : >= 01/01/1996 < 01/01/1997
+        Commit Date : &gt;&#61; 01/01/1996 &lt; 01/01/1997
         Ship Mode
       tables:
       - id: LINEORDER
@@ -234,7 +234,7 @@ liveboard:
       name: 1995 Revenue Trend by Ship Mode
       description: |-
         Filters:
-        Commit Date : >= 01/01/1995 < 01/01/1996
+        Commit Date : &gt;&#61; 01/01/1995 &lt; 01/01/1996
       tables:
       - id: LINEORDER
         name: LINEORDER
@@ -348,7 +348,7 @@ liveboard:
       name: "Revenue Trends By Ship Mode, Semi-annual, Monthly"
       description: |-
         Filters:
-        Commit Date : >= 01/01/1992 < 08/01/1992
+        Commit Date : &gt;&#61; 01/01/1992 &lt; 08/01/1992
       tables:
       - id: LINEORDER
         name: LINEORDER
@@ -403,7 +403,7 @@ liveboard:
       name: Revenue by Monthly (Commit Date)
       description: |-
         Filters:
-        Commit Date : >= 01/01/1992 < 08/01/1992
+        Commit Date : &gt;&#61; 01/01/1992 &lt; 08/01/1992
       tables:
       - id: LINEORDER
         name: LINEORDER
