@@ -1,0 +1,38 @@
+guid: 20055df4-b307-48c3-879d-030d7ef90587
+liveboard:
+  name: testing lb
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: Total promotion_budget by promotion_customer_id
+      tables:
+      - id: complex_schema_falcon_default_schema_promotion
+        name: complex_schema_falcon_default_schema_promotion
+        fqn: e9baf652-3aa7-4b6b-a9ee-3d9688cfbbaa
+      search_query: "[promotion_customer_id] [promotion_budget]"
+      answer_columns:
+      - name: Total promotion_budget
+      - name: promotion_customer_id
+      table:
+        table_columns:
+        - column_id: Total promotion_budget
+          show_headline: false
+        - column_id: promotion_customer_id
+          show_headline: false
+        ordered_column_ids:
+        - promotion_customer_id
+        - Total promotion_budget
+        client_state: ""
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: Total promotion_budget
+        - column_id: promotion_customer_id
+        axis_configs:
+        - x:
+          - promotion_customer_id
+          "y":
+          - Total promotion_budget
+        client_state: ""
+      display_mode: CHART_MODE
+    viz_guid: a4b2c43e-e95c-4609-8d3f-cf33a3da163d
