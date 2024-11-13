@@ -1,3 +1,38 @@
 guid: 439bd74d-c4f6-4dc9-b23b-e34d87884759
 liveboard:
   name: new
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: Total agency_review_rating_id by Monthly agency_review_date_rating_expiration
+      tables:
+      - id: complex_schema_falcon_default_schema_agency_review
+        name: complex_schema_falcon_default_schema_agency_review
+        fqn: e5cea189-5430-4756-a36f-d5345d80b3d0
+      search_query: "[agency_review_rating_id] [agency_review_date_rating_expiration] [agency_review_date_rating_expiration].monthly"
+      answer_columns:
+      - name: Month(agency_review_date_rating_expiration)
+      - name: Total agency_review_rating_id
+      table:
+        table_columns:
+        - column_id: Month(agency_review_date_rating_expiration)
+          show_headline: false
+        - column_id: Total agency_review_rating_id
+          show_headline: false
+        ordered_column_ids:
+        - Month(agency_review_date_rating_expiration)
+        - Total agency_review_rating_id
+        client_state: ""
+      chart:
+        type: LINE
+        chart_columns:
+        - column_id: Month(agency_review_date_rating_expiration)
+        - column_id: Total agency_review_rating_id
+        axis_configs:
+        - x:
+          - Month(agency_review_date_rating_expiration)
+          "y":
+          - Total agency_review_rating_id
+        client_state: ""
+      display_mode: CHART_MODE
+    viz_guid: ac3f6930-7977-4d06-bcd8-b7d8d6bf8c33

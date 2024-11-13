@@ -1,0 +1,55 @@
+guid: e5cea189-5430-4756-a36f-d5345d80b3d0
+table:
+  name: complex_schema_falcon_default_schema_agency_review
+  db: DEVELOPMENT
+  schema: TS_dataset
+  db_table: complex_schema_falcon_default_schema_agency_review
+  connection:
+    name: test
+    fqn: b56daa37-b506-4fa3-8f4f-5f20766f37e4
+  columns:
+  - name: agency_review_rating_id
+    db_column_name: agency_review_rating_id
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: INT64
+  - name: agency_review_reporting_company
+    db_column_name: agency_review_reporting_company
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: agency_review_agency_id
+    db_column_name: agency_review_agency_id
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: agency_review_rating
+    db_column_name: agency_review_rating
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: DOUBLE
+  - name: agency_review_date_rating_issued
+    db_column_name: agency_review_date_rating_issued
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: DATE_TIME
+  - name: agency_review_date_rating_expiration
+    db_column_name: agency_review_date_rating_expiration
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: DATE_TIME
+  properties:
+    sage_config:
+      is_sage_enabled: false
