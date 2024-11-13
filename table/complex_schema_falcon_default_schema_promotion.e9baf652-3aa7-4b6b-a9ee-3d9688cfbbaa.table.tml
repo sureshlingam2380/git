@@ -1,0 +1,87 @@
+guid: e9baf652-3aa7-4b6b-a9ee-3d9688cfbbaa
+table:
+  name: complex_schema_falcon_default_schema_promotion
+  db: DEVELOPMENT
+  schema: TS_dataset
+  db_table: complex_schema_falcon_default_schema_promotion
+  connection:
+    name: test
+    fqn: 59d3e820-9439-415e-9c37-0b4d47bb339d
+  columns:
+  - name: promotion_id
+    db_column_name: promotion_id
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: INT64
+  - name: promotion_customer_id
+    db_column_name: promotion_customer_id
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: promotion_first_name
+    db_column_name: promotion_first_name
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: promotion_last_name
+    db_column_name: promotion_last_name
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: promotion_state
+    db_column_name: promotion_state
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: promotion_cost
+    db_column_name: promotion_cost
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: INT64
+  - name: promotion_budget
+    db_column_name: promotion_budget
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: INT64
+  - name: promotion_type
+    db_column_name: promotion_type
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: promotion_date
+    db_column_name: promotion_date
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: DATE_TIME
+  - name: promotion_salesman_id
+    db_column_name: promotion_salesman_id
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: promotion_dateonly
+    db_column_name: promotion_dateonly
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: DATE
+  properties:
+    sage_config:
+      is_sage_enabled: false

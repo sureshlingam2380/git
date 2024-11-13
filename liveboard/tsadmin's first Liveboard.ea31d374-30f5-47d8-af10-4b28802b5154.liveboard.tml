@@ -1,0 +1,38 @@
+guid: ea31d374-30f5-47d8-af10-4b28802b5154
+liveboard:
+  name: tsadmin's first Liveboard
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: Total promotion_budget by promotion_state
+      tables:
+      - id: complex_schema_falcon_default_schema_promotion
+        name: complex_schema_falcon_default_schema_promotion
+        fqn: e9baf652-3aa7-4b6b-a9ee-3d9688cfbbaa
+      search_query: "[promotion_budget] [promotion_state]"
+      answer_columns:
+      - name: Total promotion_budget
+      - name: promotion_state
+      table:
+        table_columns:
+        - column_id: Total promotion_budget
+          show_headline: false
+        - column_id: promotion_state
+          show_headline: false
+        ordered_column_ids:
+        - promotion_state
+        - Total promotion_budget
+        client_state: ""
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: Total promotion_budget
+        - column_id: promotion_state
+        axis_configs:
+        - x:
+          - promotion_state
+          "y":
+          - Total promotion_budget
+        client_state: ""
+      display_mode: CHART_MODE
+    viz_guid: bfe3a4b3-1601-452f-8974-6446334c1237
